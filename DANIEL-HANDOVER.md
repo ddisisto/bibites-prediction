@@ -1,0 +1,4 @@
+@project-manager:
+for now, for simplicity, you also own the git repo, which is needs an init + initial commit as soon as is appropriate. if/when you delegate out to other @agents, they should expect a clean repo in appropriate branch if applicable.
+you may delegate out asingle @git agent (or similar) in future if this stops being effective, or alternately push specific responsibilities (e.g. via project protocol file context?) to called @agents
+evolve your role - ensure e.g. current git responsibilities + agent JIT creation / delegation are well understood across all of your contexts, as you validate their usage.
