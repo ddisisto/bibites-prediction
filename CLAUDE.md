@@ -10,6 +10,19 @@
 - [ ] **Development Phase**: Prediction system implementation
 - [ ] **Evaluation Phase**: Tournament and accuracy assessment
 
+## Experimental Scope Definition
+
+**Core Mission**: Ecosystem Survival Prediction and Engineering
+- **Success Metric**: Survival in Daniel's established stable ecosystems (hours of evolution, proven dynamics)
+- **Testing Framework**: Rapid feedback loop via manual organism introduction to stable worlds
+- **Ground Truth**: Mature worlds resist r-selected perturbations that previously dominated
+
+**Phased Experimental Approach**:
+1. **Survival Prediction**: Analyze survivors vs. failures → build compatibility models
+2. **Prediction Validation**: Test predictions against stable worlds → refine models  
+3. **Organism Engineering**: Design ecosystem-adapted organisms → test survival
+4. **Pattern Discovery**: Document ecosystem niches and integration strategies
+
 ## Key Architectural Decisions [LIVING SECTION - UPDATE WITH MAJOR CHOICES]
 
 ### Data Architecture
@@ -50,10 +63,10 @@
 
 ### Discovery Phase: Problem Space Understanding
 - [x] Parse all template organism configs (COMPLETED by @format-analyst)
-- [ ] Web research on Bibites game mechanics and behaviors (@web-research-agent)
-- [ ] Define prediction goals and success criteria (discussions with Daniel)
-- [ ] Determine technical approach: language, architecture, design philosophy
-- [ ] Establish project management and development methodology
+- [x] Web research on Bibites game mechanics and behaviors (COMPLETED via @general-purpose)
+- [x] Define prediction goals and success criteria (COMPLETED - survival in stable ecosystems)
+- [ ] Determine technical approach: language, architecture, design philosophy (DELEGATING to @engineering-manager)
+- [x] Establish project management and development methodology (COMPLETED)
 
 ### Phase 1: Format Understanding
 - [ ] Document genetic encoding patterns
