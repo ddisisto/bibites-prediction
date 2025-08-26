@@ -4,6 +4,7 @@
 **Mission:** Develop AI system to predict Bibites organism behaviors and outcomes from genetic/neural configurations, with potential for evolutionary tournament evaluation.
 
 ## Current Phase: [UPDATE AS PROJECT PROGRESSES]
+- [ ] **Discovery Phase**: Understanding problem space, format analysis, research, approach definition (CURRENT)
 - [ ] **Design Phase**: Technical architecture and system design
 - [ ] **Analysis Phase**: Bibites format understanding and structural modeling  
 - [ ] **Development Phase**: Prediction system implementation
@@ -47,8 +48,14 @@
 
 ## Milestone Tracking [UPDATE AS COMPLETED]
 
+### Discovery Phase: Problem Space Understanding
+- [ ] Parse all template organism configs (DELEGATING to @format-analyst)
+- [ ] Web research on Bibites game mechanics and behaviors (@web-research-agent)
+- [ ] Define prediction goals and success criteria (discussions with Daniel)
+- [ ] Determine technical approach: language, architecture, design philosophy
+- [ ] Establish project management and development methodology
+
 ### Phase 1: Format Understanding
-- [ ] Parse all template organism configs
 - [ ] Document genetic encoding patterns
 - [ ] Map neural network architectures  
 - [ ] Create format specification documents
