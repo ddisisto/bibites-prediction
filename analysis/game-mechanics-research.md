@@ -126,10 +126,11 @@ The Bibites is an artificial life simulation that uses NEAT-based neural network
 ### Egg Production System
 
 **Reproduction Requirements:**
-- Maturity based on size, not age
+- Maturity based on size, not age  
 - Health threshold (≥50%) required
 - Gradual egg production with energy investment
 - Clutch laying capability (multiple eggs)
+- EggLaying activation threshold: 0.25 (confirmed via neural network analysis)
 
 **Genetic Inheritance:**
 - Asexual reproduction with potential mutations
@@ -164,7 +165,7 @@ The Bibites is an artificial life simulation that uses NEAT-based neural network
 - **Mouth Muscles:** Bite strength (supported by MouthMusclesWAG genetic parameter)
 - **Movement Muscles:** Locomotion system (supported by MoveMusclesWAG genetic parameter)
 
-**TEMPLATE DATA CONFIRMATION:** WAG (Weight Allocation Gene) parameters in genes section directly control organ investment, with 8 distinct organ systems represented in the genetic data.
+**TEMPLATE DATA CONFIRMATION:** WAG (Weight Allocation Gene) parameters in genes section directly control organ investment, with 7 distinct organ systems represented in the genetic data. WAG organs compete for limited internal body area, creating evolutionary trade-offs between capabilities.
 
 ## Prediction Opportunities
 
@@ -241,6 +242,8 @@ The template format provides excellent structural and parametric data for indivi
 5. Various wiki pages on specific mechanics (Energy, Aging, Reproduction, etc.)
 6. Developer update logs and community discussions
 7. **Template Data Analysis**: Cross-referenced against 70+ .bb8template files (August 2025)
+8. **Neural Network Tooltip Extraction**: BibitesAssembly.dll analysis (August 2025) - see `node-behavior-reference.md`
+9. **Genetic Parameter Tooltip Extraction**: BibitesAssembly.dll analysis (August 2025) - see `gene-behavior-reference.md`
 
 ---
 

@@ -3,6 +3,8 @@
 ## Overview
 The .bb8template format is a JSON-based configuration file that defines Bibites organisms. This document provides the structural schema specification derived from analysis of 70+ template examples.
 
+**For behavioral specifications**: See `node-behavior-reference.md` (neural network behaviors) and `gene-behavior-reference.md` (genetic parameter effects).
+
 ## Root Schema Structure
 
 ```json
@@ -39,25 +41,32 @@ Neural network nodes with the following structure:
 - **Type 3**: Output/action nodes
 - **Types 4-13**: Specialized hidden nodes (memory, temporal, logic, etc.)
 
-### Standard Node Descriptions (Type 0 - Inputs)
-- `EnergyRatio`, `Maturity`, `LifeRatio`, `Fullness`, `Speed`
-- `IsGrabbing`, `AttackedDamage`, `EggStored`
-- `BibiteCloseness`, `BibiteAngle`, `NBibites`
-- `PlantCloseness`, `PlantAngle`, `NPlants`
-- `MeatCloseness`, `MeatAngle`, `NMeats`
-- `RedBibite`, `GreenBibite`, `BlueBibite`
-- `Tic`, `Minute`, `TimeAlive`
-- `PheroSense1-3`, `Phero1-3Angle`, `Phero1-3Heading`
-- `RotationSpeed` (version-dependent)
+### Standard Node Descriptions (By Type)
 
-### Standard Node Descriptions (Type 3 - Outputs)
-- `Accelerate`, `Rotate`, `Herding`
-- `Want2Eat`, `Grab`
-- `EggProduction`
+**Note**: For detailed behavioral specifications, activation ranges, and thresholds, see `node-behavior-reference.md`.
 
-### Standard Node Descriptions (Type 1 - Processing)
-- `Want2Lay`, `Digestion`, `ClkReset`
-- `Want2Grow`, `Want2Heal`, `Want2Attack`
+#### Type 0 (Input/Sensor Nodes)
+- Physical state: `EnergyRatio`, `Maturity`, `LifeRatio`, `Fullness`, `Speed`, `RotationSpeed`, `IsGrabbing`, `AttackedDamage`, `EggStored`
+- Environmental sensing: `BibiteCloseness`, `BibiteAngle`, `NBibites`, `PlantCloseness`, `PlantAngle`, `NPlants`, `MeatCloseness`, `MeatAngle`, `NMeats`
+- Chemical detection: `PheroSense1-3`, `Phero1-3Angle`, `Phero1-3Heading`
+- Social recognition: `RedBibite`, `GreenBibite`, `BlueBibite`
+- Temporal awareness: `Tic`, `Minute`, `TimeAlive`
+
+#### Type 1 (Basic Processing Nodes)  
+- `Want2Lay`, `Digestion`, `ClkReset`, `Want2Grow`, `Want2Heal`, `Want2Attack`
+
+#### Type 2 (Hidden Processing Nodes)
+- Generic processing and intermediate calculations
+
+#### Type 3 (Output/Action Nodes)
+- Movement: `Accelerate`, `Rotate`, `Herding`
+- Feeding: `Want2Eat`, `Grab`
+- Reproduction: `EggProduction`
+
+#### Types 4-13 (Specialized Processing Nodes)
+- Mathematical: Absolute, Gaussian, Sinusoidal, Sigmoid, TanH, Linear, ReLU
+- Temporal: Differential, Inhibitory, Integrator
+- Memory: Latch, SoftLatch
 
 ## Synapse Schema
 Connections between nodes with the following structure:
@@ -73,60 +82,62 @@ Connections between nodes with the following structure:
 ```
 
 ## Genes Schema
-Genetic parameters controlling organism behavior:
+Genetic parameters controlling organism behavior and capabilities.
+
+**Note**: For detailed behavioral effects, metabolic costs, and trade-off mechanics, see `gene-behavior-reference.md`.
 
 ```json
 {
-  // Reproduction timing
-  "LayTime": number,                    // Time to lay eggs
-  "BroodTime": number,                  // Brooding duration
-  "HatchTime": number,                  // Hatching time
+  // Reproduction and development timing
+  "LayTime": number,
+  "BroodTime": number, 
+  "HatchTime": number,
   
-  // Physical properties
-  "SizeRatio": number,                  // Size scaling factor
-  "SpeedRatio": number,                 // Movement speed scaling
-  "ColorR": number,                     // Red color component [0-1]
-  "ColorG": number,                     // Green color component [0-1] 
-  "ColorB": number,                     // Blue color component [0-1]
+  // Physical scaling properties
+  "SizeRatio": number,
+  "SpeedRatio": number,
+  "ColorR": number,        // [0.0, 1.0]
+  "ColorG": number,        // [0.0, 1.0]
+  "ColorB": number,        // [0.0, 1.0]
   
-  // Mutation parameters
-  "MutationAmountSigma": number,        // Genetic mutation variance
-  "AverageMutationNumber": number,      // Expected mutations per generation
-  "BrainMutationSigma": number,         // Neural mutation variance
-  "BrainAverageMutation": number,       // Expected brain mutations
+  // Evolution and mutation control
+  "MutationAmountSigma": number,
+  "AverageMutationNumber": number,
+  "BrainMutationSigma": number,
+  "BrainAverageMutation": number,
   
-  // Sensory capabilities
-  "ViewAngle": number,                  // Field of view in degrees
-  "ViewRadius": number,                 // Vision range
-  "ClockSpeed": number,                 // Internal timing rate
-  "PheroSense": number,                 // Pheromone sensitivity range
+  // Sensory system parameters
+  "ViewAngle": number,     // Field of view in degrees
+  "ViewRadius": number,    // Vision range
+  "ClockSpeed": number,    // Internal timing rate
+  "PheroSense": number,    // Pheromone detection range
   
-  // Behavioral parameters
-  "Diet": number,                       // Dietary preference [0-1]
-  "HerdSeparationWeight": number,       // Flocking behavior weights
+  // Behavioral trait parameters
+  "Diet": number,          // [0.0, 1.0] herbivore to carnivore
+  "HerdSeparationWeight": number,
   "HerdAlignmentWeight": number,        
   "HerdCohesionWeight": number,
   "HerdVelocityWeight": number,
   "HerdSeparationDistance": number,
   
-  // Growth and development
-  "GrowthScale": number,                // Growth rate scaling
-  "GrowthMaturityFactor": number,       // Maturity growth influence
-  "GrowthMaturityExponent": number,     // Maturity curve shape
-  "EyeOffset": number,                  // Visual system positioning
+  // Growth and maturation control
+  "GrowthScale": number,
+  "GrowthMaturityFactor": number,
+  "GrowthMaturityExponent": number,
+  "EyeOffset": number,
   
-  // Resource allocation (WAG = Weight Allocation Gene)
-  "StomachWAG": number,                 // Digestive system investment
-  "WombWAG": number,                    // Reproductive system investment
-  "FatWAG": number,                     // Energy storage investment  
-  "ArmorWAG": number,                   // Defense investment
-  "ThroatWAG": number,                  // Feeding apparatus investment
-  "MouthMusclesWAG": number,            // Bite strength investment
-  "MoveMusclesWAG": number,             // Locomotion investment
+  // WAG System: Organ allocation (compete for limited internal space)
+  "StomachWAG": number,      // Digestive capacity
+  "WombWAG": number,         // Reproductive capacity
+  "FatWAG": number,          // Energy storage capacity  
+  "ArmorWAG": number,        // Defense capability
+  "ThroatWAG": number,       // Feeding apparatus size
+  "MouthMusclesWAG": number, // Bite strength
+  "MoveMusclesWAG": number,  // Locomotion power
   
-  // Energy management
-  "FatStorageThreshold": number,        // Energy storage trigger point
-  "FatStorageDeadband": number          // Storage hysteresis range
+  // Energy management system
+  "FatStorageThreshold": number,
+  "FatStorageDeadband": number
 }
 ```
 
