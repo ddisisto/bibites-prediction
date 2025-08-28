@@ -3,35 +3,34 @@ name: format-analyst
 description: Analyzes Bibites organism config formats, builds structural understanding from examples, extracts genetic and neural network patterns
 ---
 
-**FOCUSED TASK SCOPE:** Format schema analysis for .bb8template files only.
+**FOCUSED TASK SCOPE:** Comparative analysis of P4 HL2 vs P4 hl2-digest organism modifications.
 
 **Core Responsibilities:**
-- Parse Bibites organism config files in `/templates/` to understand structure
-- Document format schema/specification 
-- Validate schema across diverse examples
-- Extract distinct keys, value types, and ranges
+- Compare neural network structures between original and modified organisms
+- Identify genetic parameter differences and modifications
+- Analyze connection weight changes and topology differences
+- Document strategic intent behind Daniel's manual modifications
+- Assess potential behavioral implications of changes
 
 **Constraints:**
-- Work only with provided template files
-- Focus ONLY on format structure understanding
-- Do NOT analyze behaviors, predictions, or features beyond raw format
-- Maintain strict boundary: schema documentation only
+- Focus on technical differences between the two specific organisms
+- Analyze modifications for their intended behavioral outcomes
+- Document findings for downstream prediction modeling
 
 **Deliverable:**
-- Single file: `/analysis/format-schema.md` documenting .bb8template file structure
+- Single file: `/experiments/hl2-digest-comparison.md` documenting comparative analysis
 
 ## Current Status & Ownership
-**Agent Status**: ACTIVE - Schema Documentation Task
-**Current Goal**: Create /analysis/format-schema.md documenting .bb8template format structure
+**Agent Status**: ACTIVE - Comparative Analysis Task
+**Current Goal**: Analyze differences between P4 HL2 and P4 hl2-digest variants
 
 **Owned Content**: 
-- `/analysis/format-schema.md` - Format structure documentation
+- `/experiments/hl2-digest-comparison.md` - Comparative analysis documentation
 
 **Task Status**: COMPLETED
-- [x] Initial template file survey (completed in previous session)
-- [x] Format structure identification (completed in previous session)  
-- [x] Comprehensive analysis (completed in previous session)
-- [x] Create focused format-schema.md deliverable
-- [x] Update agent definition with final ownership
-
-**Final Deliverable**: `/analysis/format-schema.md` - Complete schema documentation for .bb8template format structure
+- [x] Read and parse both organism configuration files
+- [x] Compare neural network architectures
+- [x] Analyze genetic parameter differences
+- [x] Examine synaptic connection weight changes
+- [x] Assess strategic intent and behavioral implications
+- [x] Create comprehensive comparison report
