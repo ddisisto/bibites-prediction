@@ -5,9 +5,20 @@ extract_save.py - Extract .bb8 files and images from Bibites save .zip files.
 Organizes extracted files (living vs eggs, numbered correctly) and extracts
 ecosystem screenshots. Handles multiple save files with batch processing.
 
-Usage examples:
+Autosave automation for evolutionary tracking:
+  python -m src.tools.extract_save --latest-autosave data/
+  python -m src.tools.extract_save --latest-autosave --cycle-name data/
+
+Traditional usage:
   python -m src.tools.extract_save Savefiles/validation-1.zip data/extracted/
   python -m src.tools.extract_save --batch Savefiles/ data/batch_extracted/
+  python -m src.tools.extract_save --latest --cycle-name data/
+
+Features:
+  - Auto-finds latest autosave with --latest-autosave flag
+  - Creates timestamped directories (e.g., cycle_20250829205409/) with --cycle-name
+  - Batch processing with --batch
+  - Smart organism categorization (bibites vs eggs)
 """
 
 import click
@@ -18,6 +29,8 @@ from rich.console import Console
 from rich.progress import track, Progress
 from rich.table import Table
 import re
+from datetime import datetime
+import glob
 
 console = Console()
 
@@ -62,6 +75,74 @@ def categorize_bb8_file(filename: str) -> tuple[str, Optional[int]]:
         return ('egg', int(egg_match.group(1)))
     
     return ('unknown', None)
+
+def find_latest_autosave(base_path: Path = None) -> Path:
+    """
+    Find the most recent autosave file in the Autosaves directory.
+    
+    Args:
+        base_path: Base path to search from (defaults to current working directory)
+        
+    Returns:
+        Path to the latest autosave file
+        
+    Raises:
+        SaveExtractionError: If no autosave files found
+    """
+    if base_path is None:
+        base_path = Path.cwd()
+    
+    # Look for Savefiles/Autosaves/ directory
+    autosave_patterns = [
+        base_path / 'Savefiles' / 'Autosaves',
+        base_path / 'savefiles' / 'autosaves',  # case insensitive
+        base_path / 'Autosaves',
+        base_path / 'autosaves'
+    ]
+    
+    autosave_dir = None
+    for pattern in autosave_patterns:
+        if pattern.exists() and pattern.is_dir():
+            autosave_dir = pattern
+            break
+    
+    if not autosave_dir:
+        raise SaveExtractionError(f"No Autosaves directory found. Searched: {[str(p) for p in autosave_patterns]}")
+    
+    # Find all autosave zip files
+    autosave_files = list(autosave_dir.glob('autosave_*.zip'))
+    if not autosave_files:
+        raise SaveExtractionError(f"No autosave files found in {autosave_dir}")
+    
+    # Sort by filename (which contains timestamp) to get the latest
+    autosave_files.sort(key=lambda x: x.name)
+    latest_autosave = autosave_files[-1]
+    
+    console.print(f"[blue]Found latest autosave: {latest_autosave.name}[/blue]")
+    return latest_autosave
+
+def create_cycle_directory_name(zip_path: Path, base_output: Path) -> Path:
+    """
+    Create a timestamped cycle directory name from autosave filename.
+    
+    Args:
+        zip_path: Path to the autosave zip file
+        base_output: Base output directory path
+        
+    Returns:
+        Path to the cycle-specific output directory
+    """
+    # Extract timestamp from autosave filename (e.g., autosave_20250829205409.zip)
+    filename = zip_path.stem
+    if filename.startswith('autosave_'):
+        timestamp = filename.replace('autosave_', '')
+        cycle_name = f'cycle_{timestamp}'
+    else:
+        # Fallback to current timestamp if not an autosave file
+        timestamp = datetime.now().strftime('%Y%m%d%H%M%S')
+        cycle_name = f'cycle_{timestamp}'
+    
+    return base_output / cycle_name
 
 def extract_save_files(zip_path: Path, output_dir: Path) -> Dict[str, Any]:
     """
@@ -183,14 +264,64 @@ def extract_save_files(zip_path: Path, output_dir: Path) -> Dict[str, Any]:
         raise SaveExtractionError(f"Error extracting {zip_path}: {e}")
 
 @click.command()
-@click.argument('input_path', type=click.Path(exists=True, path_type=Path))
 @click.argument('output_dir', type=click.Path(path_type=Path))
+@click.argument('input_path', type=click.Path(path_type=Path), required=False)
 @click.option('--batch', '-b', is_flag=True, 
               help='Process all .zip files in directory')
 @click.option('--overwrite', is_flag=True,
               help='Overwrite existing files in output directory')
-def extract_save(input_path: Path, output_dir: Path, batch: bool, overwrite: bool):
-    """Extract .bb8 files and images from Bibites save .zip files."""
+@click.option('--latest', is_flag=True,
+              help='Automatically find and process the latest autosave file')
+@click.option('--latest-autosave', is_flag=True,
+              help='Automatically find and process the latest autosave file (alias for --latest)')
+@click.option('--cycle-name', is_flag=True,
+              help='Create timestamped cycle directory (e.g., cycle_20250829205409/)')
+def extract_save(output_dir: Path, input_path: Optional[Path], batch: bool, overwrite: bool, latest: bool, latest_autosave: bool, cycle_name: bool):
+    """Extract .bb8 files and images from Bibites save .zip files.
+    
+    Examples:
+        # Extract specific save file
+        extract-save Savefiles/validation-1.zip data/extracted/
+        
+        # Extract latest autosave automatically
+        extract-save --latest data/
+        extract-save --latest-autosave data/
+        
+        # Extract latest autosave with timestamped directory
+        extract-save --latest --cycle-name data/
+        extract-save --latest-autosave --cycle-name data/
+        
+        # Batch process all saves in directory
+        extract-save --batch Savefiles/ data/batch_extracted/
+    """
+    
+    # Handle --latest or --latest-autosave flags
+    if latest or latest_autosave:
+        if input_path is not None:
+            flag_name = "--latest-autosave" if latest_autosave else "--latest"
+            console.print(f"[yellow]Warning: input_path ignored when using {flag_name} flag[/yellow]")
+        try:
+            input_path = find_latest_autosave()
+            console.print(f"[green]Using latest autosave: {input_path}[/green]")
+        except SaveExtractionError as e:
+            console.print(f"[red]Error finding latest autosave: {e}[/red]")
+            return
+    elif input_path is None:
+        console.print("[red]Error: input_path is required unless using --latest or --latest-autosave flag[/red]")
+        return
+    elif not input_path.exists():
+        console.print(f"[red]Error: input path does not exist: {input_path}[/red]")
+        return
+    
+    # Handle --cycle-name flag
+    if cycle_name:
+        if latest or latest_autosave or (input_path and input_path.name.startswith('autosave_')):
+            # Create timestamped cycle directory
+            cycle_output_dir = create_cycle_directory_name(input_path, output_dir)
+            console.print(f"[blue]Creating cycle directory: {cycle_output_dir}[/blue]")
+            output_dir = cycle_output_dir
+        else:
+            console.print("[yellow]Warning: --cycle-name only applies to autosave files, ignoring[/yellow]")
     
     # Determine input files
     if batch or input_path.is_dir():

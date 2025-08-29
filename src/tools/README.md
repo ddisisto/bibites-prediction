@@ -6,11 +6,17 @@
 
 ### Data Extraction Tools
 
-#### `extract_save.py` - Save File Processing
+#### `extract_save.py` - Save File Processing  
 Extracts all content from Bibites save .zip files with automatic organization.
 ```bash
 # Extract latest save file
 python -m src.tools.extract_save Savefiles/latest.zip data/ecosystem_name/
+
+# AUTO-EXTRACT LATEST AUTOSAVE (New!)
+python -m src.tools.extract_save --latest-autosave data/
+
+# Create timestamped cycle directory for evolution tracking
+python -m src.tools.extract_save --latest-autosave --cycle-name data/
 
 # Batch process multiple saves
 python -m src.tools.extract_save --batch Savefiles/ data/batch_output/
@@ -25,6 +31,12 @@ python -m src.tools.extract_data --fields genes.tag,genes.genes.ColorR data/ecos
 
 # Batch field extraction with table output
 python -m src.tools.extract_data --fields genes.genes.AverageMutationNumber,clock.age --batch data/ecosystem/bibites/ --format table
+
+# POPULATION TRACKING (New!)
+python -m src.tools.extract_data --population-summary data/cycle_dir/bibites/
+
+# EVOLUTIONARY COMPARISON (New!)
+python -m src.tools.extract_data --compare-populations data/cycle_A/bibites/ data/cycle_B/bibites/
 ```
 **Supports:** JSON, CSV, table output formats. 3x faster than manual jq commands.
 
