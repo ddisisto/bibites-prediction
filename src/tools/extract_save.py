@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-extract_save.py - Extract .bb8 files from Bibites save .zip files.
+extract_save.py - Extract .bb8 files and images from Bibites save .zip files.
 
-Organizes extracted files (living vs eggs, numbered correctly) and handles 
-multiple save files with batch processing.
+Organizes extracted files (living vs eggs, numbered correctly) and extracts
+ecosystem screenshots. Handles multiple save files with batch processing.
 
 Usage examples:
   python -m src.tools.extract_save Savefiles/validation-1.zip data/extracted/
@@ -28,6 +28,11 @@ class SaveExtractionError(Exception):
 def is_bb8_file(filename: str) -> bool:
     """Check if filename is a .bb8 file."""
     return filename.lower().endswith('.bb8')
+
+def is_image_file(filename: str) -> bool:
+    """Check if filename is an image file."""
+    image_extensions = {'.png', '.jpg', '.jpeg', '.gif', '.bmp'}
+    return Path(filename).suffix.lower() in image_extensions
 
 def categorize_bb8_file(filename: str) -> tuple[str, Optional[int]]:
     """
@@ -58,9 +63,9 @@ def categorize_bb8_file(filename: str) -> tuple[str, Optional[int]]:
     
     return ('unknown', None)
 
-def extract_bb8_files(zip_path: Path, output_dir: Path) -> Dict[str, Any]:
+def extract_save_files(zip_path: Path, output_dir: Path) -> Dict[str, Any]:
     """
-    Extract all .bb8 files from a save zip file.
+    Extract all .bb8 files and images from a save zip file.
     
     Args:
         zip_path: Path to the save .zip file
@@ -82,28 +87,32 @@ def extract_bb8_files(zip_path: Path, output_dir: Path) -> Dict[str, Any]:
     bibites_dir = output_dir / 'bibites'
     eggs_dir = output_dir / 'eggs'
     unknown_dir = output_dir / 'unknown'
+    images_dir = output_dir / 'images'
     
     bibites_dir.mkdir(parents=True, exist_ok=True)
     eggs_dir.mkdir(parents=True, exist_ok=True)
+    images_dir.mkdir(parents=True, exist_ok=True)
     
     stats = {
         'save_name': zip_path.stem,
         'bibites': 0,
         'eggs': 0,
         'unknown': 0,
+        'images': 0,
         'errors': []
     }
     
     try:
         with zipfile.ZipFile(zip_path, 'r') as zip_file:
-            # Get all .bb8 files in the archive
+            # Get all .bb8 files and images in the archive
             bb8_files = [name for name in zip_file.namelist() if is_bb8_file(name)]
+            image_files = [name for name in zip_file.namelist() if is_image_file(name)]
             
-            if not bb8_files:
-                console.print(f"[yellow]No .bb8 files found in {zip_path.name}[/yellow]")
+            if not bb8_files and not image_files:
+                console.print(f"[yellow]No .bb8 files or images found in {zip_path.name}[/yellow]")
                 return stats
             
-            console.print(f"[blue]Found {len(bb8_files)} .bb8 files in {zip_path.name}[/blue]")
+            console.print(f"[blue]Found {len(bb8_files)} .bb8 files and {len(image_files)} images in {zip_path.name}[/blue]")
             
             for file_path in bb8_files:
                 try:
@@ -136,6 +145,35 @@ def extract_bb8_files(zip_path: Path, output_dir: Path) -> Dict[str, Any]:
                     error_msg = f"Failed to extract {file_path}: {e}"
                     stats['errors'].append(error_msg)
                     console.print(f"[red]{error_msg}[/red]")
+            
+            # Extract image files
+            for file_path in image_files:
+                try:
+                    # Use original filename for images
+                    target_name = Path(file_path).name
+                    target_path = images_dir / target_name
+                    
+                    # Handle duplicate filenames by adding number suffix
+                    if target_path.exists():
+                        stem = target_path.stem
+                        suffix = target_path.suffix
+                        counter = 1
+                        while target_path.exists():
+                            target_name = f"{stem}_{counter}{suffix}"
+                            target_path = images_dir / target_name
+                            counter += 1
+                    
+                    # Extract the image file
+                    with zip_file.open(file_path) as source:
+                        with open(target_path, 'wb') as target:
+                            target.write(source.read())
+                    
+                    stats['images'] += 1
+                    
+                except Exception as e:
+                    error_msg = f"Failed to extract image {file_path}: {e}"
+                    stats['errors'].append(error_msg)
+                    console.print(f"[red]{error_msg}[/red]")
         
         return stats
                     
@@ -152,7 +190,7 @@ def extract_bb8_files(zip_path: Path, output_dir: Path) -> Dict[str, Any]:
 @click.option('--overwrite', is_flag=True,
               help='Overwrite existing files in output directory')
 def extract_save(input_path: Path, output_dir: Path, batch: bool, overwrite: bool):
-    """Extract .bb8 files from Bibites save .zip files."""
+    """Extract .bb8 files and images from Bibites save .zip files."""
     
     # Determine input files
     if batch or input_path.is_dir():
@@ -166,9 +204,10 @@ def extract_save(input_path: Path, output_dir: Path, batch: bool, overwrite: boo
     
     # Check output directory
     if output_dir.exists() and not overwrite:
-        existing_files = list(output_dir.rglob('*.bb8'))
-        if existing_files:
-            console.print(f"[yellow]Output directory {output_dir} contains {len(existing_files)} .bb8 files[/yellow]")
+        existing_bb8_files = list(output_dir.rglob('*.bb8'))
+        existing_image_files = list(output_dir.rglob('images/*'))
+        if existing_bb8_files or existing_image_files:
+            console.print(f"[yellow]Output directory {output_dir} contains {len(existing_bb8_files)} .bb8 files and {len(existing_image_files)} image files[/yellow]")
             console.print("[yellow]Use --overwrite to overwrite existing files[/yellow]")
             if not click.confirm("Continue anyway?"):
                 return
@@ -178,6 +217,7 @@ def extract_save(input_path: Path, output_dir: Path, batch: bool, overwrite: boo
     total_bibites = 0
     total_eggs = 0
     total_unknown = 0
+    total_images = 0
     total_errors = 0
     
     with Progress() as progress:
@@ -191,16 +231,17 @@ def extract_save(input_path: Path, output_dir: Path, batch: bool, overwrite: boo
                 else:
                     save_output_dir = output_dir
                 
-                stats = extract_bb8_files(zip_file, save_output_dir)
+                stats = extract_save_files(zip_file, save_output_dir)
                 all_stats.append(stats)
                 
                 total_bibites += stats['bibites']
                 total_eggs += stats['eggs'] 
                 total_unknown += stats['unknown']
+                total_images += stats['images']
                 total_errors += len(stats['errors'])
                 
                 console.print(f"[green]✓ {zip_file.name}:[/green] "
-                            f"{stats['bibites']} bibites, {stats['eggs']} eggs"
+                            f"{stats['bibites']} bibites, {stats['eggs']} eggs, {stats['images']} images"
                             + (f", {stats['unknown']} unknown" if stats['unknown'] > 0 else "")
                             + (f", {len(stats['errors'])} errors" if stats['errors'] else ""))
                 
@@ -219,6 +260,7 @@ def extract_save(input_path: Path, output_dir: Path, batch: bool, overwrite: boo
     table.add_row("Save files processed", str(len(zip_files)))
     table.add_row("Bibites extracted", str(total_bibites))
     table.add_row("Eggs extracted", str(total_eggs))
+    table.add_row("Images extracted", str(total_images))
     if total_unknown > 0:
         table.add_row("Unknown files", str(total_unknown))
     if total_errors > 0:
