@@ -6,22 +6,24 @@
 
 ### Data Extraction Tools
 
-#### `extract_save.py` - Save File Processing  
-Extracts all content from Bibites save .zip files with automatic organization.
+#### `extract_save.py` - Path-Agnostic Autosave Processing  
+**Simplified autosave extraction** with hardcoded Steam paths and cache-transparent operation. No path management needed.
 ```bash
-# Extract latest save file
-python -m src.tools.extract_save Savefiles/latest.zip data/ecosystem_name/
+# Extract latest autosave (zero configuration required)
+python -m src.tools.extract_save --latest
 
-# AUTO-EXTRACT LATEST AUTOSAVE (New!)
-python -m src.tools.extract_save --latest-autosave data/
+# Extract last N autosaves for longitudinal analysis
+python -m src.tools.extract_save --last 3
 
-# Create timestamped cycle directory for evolution tracking
-python -m src.tools.extract_save --latest-autosave --cycle-name data/
+# Extract specific autosave by name/pattern
+python -m src.tools.extract_save --name autosave_20250831204442
+python -m src.tools.extract_save --name 20250831204442  # partial match works
 
-# Batch process multiple saves
-python -m src.tools.extract_save --batch Savefiles/ data/batch_output/
+# Force re-extraction (override cache)
+python -m src.tools.extract_save --latest --overwrite
 ```
-**Outputs:** Organized `.bb8` files (bibites/, eggs/) + ecosystem images + metadata
+**Features:** Cache-transparent (reuses extracted data), automatic Steam autosave detection, perfect filename correspondence  
+**Outputs:** Organized `.bb8` files (bibites/, eggs/) + ecosystem images → `data/autosave_TIMESTAMP/`
 
 #### `extract_data.py` - Field Extraction & Population Analysis
 **Modular Python tool** for organism data extraction and evolutionary tracking. Refactored into specialized library modules for maintainability.
@@ -89,27 +91,45 @@ python -m src.tools.validate_format --batch --detailed data/ecosystem/bibites/
 
 ### Complete Ecosystem Analysis Workflow
 ```bash
-# 1. Extract latest save
-python -m src.tools.extract_save Savefiles/$(ls -t Savefiles/*.zip | head -1 | grep -v auto) data/current/
+# 1. Extract latest autosave (no paths needed)
+python -m src.tools.extract_save --latest
 
-# 2. Understand ecosystem structure
-python -m src.tools.extract_metadata Savefiles/latest.zip
+# 2. Analyze species distribution immediately  
+python -m src.tools.extract_data --population-summary data/autosave_TIMESTAMP/bibites/
 
-# 3. Analyze species distribution
-python -m src.tools.extract_data --fields genes.tag,clock.age --batch data/current/bibites/ --format table
+# 3. Understand ecosystem structure
+python -m src.tools.extract_metadata ~/.local/share/Steam/.../autosave_TIMESTAMP.zip
 
 # 4. Validate data quality
-python -m src.tools.validate_format --batch data/current/bibites/
+python -m src.tools.validate_format --batch data/autosave_TIMESTAMP/bibites/
 ```
 
 ### Representative Specimen Selection
 ```bash
 # Extract key genetic features for species clustering
-python -m src.tools.extract_data --fields genes.tag,genes.genes.AverageMutationNumber,genes.genes.SizeRatio --batch data/current/bibites/ --output ./tmp/species_analysis.json
+python -m src.tools.extract_data --fields genes.tag,genes.genes.AverageMutationNumber,genes.genes.SizeRatio --batch data/autosave_TIMESTAMP/bibites/ --output ./tmp/species_analysis.json
 
 # Validate selected specimens for analysis
-python -m src.tools.validate_format --detailed data/current/bibites/bibite_0.bb8 data/current/bibites/bibite_405.bb8
+python -m src.tools.validate_format --detailed data/autosave_TIMESTAMP/bibites/bibite_0.bb8 data/autosave_TIMESTAMP/bibites/bibite_405.bb8
 ```
+
+### Longitudinal Analysis with Cache-Transparent Operation
+```bash
+# Extract last 5 autosaves for temporal analysis (cache-transparent)
+python -m src.tools.extract_save --last 5
+
+# Compare population changes across extracted cycles
+python -m src.tools.extract_data --compare-populations \
+  data/autosave_20250830/bibites/ \
+  data/autosave_20250831/bibites/
+
+# Batch analyze all extracted autosaves for species tracking
+for dir in data/autosave_*/; do
+  echo "Analyzing $(basename $dir)..."
+  python -m src.tools.extract_data --population-summary ${dir}bibites/
+done
+```
+**Benefits:** Zero path management, automatic cache reuse, perfect for evolutionary tracking workflows
 
 ## Tool Development & Updates
 
