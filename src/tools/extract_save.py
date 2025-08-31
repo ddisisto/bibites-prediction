@@ -1,24 +1,21 @@
 #!/usr/bin/env python3
 """
-extract_save.py - Extract .bb8 files and images from Bibites save .zip files.
+extract_save.py - Path-agnostic autosave extraction tool.
 
-Organizes extracted files (living vs eggs, numbered correctly) and extracts
-ecosystem screenshots. Handles multiple save files with batch processing.
+Simplified CLI that hardcodes paths and provides cache-transparent operation.
+Always looks in Steam autosaves directory, always extracts to data/ directory.
 
-Autosave automation for evolutionary tracking:
-  python -m src.tools.extract_save --latest-autosave data/
-  python -m src.tools.extract_save --latest-autosave --cycle-name data/
-
-Traditional usage:
-  python -m src.tools.extract_save Savefiles/validation-1.zip data/extracted/
-  python -m src.tools.extract_save --batch Savefiles/ data/batch_extracted/
-  python -m src.tools.extract_save --latest --cycle-name data/
+Usage:
+  python -m src.tools.extract_save --latest
+  python -m src.tools.extract_save --last 3
+  python -m src.tools.extract_save --name autosave_20250831204442
+  python -m src.tools.extract_save --name 20250831204442  # partial match
 
 Features:
-  - Auto-finds latest autosave with --latest-autosave flag
-  - Creates timestamped directories (e.g., cycle_20250829205409/) with --cycle-name
-  - Batch processing with --batch
-  - Smart organism categorization (bibites vs eggs)
+  - Hardcoded autosaves path: no path management needed
+  - Cache-transparent: automatically uses cached data when available
+  - Smart organism categorization (bibites vs eggs, numbered correctly)
+  - Always outputs to data/ with filename correspondence
 """
 
 import click
@@ -33,6 +30,10 @@ from datetime import datetime
 import glob
 
 console = Console()
+
+# Hardcoded paths
+AUTOSAVES_PATH = Path("/home/daniel/.local/share/Steam/steamapps/compatdata/2736860/pfx/drive_c/users/steamuser/AppData/LocalLow/The Bibites/The Bibites/Savefiles/Autosaves/")
+DATA_OUTPUT_PATH = Path("data")
 
 class SaveExtractionError(Exception):
     """Raised when save file extraction fails."""
@@ -76,73 +77,108 @@ def categorize_bb8_file(filename: str) -> tuple[str, Optional[int]]:
     
     return ('unknown', None)
 
-def find_latest_autosave(base_path: Path = None) -> Path:
+def get_all_autosaves() -> List[Path]:
     """
-    Find the most recent autosave file in the Autosaves directory.
+    Get all autosave files from the hardcoded autosaves directory.
     
-    Args:
-        base_path: Base path to search from (defaults to current working directory)
-        
     Returns:
-        Path to the latest autosave file
+        List of autosave file paths, sorted by filename (oldest to newest)
         
     Raises:
-        SaveExtractionError: If no autosave files found
+        SaveExtractionError: If autosaves directory not found or no autosave files
     """
-    if base_path is None:
-        base_path = Path.cwd()
-    
-    # Look for Savefiles/Autosaves/ directory
-    autosave_patterns = [
-        base_path / 'Savefiles' / 'Autosaves',
-        base_path / 'savefiles' / 'autosaves',  # case insensitive
-        base_path / 'Autosaves',
-        base_path / 'autosaves'
-    ]
-    
-    autosave_dir = None
-    for pattern in autosave_patterns:
-        if pattern.exists() and pattern.is_dir():
-            autosave_dir = pattern
-            break
-    
-    if not autosave_dir:
-        raise SaveExtractionError(f"No Autosaves directory found. Searched: {[str(p) for p in autosave_patterns]}")
+    if not AUTOSAVES_PATH.exists():
+        raise SaveExtractionError(f"Autosaves directory not found: {AUTOSAVES_PATH}")
     
     # Find all autosave zip files
-    autosave_files = list(autosave_dir.glob('autosave_*.zip'))
+    autosave_files = list(AUTOSAVES_PATH.glob('autosave_*.zip'))
     if not autosave_files:
-        raise SaveExtractionError(f"No autosave files found in {autosave_dir}")
+        raise SaveExtractionError(f"No autosave files found in {AUTOSAVES_PATH}")
     
-    # Sort by filename (which contains timestamp) to get the latest
+    # Sort by filename (which contains timestamp)
     autosave_files.sort(key=lambda x: x.name)
-    latest_autosave = autosave_files[-1]
-    
-    console.print(f"[blue]Found latest autosave: {latest_autosave.name}[/blue]")
-    return latest_autosave
+    return autosave_files
 
-def create_cycle_directory_name(zip_path: Path, base_output: Path) -> Path:
+def find_latest_autosave() -> Path:
+    """Find the most recent autosave file."""
+    autosaves = get_all_autosaves()
+    latest = autosaves[-1]
+    console.print(f"[blue]Found latest autosave: {latest.name}[/blue]")
+    return latest
+
+def find_last_n_autosaves(n: int) -> List[Path]:
+    """Find the last N autosave files."""
+    autosaves = get_all_autosaves()
+    if n > len(autosaves):
+        console.print(f"[yellow]Requested {n} autosaves, but only {len(autosaves)} available[/yellow]")
+        return autosaves
+    return autosaves[-n:]
+
+def find_autosave_by_name(name_pattern: str) -> Path:
     """
-    Create a timestamped cycle directory name from autosave filename.
+    Find autosave by name or partial name match.
+    
+    Args:
+        name_pattern: Full or partial autosave name (with or without .zip extension)
+        
+    Returns:
+        Path to matching autosave file
+        
+    Raises:
+        SaveExtractionError: If no match found or multiple matches
+    """
+    autosaves = get_all_autosaves()
+    
+    # Normalize the pattern (remove .zip if present)
+    clean_pattern = name_pattern.replace('.zip', '').lower()
+    
+    # Find matches
+    matches = []
+    for autosave in autosaves:
+        autosave_name = autosave.stem.lower()  # Remove .zip extension
+        if clean_pattern in autosave_name or autosave_name == clean_pattern:
+            matches.append(autosave)
+    
+    if not matches:
+        raise SaveExtractionError(f"No autosave found matching '{name_pattern}'")
+    elif len(matches) > 1:
+        match_names = [m.name for m in matches]
+        raise SaveExtractionError(f"Multiple autosaves match '{name_pattern}': {match_names}")
+    
+    found = matches[0]
+    console.print(f"[blue]Found autosave: {found.name}[/blue]")
+    return found
+
+def get_output_directory(zip_path: Path) -> Path:
+    """
+    Get the output directory for an autosave file in the hardcoded data/ directory.
     
     Args:
         zip_path: Path to the autosave zip file
-        base_output: Base output directory path
         
     Returns:
-        Path to the cycle-specific output directory
+        Path to the output directory (data/autosave_timestamp/)
     """
-    # Extract timestamp from autosave filename (e.g., autosave_20250829205409.zip)
+    # Use filename stem directly for 1:1 correspondence (e.g., autosave_20250829205409.zip -> data/autosave_20250829205409/)
     filename = zip_path.stem
-    if filename.startswith('autosave_'):
-        timestamp = filename.replace('autosave_', '')
-        cycle_name = f'cycle_{timestamp}'
-    else:
-        # Fallback to current timestamp if not an autosave file
-        timestamp = datetime.now().strftime('%Y%m%d%H%M%S')
-        cycle_name = f'cycle_{timestamp}'
+    return DATA_OUTPUT_PATH / filename
+
+def is_directory_cached(output_dir: Path) -> bool:
+    """
+    Check if output directory exists and contains extracted data.
     
-    return base_output / cycle_name
+    Args:
+        output_dir: Directory to check for cached data
+        
+    Returns:
+        True if directory exists and has content, False otherwise
+    """
+    if not output_dir.exists():
+        return False
+        
+    # Check if directory has any .bb8 files (main indicator of successful extraction)
+    bb8_files = list(output_dir.rglob('*.bb8'))
+    return len(bb8_files) > 0
 
 def extract_save_files(zip_path: Path, output_dir: Path) -> Dict[str, Any]:
     """
@@ -264,84 +300,58 @@ def extract_save_files(zip_path: Path, output_dir: Path) -> Dict[str, Any]:
         raise SaveExtractionError(f"Error extracting {zip_path}: {e}")
 
 @click.command()
-@click.argument('output_dir', type=click.Path(path_type=Path))
-@click.argument('input_path', type=click.Path(path_type=Path), required=False)
-@click.option('--batch', '-b', is_flag=True, 
-              help='Process all .zip files in directory')
-@click.option('--overwrite', is_flag=True,
-              help='Overwrite existing files in output directory')
 @click.option('--latest', is_flag=True,
-              help='Automatically find and process the latest autosave file')
-@click.option('--latest-autosave', is_flag=True,
-              help='Automatically find and process the latest autosave file (alias for --latest)')
-@click.option('--cycle-name', is_flag=True,
-              help='Create timestamped cycle directory (e.g., cycle_20250829205409/)')
-def extract_save(output_dir: Path, input_path: Optional[Path], batch: bool, overwrite: bool, latest: bool, latest_autosave: bool, cycle_name: bool):
-    """Extract .bb8 files and images from Bibites save .zip files.
+              help='Extract the latest autosave file')
+@click.option('--last', type=int, metavar='N',
+              help='Extract the last N autosave files')
+@click.option('--name', type=str, metavar='PATTERN',
+              help='Extract autosave by name or partial name match')
+@click.option('--overwrite', is_flag=True,
+              help='Overwrite existing cached data')
+def extract_save(latest: bool, last: Optional[int], name: Optional[str], overwrite: bool):
+    """Path-agnostic autosave extraction tool.
+    
+    Automatically looks in Steam autosaves directory and extracts to data/ directory.
+    Cache-transparent operation: uses existing data when available.
     
     Examples:
-        # Extract specific save file
-        extract-save Savefiles/validation-1.zip data/extracted/
+        # Extract latest autosave
+        python -m src.tools.extract_save --latest
         
-        # Extract latest autosave automatically
-        extract-save --latest data/
-        extract-save --latest-autosave data/
+        # Extract last 3 autosaves  
+        python -m src.tools.extract_save --last 3
         
-        # Extract latest autosave with timestamped directory
-        extract-save --latest --cycle-name data/
-        extract-save --latest-autosave --cycle-name data/
-        
-        # Batch process all saves in directory
-        extract-save --batch Savefiles/ data/batch_extracted/
+        # Extract specific autosave by name
+        python -m src.tools.extract_save --name autosave_20250831204442
+        python -m src.tools.extract_save --name 20250831204442  # partial match
     """
     
-    # Handle --latest or --latest-autosave flags
-    if latest or latest_autosave:
-        if input_path is not None:
-            flag_name = "--latest-autosave" if latest_autosave else "--latest"
-            console.print(f"[yellow]Warning: input_path ignored when using {flag_name} flag[/yellow]")
-        try:
-            input_path = find_latest_autosave()
-            console.print(f"[green]Using latest autosave: {input_path}[/green]")
-        except SaveExtractionError as e:
-            console.print(f"[red]Error finding latest autosave: {e}[/red]")
-            return
-    elif input_path is None:
-        console.print("[red]Error: input_path is required unless using --latest or --latest-autosave flag[/red]")
+    # Validate exactly one option is specified
+    options_count = sum([latest, last is not None, name is not None])
+    if options_count == 0:
+        console.print("[red]Error: Must specify exactly one option: --latest, --last N, or --name PATTERN[/red]")
+        console.print("Use --help for usage examples")
         return
-    elif not input_path.exists():
-        console.print(f"[red]Error: input path does not exist: {input_path}[/red]")
+    elif options_count > 1:
+        console.print("[red]Error: Cannot combine --latest, --last, and --name options[/red]")
         return
     
-    # Handle --cycle-name flag
-    if cycle_name:
-        if latest or latest_autosave or (input_path and input_path.name.startswith('autosave_')):
-            # Create timestamped cycle directory
-            cycle_output_dir = create_cycle_directory_name(input_path, output_dir)
-            console.print(f"[blue]Creating cycle directory: {cycle_output_dir}[/blue]")
-            output_dir = cycle_output_dir
-        else:
-            console.print("[yellow]Warning: --cycle-name only applies to autosave files, ignoring[/yellow]")
-    
-    # Determine input files
-    if batch or input_path.is_dir():
-        zip_files = list(input_path.glob('*.zip'))
-        if not zip_files:
-            console.print(f"[red]No .zip files found in {input_path}[/red]")
-            return
-        console.print(f"[blue]Found {len(zip_files)} zip files for batch processing[/blue]")
-    else:
-        zip_files = [input_path]
-    
-    # Check output directory
-    if output_dir.exists() and not overwrite:
-        existing_bb8_files = list(output_dir.rglob('*.bb8'))
-        existing_image_files = list(output_dir.rglob('images/*'))
-        if existing_bb8_files or existing_image_files:
-            console.print(f"[yellow]Output directory {output_dir} contains {len(existing_bb8_files)} .bb8 files and {len(existing_image_files)} image files[/yellow]")
-            console.print("[yellow]Use --overwrite to overwrite existing files[/yellow]")
-            if not click.confirm("Continue anyway?"):
+    try:
+        # Determine which autosave files to process
+        if latest:
+            zip_files = [find_latest_autosave()]
+        elif last is not None:
+            if last <= 0:
+                console.print("[red]Error: --last must be a positive number[/red]")
                 return
+            zip_files = find_last_n_autosaves(last)
+            console.print(f"[blue]Found last {len(zip_files)} autosaves[/blue]")
+        elif name is not None:
+            zip_files = [find_autosave_by_name(name)]
+        
+    except SaveExtractionError as e:
+        console.print(f"[red]Error: {e}[/red]")
+        return
     
     # Process files
     all_stats = []
@@ -350,19 +360,46 @@ def extract_save(output_dir: Path, input_path: Optional[Path], batch: bool, over
     total_unknown = 0
     total_images = 0
     total_errors = 0
+    cached_files = 0
+    output_paths = []
     
     with Progress() as progress:
-        task = progress.add_task("[green]Extracting saves...", total=len(zip_files))
+        task = progress.add_task("[green]Processing autosaves...", total=len(zip_files))
         
         for zip_file in zip_files:
             try:
-                # Create subdirectory for this save if batch processing
-                if len(zip_files) > 1:
-                    save_output_dir = output_dir / zip_file.stem
-                else:
-                    save_output_dir = output_dir
+                # Get output directory for this autosave
+                output_dir = get_output_directory(zip_file)
+                output_paths.append(output_dir)
                 
-                stats = extract_save_files(zip_file, save_output_dir)
+                # Check cache first (unless overwrite requested)
+                if not overwrite and is_directory_cached(output_dir):
+                    console.print(f"[blue]Using cached data from {output_dir}[/blue]")
+                    cached_files += 1
+                    
+                    # Generate stats from cached files
+                    bb8_files = list(output_dir.rglob('*.bb8'))
+                    image_files = list((output_dir / 'images').glob('*')) if (output_dir / 'images').exists() else []
+                    
+                    # Count bibites vs eggs from cached files
+                    bibites_count = len(list((output_dir / 'bibites').glob('*.bb8'))) if (output_dir / 'bibites').exists() else 0
+                    eggs_count = len(list((output_dir / 'eggs').glob('*.bb8'))) if (output_dir / 'eggs').exists() else 0
+                    unknown_count = len(bb8_files) - bibites_count - eggs_count
+                    
+                    stats = {
+                        'save_name': zip_file.stem,
+                        'bibites': bibites_count,
+                        'eggs': eggs_count,
+                        'unknown': max(0, unknown_count),
+                        'images': len(image_files),
+                        'errors': [],
+                        'cached': True
+                    }
+                else:
+                    # Extract the autosave
+                    stats = extract_save_files(zip_file, output_dir)
+                    stats['cached'] = False
+                
                 all_stats.append(stats)
                 
                 total_bibites += stats['bibites']
@@ -371,10 +408,16 @@ def extract_save(output_dir: Path, input_path: Optional[Path], batch: bool, over
                 total_images += stats['images']
                 total_errors += len(stats['errors'])
                 
-                console.print(f"[green]✓ {zip_file.name}:[/green] "
-                            f"{stats['bibites']} bibites, {stats['eggs']} eggs, {stats['images']} images"
-                            + (f", {stats['unknown']} unknown" if stats['unknown'] > 0 else "")
-                            + (f", {len(stats['errors'])} errors" if stats['errors'] else ""))
+                # Display individual file results
+                if stats.get('cached', False):
+                    console.print(f"[cyan]✓ {zip_file.name} (cached):[/cyan] "
+                                f"{stats['bibites']} bibites, {stats['eggs']} eggs, {stats['images']} images"
+                                + (f", {stats['unknown']} unknown" if stats['unknown'] > 0 else ""))
+                else:
+                    console.print(f"[green]✓ {zip_file.name}:[/green] "
+                                f"{stats['bibites']} bibites, {stats['eggs']} eggs, {stats['images']} images"
+                                + (f", {stats['unknown']} unknown" if stats['unknown'] > 0 else "")
+                                + (f", {len(stats['errors'])} errors" if stats['errors'] else ""))
                 
             except SaveExtractionError as e:
                 console.print(f"[red]✗ {zip_file.name}: {e}[/red]")
@@ -388,10 +431,13 @@ def extract_save(output_dir: Path, input_path: Optional[Path], batch: bool, over
     table.add_column("Metric", style="cyan")
     table.add_column("Count", style="green")
     
-    table.add_row("Save files processed", str(len(zip_files)))
-    table.add_row("Bibites extracted", str(total_bibites))
-    table.add_row("Eggs extracted", str(total_eggs))
-    table.add_row("Images extracted", str(total_images))
+    table.add_row("Autosave files processed", str(len(zip_files)))
+    if cached_files > 0:
+        table.add_row("Files from cache", str(cached_files), style="cyan")
+        table.add_row("Files extracted", str(len(zip_files) - cached_files))
+    table.add_row("Bibites total", str(total_bibites))
+    table.add_row("Eggs total", str(total_eggs))
+    table.add_row("Images total", str(total_images))
     if total_unknown > 0:
         table.add_row("Unknown files", str(total_unknown))
     if total_errors > 0:
@@ -399,7 +445,13 @@ def extract_save(output_dir: Path, input_path: Optional[Path], batch: bool, over
     
     console.print(table)
     
-    console.print(f"\n[green]Files extracted to: {output_dir.resolve()}[/green]")
+    # Display data paths for chaining with analysis tools
+    console.print("\n[bold]Data Available At:[/bold]")
+    for path in output_paths:
+        if path.exists():
+            console.print(f"[green]{path.resolve()}[/green]")
+        else:
+            console.print(f"[red]{path.resolve()} (extraction failed)[/red]")
 
 if __name__ == '__main__':
     extract_save()
