@@ -23,8 +23,8 @@ python -m src.tools.extract_save --batch Savefiles/ data/batch_output/
 ```
 **Outputs:** Organized `.bb8` files (bibites/, eggs/) + ecosystem images + metadata
 
-#### `extract_data.py` - Field Extraction
-Extracts specific data fields from .bb8 organism files using dot notation.
+#### `extract_data.py` - Field Extraction & Population Analysis
+**Modular Python tool** for organism data extraction and evolutionary tracking. Refactored into specialized library modules for maintainability.
 ```bash
 # Single organism analysis
 python -m src.tools.extract_data --fields genes.tag,genes.genes.ColorR data/ecosystem/bibites/bibite_0.bb8
@@ -32,13 +32,20 @@ python -m src.tools.extract_data --fields genes.tag,genes.genes.ColorR data/ecos
 # Batch field extraction with table output
 python -m src.tools.extract_data --fields genes.genes.AverageMutationNumber,clock.age --batch data/ecosystem/bibites/ --format table
 
-# POPULATION TRACKING (New!)
+# POPULATION TRACKING - Species distribution analysis
 python -m src.tools.extract_data --population-summary data/cycle_dir/bibites/
 
-# EVOLUTIONARY COMPARISON (New!)
+# EVOLUTIONARY COMPARISON - Cross-cycle analysis
 python -m src.tools.extract_data --compare-populations data/cycle_A/bibites/ data/cycle_B/bibites/
+
+# SPATIAL ANALYSIS - Geographic zone distribution
+python -m src.tools.extract_data --spatial-analysis data/cycle_dir/bibites/ --output ./tmp/spatial.json
+
+# SPECIES ANALYSIS - Detailed species breakdowns (New!)
+python -m src.tools.extract_data --species-summary data/cycle_dir/bibites/
 ```
-**Supports:** JSON, CSV, table output formats. 3x faster than manual jq commands.
+**Modular Architecture:** 5 specialized lib modules (field_extraction, population_analysis, spatial_analysis, comparison_tools, output_formatters)
+**Performance:** orjson parsing, rich output, 3x faster than manual jq commands
 
 #### `extract_metadata.py` - Ecosystem Configuration
 Reveals zone settings, environmental parameters, and world configuration from save files.
@@ -126,11 +133,11 @@ Test: Validate against data/current/bibites/bibite_0.bb8
 
 ## Integration with Analysis Agents
 
-### For Ecosystem Analysis Agents
-- **@ecosystem-scout:** Use `extract_metadata.py` + `extract_data.py --batch` for population overview
-- **@gene-analyst:** Use `extract_data.py` with genetic field paths for WAG analysis  
-- **@neural-analyst:** Use `extract_data.py` with brain field paths for circuit analysis
-- **@synthesis-judge:** Access all extracted data for cross-domain validation
+### For Evolutionary Analysis Agents
+- **@ecosystem-scout:** Use `extract_metadata.py` + `extract_data.py --population-summary` for population overview
+- **@speciation-analyst:** Use `extract_data.py --species-summary` + `--spatial-analysis` for subspeciation studies
+- **@evolutionary-tracker:** Use `extract_data.py --compare-populations` for cycle-to-cycle analysis
+- **@tools-engineer:** Maintain and enhance modular lib/ structure for new capabilities
 
 ### Data Flow Pattern
 1. **Extract** ecosystem with appropriate tool
@@ -139,6 +146,23 @@ Test: Validate against data/current/bibites/bibite_0.bb8
 4. **Integrate** findings through synthesis agents
 5. **Document** results in appropriate `/analysis/` subdirectories
 
+## Modular Architecture Details
+
+### Library Structure (`src/tools/lib/`)
+The modular refactor creates focused, single-responsibility modules:
+
+- **`field_extraction.py`** - Core BB8 file processing, single/batch extraction, species field mapping
+- **`population_analysis.py`** - Species distribution, statistics, population summaries  
+- **`spatial_analysis.py`** - Geographic zone classification, spatial distribution analysis
+- **`comparison_tools.py`** - Cycle comparisons, species-to-species analysis  
+- **`output_formatters.py`** - Table, JSON, CSV output with consistent rich formatting
+
+### Extension Points
+Ready for species name integration:
+- Species ID mapping infrastructure in place
+- Clear separation between hereditary tags and sim-generated species
+- Modular structure supports easy feature addition without code disruption
+
 ---
-*Tools designed for natural language ecosystem analysis workflow*
-*Updated: August 29, 2025*
+*Tools designed for evolutionary tracking and speciation analysis workflow*
+*Updated: August 31, 2025*

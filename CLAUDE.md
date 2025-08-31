@@ -44,8 +44,8 @@
 **See: [src/tools/README.md](src/tools/README.md) for complete tool inventory and usage patterns.**
 
 ### Core Tools
-- **`extract_save.py`** - Automated save file processing (bibites, eggs, images, metadata)
-- **`extract_data.py`** - Field extraction with dot notation (3x faster than jq)
+- **`extract_save.py`** - Automated autosave processing with --latest-autosave, --cycle-name
+- **`extract_data.py`** - **Modular field extraction** with population analysis, spatial analysis, evolutionary tracking
 - **`extract_metadata.py`** - Ecosystem zone configuration and settings analysis  
 - **`validate_format.py`** - Data quality validation and format compliance
 
