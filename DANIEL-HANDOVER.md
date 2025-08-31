@@ -1,4 +1,9 @@
-@project-manager:
-for now, for simplicity, you also own the git repo, which is needs an init + initial commit as soon as is appropriate. if/when you delegate out to other @agents, they should expect a clean repo in appropriate branch if applicable.
-you may delegate out asingle @git agent (or similar) in future if this stops being effective, or alternately push specific responsibilities (e.g. via project protocol file context?) to called @agents
-evolve your role - ensure e.g. current git responsibilities + agent JIT creation / delegation are well understood across all of your contexts, as you validate their usage.
+context compact done, coming in for restructure
+
+git has current state.
+plan for next commit.
+provide concrete steps where clear, and identify where further consideration, planning out, breaking down discussions req'd.
+
+CLAUDE.md Options: New CLAUDE.md acts as a directory for phases and agents. ANALYSIS.md is a "meta-agent" of sorts, the primary user chat context for this phase. prior phase becomes INCEPTION.md or something, maintains earlier context, particularly where relevant to current phase. then as we get better at tool / agent usage, they can skip this (still get CLAUDE.md in all cases I think). functionally I think this could work well. each successive phase adapts CLAUDE.md and project structure, which is 50/50 covering the project (nature, purpose, function) / (tooling, agents, meta).
+
+Questions encouraged, especially when they're interesting ones.

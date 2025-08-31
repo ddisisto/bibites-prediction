@@ -1,0 +1,5392 @@
+Processing 898 files...
+Extracting data ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
+[
+  {
+    "rb2d.px": -11665.2334,
+    "rb2d.py": -5100.72559,
+    "genes.tag": "loop",
+    "_file": "bibite_313.bb8"
+  },
+  {
+    "rb2d.px": -6892.591,
+    "rb2d.py": -7133.91162,
+    "genes.tag": "plate",
+    "_file": "bibite_18.bb8"
+  },
+  {
+    "rb2d.px": -8053.936,
+    "rb2d.py": -7827.10059,
+    "genes.tag": "plate",
+    "_file": "bibite_876.bb8"
+  },
+  {
+    "rb2d.px": 10007.3223,
+    "rb2d.py": -1958.243,
+    "genes.tag": "plate",
+    "_file": "bibite_27.bb8"
+  },
+  {
+    "rb2d.px": -7271.45068,
+    "rb2d.py": 11763.6826,
+    "genes.tag": "loop",
+    "_file": "bibite_784.bb8"
+  },
+  {
+    "rb2d.px": -10884.9531,
+    "rb2d.py": -12572.3047,
+    "genes.tag": "loop",
+    "_file": "bibite_773.bb8"
+  },
+  {
+    "rb2d.px": -2918.76416,
+    "rb2d.py": 8505.487,
+    "genes.tag": "loop",
+    "_file": "bibite_146.bb8"
+  },
+  {
+    "rb2d.px": -3021.03442,
+    "rb2d.py": 10895.7109,
+    "genes.tag": "loop",
+    "_file": "bibite_674.bb8"
+  },
+  {
+    "rb2d.px": -3450.58423,
+    "rb2d.py": 11718.4648,
+    "genes.tag": "loop",
+    "_file": "bibite_646.bb8"
+  },
+  {
+    "rb2d.px": 3752.83423,
+    "rb2d.py": -12680.3926,
+    "genes.tag": "loop",
+    "_file": "bibite_216.bb8"
+  },
+  {
+    "rb2d.px": -10596.0293,
+    "rb2d.py": -12824.7842,
+    "genes.tag": "loop",
+    "_file": "bibite_664.bb8"
+  },
+  {
+    "rb2d.px": -8408.208,
+    "rb2d.py": 9687.237,
+    "genes.tag": "loop",
+    "_file": "bibite_587.bb8"
+  },
+  {
+    "rb2d.px": -6239.30273,
+    "rb2d.py": 6823.268,
+    "genes.tag": "eng",
+    "_file": "bibite_285.bb8"
+  },
+  {
+    "rb2d.px": 10575.7793,
+    "rb2d.py": 9643.456,
+    "genes.tag": "loop",
+    "_file": "bibite_348.bb8"
+  },
+  {
+    "rb2d.px": -5218.50732,
+    "rb2d.py": -8708.396,
+    "genes.tag": "loop",
+    "_file": "bibite_484.bb8"
+  },
+  {
+    "rb2d.px": 4634.46826,
+    "rb2d.py": 12971.7832,
+    "genes.tag": "loop",
+    "_file": "bibite_271.bb8"
+  },
+  {
+    "rb2d.px": -4771.68,
+    "rb2d.py": -13930.6641,
+    "genes.tag": "loop",
+    "_file": "bibite_103.bb8"
+  },
+  {
+    "rb2d.px": -3338.29126,
+    "rb2d.py": 11633.4912,
+    "genes.tag": "loop",
+    "_file": "bibite_671.bb8"
+  },
+  {
+    "rb2d.px": 11136.127,
+    "rb2d.py": -6199.89,
+    "genes.tag": "loop",
+    "_file": "bibite_397.bb8"
+  },
+  {
+    "rb2d.px": -4905.16943,
+    "rb2d.py": 11746.6328,
+    "genes.tag": "loop",
+    "_file": "bibite_558.bb8"
+  },
+  {
+    "rb2d.px": -5829.914,
+    "rb2d.py": -13407.0615,
+    "genes.tag": "loop",
+    "_file": "bibite_434.bb8"
+  },
+  {
+    "rb2d.px": -12759.5576,
+    "rb2d.py": 1470.42834,
+    "genes.tag": "loop",
+    "_file": "bibite_370.bb8"
+  },
+  {
+    "rb2d.px": 10008.9473,
+    "rb2d.py": -1823.173,
+    "genes.tag": "plate",
+    "_file": "bibite_1.bb8"
+  },
+  {
+    "rb2d.px": -7489.213,
+    "rb2d.py": -13373.4541,
+    "genes.tag": "loop",
+    "_file": "bibite_267.bb8"
+  },
+  {
+    "rb2d.px": -6308.978,
+    "rb2d.py": -13813.0625,
+    "genes.tag": "loop",
+    "_file": "bibite_750.bb8"
+  },
+  {
+    "rb2d.px": -4473.4375,
+    "rb2d.py": 11914.5244,
+    "genes.tag": "loop",
+    "_file": "bibite_529.bb8"
+  },
+  {
+    "rb2d.px": -11867.085,
+    "rb2d.py": -10940.7139,
+    "genes.tag": "loop",
+    "_file": "bibite_396.bb8"
+  },
+  {
+    "rb2d.px": -6536.406,
+    "rb2d.py": 12499.8223,
+    "genes.tag": "creep",
+    "_file": "bibite_259.bb8"
+  },
+  {
+    "rb2d.px": -6763.67236,
+    "rb2d.py": -9289.132,
+    "genes.tag": "bait",
+    "_file": "bibite_203.bb8"
+  },
+  {
+    "rb2d.px": 4220.14258,
+    "rb2d.py": 11591.5313,
+    "genes.tag": "loop",
+    "_file": "bibite_317.bb8"
+  },
+  {
+    "rb2d.px": 7586.41553,
+    "rb2d.py": 10022.1133,
+    "genes.tag": "loop",
+    "_file": "bibite_189.bb8"
+  },
+  {
+    "rb2d.px": -4833.205,
+    "rb2d.py": -8108.33643,
+    "genes.tag": "loop",
+    "_file": "bibite_66.bb8"
+  },
+  {
+    "rb2d.px": -4638.66748,
+    "rb2d.py": 10139.22,
+    "genes.tag": "loop",
+    "_file": "bibite_401.bb8"
+  },
+  {
+    "rb2d.px": -3130.94751,
+    "rb2d.py": -8628.819,
+    "genes.tag": "loop",
+    "_file": "bibite_753.bb8"
+  },
+  {
+    "rb2d.px": 11583.0205,
+    "rb2d.py": 5264.3623,
+    "genes.tag": "loop",
+    "_file": "bibite_119.bb8"
+  },
+  {
+    "rb2d.px": 11471.7656,
+    "rb2d.py": 2659.29614,
+    "genes.tag": "plate",
+    "_file": "bibite_439.bb8"
+  },
+  {
+    "rb2d.px": -1761.22632,
+    "rb2d.py": -12560.4521,
+    "genes.tag": "loop",
+    "_file": "bibite_97.bb8"
+  },
+  {
+    "rb2d.px": -8225.94,
+    "rb2d.py": 10924.9561,
+    "genes.tag": "loop",
+    "_file": "bibite_875.bb8"
+  },
+  {
+    "rb2d.px": -10202.0439,
+    "rb2d.py": -12214.7725,
+    "genes.tag": "loop",
+    "_file": "bibite_725.bb8"
+  },
+  {
+    "rb2d.px": 13073.5352,
+    "rb2d.py": 1797.42139,
+    "genes.tag": "loop",
+    "_file": "bibite_266.bb8"
+  },
+  {
+    "rb2d.px": -7613.25049,
+    "rb2d.py": 10840.6172,
+    "genes.tag": "creep",
+    "_file": "bibite_329.bb8"
+  },
+  {
+    "rb2d.px": 10841.5977,
+    "rb2d.py": -1133.346,
+    "genes.tag": "loop",
+    "_file": "bibite_403.bb8"
+  },
+  {
+    "rb2d.px": 8652.977,
+    "rb2d.py": 1093.5238,
+    "genes.tag": "loop",
+    "_file": "bibite_284.bb8"
+  },
+  {
+    "rb2d.px": -10261.375,
+    "rb2d.py": -8740.383,
+    "genes.tag": "loop",
+    "_file": "bibite_176.bb8"
+  },
+  {
+    "rb2d.px": -12233.5059,
+    "rb2d.py": -5381.46,
+    "genes.tag": "loop",
+    "_file": "bibite_308.bb8"
+  },
+  {
+    "rb2d.px": -4689.307,
+    "rb2d.py": 11629.2715,
+    "genes.tag": "loop",
+    "_file": "bibite_746.bb8"
+  },
+  {
+    "rb2d.px": -8479.234,
+    "rb2d.py": 8984.659,
+    "genes.tag": "creep",
+    "_file": "bibite_324.bb8"
+  },
+  {
+    "rb2d.px": -2803.779,
+    "rb2d.py": -10955.6465,
+    "genes.tag": "plate",
+    "_file": "bibite_704.bb8"
+  },
+  {
+    "rb2d.px": 499.28717,
+    "rb2d.py": 13050.4707,
+    "genes.tag": "loop",
+    "_file": "bibite_43.bb8"
+  },
+  {
+    "rb2d.px": -11003.0225,
+    "rb2d.py": -12191.9912,
+    "genes.tag": "loop",
+    "_file": "bibite_788.bb8"
+  },
+  {
+    "rb2d.px": -4442.642,
+    "rb2d.py": 12355.4756,
+    "genes.tag": "loop",
+    "_file": "bibite_695.bb8"
+  },
+  {
+    "rb2d.px": -10689.291,
+    "rb2d.py": -11641.6572,
+    "genes.tag": "loop",
+    "_file": "bibite_712.bb8"
+  },
+  {
+    "rb2d.px": -10648.5938,
+    "rb2d.py": -11891.4219,
+    "genes.tag": "loop",
+    "_file": "bibite_678.bb8"
+  },
+  {
+    "rb2d.px": -13277.7344,
+    "rb2d.py": 395.974579,
+    "genes.tag": "loop",
+    "_file": "bibite_853.bb8"
+  },
+  {
+    "rb2d.px": -5829.54346,
+    "rb2d.py": 12125.5127,
+    "genes.tag": "creep",
+    "_file": "bibite_303.bb8"
+  },
+  {
+    "rb2d.px": 10991.8945,
+    "rb2d.py": 7151.428,
+    "genes.tag": "loop",
+    "_file": "bibite_701.bb8"
+  },
+  {
+    "rb2d.px": 12420.459,
+    "rb2d.py": -4959.34863,
+    "genes.tag": "loop",
+    "_file": "bibite_50.bb8"
+  },
+  {
+    "rb2d.px": 6538.592,
+    "rb2d.py": -11563.2529,
+    "genes.tag": "loop",
+    "_file": "bibite_160.bb8"
+  },
+  {
+    "rb2d.px": -13510.2568,
+    "rb2d.py": 1833.85388,
+    "genes.tag": "loop",
+    "_file": "bibite_411.bb8"
+  },
+  {
+    "rb2d.px": 8302.695,
+    "rb2d.py": 1472.04468,
+    "genes.tag": "loop",
+    "_file": "bibite_810.bb8"
+  },
+  {
+    "rb2d.px": 4318.713,
+    "rb2d.py": -12442.7314,
+    "genes.tag": "loop",
+    "_file": "bibite_11.bb8"
+  },
+  {
+    "rb2d.px": -7419.892,
+    "rb2d.py": 8477.485,
+    "genes.tag": "creep",
+    "_file": "bibite_399.bb8"
+  },
+  {
+    "rb2d.px": -3774.7478,
+    "rb2d.py": -12825.3447,
+    "genes.tag": "loop",
+    "_file": "bibite_490.bb8"
+  },
+  {
+    "rb2d.px": -4134.27,
+    "rb2d.py": 12313.8193,
+    "genes.tag": "creep",
+    "_file": "bibite_392.bb8"
+  },
+  {
+    "rb2d.px": 9574.357,
+    "rb2d.py": 321.3574,
+    "genes.tag": "loop",
+    "_file": "bibite_492.bb8"
+  },
+  {
+    "rb2d.px": -10797.1855,
+    "rb2d.py": -12566.2119,
+    "genes.tag": "loop",
+    "_file": "bibite_501.bb8"
+  },
+  {
+    "rb2d.px": -8146.744,
+    "rb2d.py": 10658.8408,
+    "genes.tag": "loop",
+    "_file": "bibite_807.bb8"
+  },
+  {
+    "rb2d.px": -3119.293,
+    "rb2d.py": 8337.187,
+    "genes.tag": "creep",
+    "_file": "bibite_192.bb8"
+  },
+  {
+    "rb2d.px": 7749.69727,
+    "rb2d.py": 11266.2617,
+    "genes.tag": "loop",
+    "_file": "bibite_343.bb8"
+  },
+  {
+    "rb2d.px": -8386.243,
+    "rb2d.py": 9644.214,
+    "genes.tag": "loop",
+    "_file": "bibite_780.bb8"
+  },
+  {
+    "rb2d.px": -1323.865,
+    "rb2d.py": 13179.79,
+    "genes.tag": "loop",
+    "_file": "bibite_193.bb8"
+  },
+  {
+    "rb2d.px": 169.748291,
+    "rb2d.py": 13217.9131,
+    "genes.tag": "loop",
+    "_file": "bibite_245.bb8"
+  },
+  {
+    "rb2d.px": -2389.494,
+    "rb2d.py": -12825.8223,
+    "genes.tag": "loop",
+    "_file": "bibite_541.bb8"
+  },
+  {
+    "rb2d.px": -13504.042,
+    "rb2d.py": -896.0339,
+    "genes.tag": "loop",
+    "_file": "bibite_475.bb8"
+  },
+  {
+    "rb2d.px": -6447.766,
+    "rb2d.py": 11975.0234,
+    "genes.tag": "eng",
+    "_file": "bibite_892.bb8"
+  },
+  {
+    "rb2d.px": 10150.249,
+    "rb2d.py": -1778.1886,
+    "genes.tag": "plate",
+    "_file": "bibite_112.bb8"
+  },
+  {
+    "rb2d.px": -6690.269,
+    "rb2d.py": -8833.169,
+    "genes.tag": "loop",
+    "_file": "bibite_174.bb8"
+  },
+  {
+    "rb2d.px": -4818.341,
+    "rb2d.py": 7211.987,
+    "genes.tag": "creep",
+    "_file": "bibite_251.bb8"
+  },
+  {
+    "rb2d.px": -7773.004,
+    "rb2d.py": -7687.67529,
+    "genes.tag": "plate",
+    "_file": "bibite_294.bb8"
+  },
+  {
+    "rb2d.px": -6818.278,
+    "rb2d.py": -12708.1377,
+    "genes.tag": "loop",
+    "_file": "bibite_864.bb8"
+  },
+  {
+    "rb2d.px": 12720.18,
+    "rb2d.py": 2240.39551,
+    "genes.tag": "plate",
+    "_file": "bibite_122.bb8"
+  },
+  {
+    "rb2d.px": -3181.19824,
+    "rb2d.py": 10146.6182,
+    "genes.tag": "loop",
+    "_file": "bibite_493.bb8"
+  },
+  {
+    "rb2d.px": -7468.104,
+    "rb2d.py": 11958.3906,
+    "genes.tag": "creep",
+    "_file": "bibite_556.bb8"
+  },
+  {
+    "rb2d.px": -6749.337,
+    "rb2d.py": 6907.47363,
+    "genes.tag": "creep",
+    "_file": "bibite_209.bb8"
+  },
+  {
+    "rb2d.px": -7643.89453,
+    "rb2d.py": -11034.877,
+    "genes.tag": "loop",
+    "_file": "bibite_595.bb8"
+  },
+  {
+    "rb2d.px": 11341.9385,
+    "rb2d.py": 2684.87964,
+    "genes.tag": "plate",
+    "_file": "bibite_125.bb8"
+  },
+  {
+    "rb2d.px": 6366.21338,
+    "rb2d.py": 11371.6777,
+    "genes.tag": "loop",
+    "_file": "bibite_879.bb8"
+  },
+  {
+    "rb2d.px": -4854.71729,
+    "rb2d.py": -11864.0469,
+    "genes.tag": "loop",
+    "_file": "bibite_620.bb8"
+  },
+  {
+    "rb2d.px": 11912.6787,
+    "rb2d.py": 588.723633,
+    "genes.tag": "plate",
+    "_file": "bibite_85.bb8"
+  },
+  {
+    "rb2d.px": -8059.885,
+    "rb2d.py": -7269.652,
+    "genes.tag": "loop",
+    "_file": "bibite_106.bb8"
+  },
+  {
+    "rb2d.px": 219.936417,
+    "rb2d.py": 11450.6982,
+    "genes.tag": "loop",
+    "_file": "bibite_528.bb8"
+  },
+  {
+    "rb2d.px": 11916.9922,
+    "rb2d.py": 5296.8877,
+    "genes.tag": "loop",
+    "_file": "bibite_653.bb8"
+  },
+  {
+    "rb2d.px": -10046.7119,
+    "rb2d.py": -12566.5615,
+    "genes.tag": "loop",
+    "_file": "bibite_720.bb8"
+  },
+  {
+    "rb2d.px": 6537.71533,
+    "rb2d.py": 11718.498,
+    "genes.tag": "loop",
+    "_file": "bibite_225.bb8"
+  },
+  {
+    "rb2d.px": 13162.4072,
+    "rb2d.py": -293.8393,
+    "genes.tag": "loop",
+    "_file": "bibite_814.bb8"
+  },
+  {
+    "rb2d.px": -4768.29639,
+    "rb2d.py": -11670.9883,
+    "genes.tag": "loop",
+    "_file": "bibite_201.bb8"
+  },
+  {
+    "rb2d.px": -4410.87646,
+    "rb2d.py": 6705.473,
+    "genes.tag": "loop",
+    "_file": "bibite_521.bb8"
+  },
+  {
+    "rb2d.px": 2680.67969,
+    "rb2d.py": -15227.1338,
+    "genes.tag": "loop",
+    "_file": "bibite_525.bb8"
+  },
+  {
+    "rb2d.px": -6979.81,
+    "rb2d.py": -12644.3936,
+    "genes.tag": "loop",
+    "_file": "bibite_663.bb8"
+  },
+  {
+    "rb2d.px": -6475.39941,
+    "rb2d.py": 12537.1816,
+    "genes.tag": "creep",
+    "_file": "bibite_686.bb8"
+  },
+  {
+    "rb2d.px": -7199.48535,
+    "rb2d.py": 9668.333,
+    "genes.tag": "creep",
+    "_file": "bibite_257.bb8"
+  },
+  {
+    "rb2d.px": -530.339539,
+    "rb2d.py": 12170.4385,
+    "genes.tag": "loop",
+    "_file": "bibite_709.bb8"
+  },
+  {
+    "rb2d.px": -12778.6172,
+    "rb2d.py": -4641.96533,
+    "genes.tag": "loop",
+    "_file": "bibite_776.bb8"
+  },
+  {
+    "rb2d.px": -3450.07935,
+    "rb2d.py": 11724.2217,
+    "genes.tag": "loop",
+    "_file": "bibite_826.bb8"
+  },
+  {
+    "rb2d.px": 13022.1514,
+    "rb2d.py": 1667.12524,
+    "genes.tag": "loop",
+    "_file": "bibite_522.bb8"
+  },
+  {
+    "rb2d.px": -4967.82031,
+    "rb2d.py": 12386.8174,
+    "genes.tag": "loop",
+    "_file": "bibite_546.bb8"
+  },
+  {
+    "rb2d.px": 12265.2363,
+    "rb2d.py": 7028.85059,
+    "genes.tag": "loop",
+    "_file": "bibite_7.bb8"
+  },
+  {
+    "rb2d.px": -3301.54419,
+    "rb2d.py": -9958.875,
+    "genes.tag": "plate",
+    "_file": "bibite_540.bb8"
+  },
+  {
+    "rb2d.px": 10997.7119,
+    "rb2d.py": -9958.065,
+    "genes.tag": "loop",
+    "_file": "bibite_139.bb8"
+  },
+  {
+    "rb2d.px": -4863.49268,
+    "rb2d.py": -9956.16,
+    "genes.tag": "loop",
+    "_file": "bibite_320.bb8"
+  },
+  {
+    "rb2d.px": -3475.78955,
+    "rb2d.py": 11724.5518,
+    "genes.tag": "loop",
+    "_file": "bibite_897.bb8"
+  },
+  {
+    "rb2d.px": 8370.05,
+    "rb2d.py": -339.6543,
+    "genes.tag": "loop",
+    "_file": "bibite_332.bb8"
+  },
+  {
+    "rb2d.px": -7326.92,
+    "rb2d.py": 10182.4727,
+    "genes.tag": "loop",
+    "_file": "bibite_132.bb8"
+  },
+  {
+    "rb2d.px": -4470.50732,
+    "rb2d.py": 11915.81,
+    "genes.tag": "loop",
+    "_file": "bibite_214.bb8"
+  },
+  {
+    "rb2d.px": -8332.5625,
+    "rb2d.py": 8669.003,
+    "genes.tag": "loop",
+    "_file": "bibite_842.bb8"
+  },
+  {
+    "rb2d.px": -9956.207,
+    "rb2d.py": -12565.3076,
+    "genes.tag": "loop",
+    "_file": "bibite_751.bb8"
+  },
+  {
+    "rb2d.px": 11276.5381,
+    "rb2d.py": 6806.032,
+    "genes.tag": "loop",
+    "_file": "bibite_574.bb8"
+  },
+  {
+    "rb2d.px": -9998.014,
+    "rb2d.py": 7701.99,
+    "genes.tag": "loop",
+    "_file": "bibite_464.bb8"
+  },
+  {
+    "rb2d.px": -10174.5693,
+    "rb2d.py": -9022.82,
+    "genes.tag": "loop",
+    "_file": "bibite_777.bb8"
+  },
+  {
+    "rb2d.px": 11819.1514,
+    "rb2d.py": -6539.81152,
+    "genes.tag": "loop",
+    "_file": "bibite_702.bb8"
+  },
+  {
+    "rb2d.px": -9178.62,
+    "rb2d.py": 9911.023,
+    "genes.tag": "loop",
+    "_file": "bibite_824.bb8"
+  },
+  {
+    "rb2d.px": -10522.27,
+    "rb2d.py": -12010.668,
+    "genes.tag": "loop",
+    "_file": "bibite_841.bb8"
+  },
+  {
+    "rb2d.px": 15886.208,
+    "rb2d.py": 1442.92542,
+    "genes.tag": "plate",
+    "_file": "bibite_600.bb8"
+  },
+  {
+    "rb2d.px": -10747.99,
+    "rb2d.py": -9672.863,
+    "genes.tag": "loop",
+    "_file": "bibite_114.bb8"
+  },
+  {
+    "rb2d.px": -8573.519,
+    "rb2d.py": -9489.692,
+    "genes.tag": "plate",
+    "_file": "bibite_342.bb8"
+  },
+  {
+    "rb2d.px": 12995.9609,
+    "rb2d.py": 2164.99438,
+    "genes.tag": "plate",
+    "_file": "bibite_76.bb8"
+  },
+  {
+    "rb2d.px": -3522.93335,
+    "rb2d.py": -11646.1123,
+    "genes.tag": "loop",
+    "_file": "bibite_262.bb8"
+  },
+  {
+    "rb2d.px": 8591.354,
+    "rb2d.py": 1289.21924,
+    "genes.tag": "loop",
+    "_file": "bibite_871.bb8"
+  },
+  {
+    "rb2d.px": 4932.40869,
+    "rb2d.py": -11939.87,
+    "genes.tag": "loop",
+    "_file": "bibite_752.bb8"
+  },
+  {
+    "rb2d.px": -5780.05371,
+    "rb2d.py": -11632.1875,
+    "genes.tag": "loop",
+    "_file": "bibite_844.bb8"
+  },
+  {
+    "rb2d.px": 5102.745,
+    "rb2d.py": -12386.6533,
+    "genes.tag": "loop",
+    "_file": "bibite_8.bb8"
+  },
+  {
+    "rb2d.px": -10547.8779,
+    "rb2d.py": -12066.9434,
+    "genes.tag": "loop",
+    "_file": "bibite_661.bb8"
+  },
+  {
+    "rb2d.px": -2231.56934,
+    "rb2d.py": -14943.665,
+    "genes.tag": "loop",
+    "_file": "bibite_81.bb8"
+  },
+  {
+    "rb2d.px": -13280.1074,
+    "rb2d.py": 392.6277,
+    "genes.tag": "loop",
+    "_file": "bibite_147.bb8"
+  },
+  {
+    "rb2d.px": -7827.16846,
+    "rb2d.py": 11406.8154,
+    "genes.tag": "loop",
+    "_file": "bibite_730.bb8"
+  },
+  {
+    "rb2d.px": -4208.90869,
+    "rb2d.py": -9264.639,
+    "genes.tag": "loop",
+    "_file": "bibite_679.bb8"
+  },
+  {
+    "rb2d.px": -3757.09741,
+    "rb2d.py": 7935.92725,
+    "genes.tag": "creep",
+    "_file": "bibite_361.bb8"
+  },
+  {
+    "rb2d.px": -2643.77319,
+    "rb2d.py": 12090.6885,
+    "genes.tag": "loop",
+    "_file": "bibite_378.bb8"
+  },
+  {
+    "rb2d.px": -10494.2822,
+    "rb2d.py": -12290.7842,
+    "genes.tag": "loop",
+    "_file": "bibite_459.bb8"
+  },
+  {
+    "rb2d.px": 12908.4424,
+    "rb2d.py": -3662.09741,
+    "genes.tag": "loop",
+    "_file": "bibite_682.bb8"
+  },
+  {
+    "rb2d.px": -4338.18359,
+    "rb2d.py": 12296.1016,
+    "genes.tag": "creep",
+    "_file": "bibite_393.bb8"
+  },
+  {
+    "rb2d.px": 13254.1777,
+    "rb2d.py": 266.342133,
+    "genes.tag": "plate",
+    "_file": "bibite_431.bb8"
+  },
+  {
+    "rb2d.px": -7657.13965,
+    "rb2d.py": 7566.064,
+    "genes.tag": "creep",
+    "_file": "bibite_213.bb8"
+  },
+  {
+    "rb2d.px": 14325.3438,
+    "rb2d.py": 647.686462,
+    "genes.tag": "loop",
+    "_file": "bibite_414.bb8"
+  },
+  {
+    "rb2d.px": 10062.6465,
+    "rb2d.py": -2684.83374,
+    "genes.tag": "plate",
+    "_file": "bibite_375.bb8"
+  },
+  {
+    "rb2d.px": -10893.5713,
+    "rb2d.py": -12372.4092,
+    "genes.tag": "loop",
+    "_file": "bibite_737.bb8"
+  },
+  {
+    "rb2d.px": -5374.23828,
+    "rb2d.py": -12239.31,
+    "genes.tag": "loop",
+    "_file": "bibite_386.bb8"
+  },
+  {
+    "rb2d.px": -6892.35059,
+    "rb2d.py": -11549.3389,
+    "genes.tag": "loop",
+    "_file": "bibite_677.bb8"
+  },
+  {
+    "rb2d.px": -4375.577,
+    "rb2d.py": 8591.144,
+    "genes.tag": "creep",
+    "_file": "bibite_775.bb8"
+  },
+  {
+    "rb2d.px": -2002.65381,
+    "rb2d.py": -12532.5293,
+    "genes.tag": "loop",
+    "_file": "bibite_191.bb8"
+  },
+  {
+    "rb2d.px": -8331.42,
+    "rb2d.py": 7877.21,
+    "genes.tag": "loop",
+    "_file": "bibite_554.bb8"
+  },
+  {
+    "rb2d.px": -5387.00537,
+    "rb2d.py": -11436.2148,
+    "genes.tag": "loop",
+    "_file": "bibite_638.bb8"
+  },
+  {
+    "rb2d.px": -4659.05225,
+    "rb2d.py": -9975.445,
+    "genes.tag": "loop",
+    "_file": "bibite_204.bb8"
+  },
+  {
+    "rb2d.px": -7619.67529,
+    "rb2d.py": 7970.096,
+    "genes.tag": "loop",
+    "_file": "bibite_57.bb8"
+  },
+  {
+    "rb2d.px": 13422.4238,
+    "rb2d.py": 160.081253,
+    "genes.tag": "loop",
+    "_file": "bibite_172.bb8"
+  },
+  {
+    "rb2d.px": -6879.58057,
+    "rb2d.py": -9227.625,
+    "genes.tag": "plate",
+    "_file": "bibite_462.bb8"
+  },
+  {
+    "rb2d.px": -4718.56445,
+    "rb2d.py": -10844.2031,
+    "genes.tag": "loop",
+    "_file": "bibite_821.bb8"
+  },
+  {
+    "rb2d.px": -2922.14551,
+    "rb2d.py": 11146.5674,
+    "genes.tag": "loop",
+    "_file": "bibite_166.bb8"
+  },
+  {
+    "rb2d.px": 9072.976,
+    "rb2d.py": 10893.2441,
+    "genes.tag": "loop",
+    "_file": "bibite_178.bb8"
+  },
+  {
+    "rb2d.px": -9316.782,
+    "rb2d.py": 9787.69,
+    "genes.tag": "loop",
+    "_file": "bibite_270.bb8"
+  },
+  {
+    "rb2d.px": 12747.09,
+    "rb2d.py": -4480.00342,
+    "genes.tag": "loop",
+    "_file": "bibite_797.bb8"
+  },
+  {
+    "rb2d.px": -4838.44336,
+    "rb2d.py": -11086.377,
+    "genes.tag": "loop",
+    "_file": "bibite_155.bb8"
+  },
+  {
+    "rb2d.px": -5015.03271,
+    "rb2d.py": 7433.47656,
+    "genes.tag": "creep",
+    "_file": "bibite_510.bb8"
+  },
+  {
+    "rb2d.px": -7191.40137,
+    "rb2d.py": 11744.7832,
+    "genes.tag": "creep",
+    "_file": "bibite_387.bb8"
+  },
+  {
+    "rb2d.px": -1736.32617,
+    "rb2d.py": -12995.81,
+    "genes.tag": "loop",
+    "_file": "bibite_145.bb8"
+  },
+  {
+    "rb2d.px": -4190.716,
+    "rb2d.py": 9716.731,
+    "genes.tag": "loop",
+    "_file": "bibite_379.bb8"
+  },
+  {
+    "rb2d.px": 6800.788,
+    "rb2d.py": 11218.8525,
+    "genes.tag": "loop",
+    "_file": "bibite_107.bb8"
+  },
+  {
+    "rb2d.px": 13323.54,
+    "rb2d.py": 1549.54211,
+    "genes.tag": "plate",
+    "_file": "bibite_855.bb8"
+  },
+  {
+    "rb2d.px": -4223.178,
+    "rb2d.py": 12833.1133,
+    "genes.tag": "loop",
+    "_file": "bibite_149.bb8"
+  },
+  {
+    "rb2d.px": 9499.514,
+    "rb2d.py": 2297.63672,
+    "genes.tag": "plate",
+    "_file": "bibite_104.bb8"
+  },
+  {
+    "rb2d.px": -7157.00049,
+    "rb2d.py": -11100.7891,
+    "genes.tag": "loop",
+    "_file": "bibite_811.bb8"
+  },
+  {
+    "rb2d.px": -8613.27051,
+    "rb2d.py": 10744.415,
+    "genes.tag": "loop",
+    "_file": "bibite_382.bb8"
+  },
+  {
+    "rb2d.px": -9332.076,
+    "rb2d.py": 5519.669,
+    "genes.tag": "loop",
+    "_file": "bibite_240.bb8"
+  },
+  {
+    "rb2d.px": -7877.82373,
+    "rb2d.py": 10257.5244,
+    "genes.tag": "eng",
+    "_file": "bibite_234.bb8"
+  },
+  {
+    "rb2d.px": 8375.657,
+    "rb2d.py": -491.515564,
+    "genes.tag": "plate",
+    "_file": "bibite_36.bb8"
+  },
+  {
+    "rb2d.px": -5169.23047,
+    "rb2d.py": -11380.44,
+    "genes.tag": "loop",
+    "_file": "bibite_357.bb8"
+  },
+  {
+    "rb2d.px": -6233.01758,
+    "rb2d.py": 6829.783,
+    "genes.tag": "creep",
+    "_file": "bibite_184.bb8"
+  },
+  {
+    "rb2d.px": 10182.6406,
+    "rb2d.py": 3823.97778,
+    "genes.tag": "loop",
+    "_file": "bibite_287.bb8"
+  },
+  {
+    "rb2d.px": -6800.56445,
+    "rb2d.py": 12072.2549,
+    "genes.tag": "loop",
+    "_file": "bibite_548.bb8"
+  },
+  {
+    "rb2d.px": -10341.5273,
+    "rb2d.py": -10778.1836,
+    "genes.tag": "loop",
+    "_file": "bibite_344.bb8"
+  },
+  {
+    "rb2d.px": 10728.959,
+    "rb2d.py": 8901.154,
+    "genes.tag": "loop",
+    "_file": "bibite_744.bb8"
+  },
+  {
+    "rb2d.px": -8284.971,
+    "rb2d.py": -10909.95,
+    "genes.tag": "plate",
+    "_file": "bibite_471.bb8"
+  },
+  {
+    "rb2d.px": -8897.11,
+    "rb2d.py": 9632.293,
+    "genes.tag": "loop",
+    "_file": "bibite_413.bb8"
+  },
+  {
+    "rb2d.px": 10153.8818,
+    "rb2d.py": -8356.3,
+    "genes.tag": "loop",
+    "_file": "bibite_211.bb8"
+  },
+  {
+    "rb2d.px": 11930.3818,
+    "rb2d.py": 6853.22656,
+    "genes.tag": "loop",
+    "_file": "bibite_195.bb8"
+  },
+  {
+    "rb2d.px": 9094.473,
+    "rb2d.py": 2667.97363,
+    "genes.tag": "loop",
+    "_file": "bibite_233.bb8"
+  },
+  {
+    "rb2d.px": -3998.05078,
+    "rb2d.py": 10747.9688,
+    "genes.tag": "creep",
+    "_file": "bibite_356.bb8"
+  },
+  {
+    "rb2d.px": 12716.4141,
+    "rb2d.py": -3652.48169,
+    "genes.tag": "loop",
+    "_file": "bibite_92.bb8"
+  },
+  {
+    "rb2d.px": 1003.9646,
+    "rb2d.py": 13357.791,
+    "genes.tag": "loop",
+    "_file": "bibite_786.bb8"
+  },
+  {
+    "rb2d.px": -4133.975,
+    "rb2d.py": -12221.4219,
+    "genes.tag": "loop",
+    "_file": "bibite_241.bb8"
+  },
+  {
+    "rb2d.px": -6777.327,
+    "rb2d.py": 7084.85156,
+    "genes.tag": "creep",
+    "_file": "bibite_182.bb8"
+  },
+  {
+    "rb2d.px": -3048.58081,
+    "rb2d.py": -8809.342,
+    "genes.tag": "loop",
+    "_file": "bibite_333.bb8"
+  },
+  {
+    "rb2d.px": -9603.104,
+    "rb2d.py": 9542.647,
+    "genes.tag": "loop",
+    "_file": "bibite_415.bb8"
+  },
+  {
+    "rb2d.px": -4126.40234,
+    "rb2d.py": 12579.06,
+    "genes.tag": "loop",
+    "_file": "bibite_602.bb8"
+  },
+  {
+    "rb2d.px": 9273.366,
+    "rb2d.py": 8476.394,
+    "genes.tag": "loop",
+    "_file": "bibite_738.bb8"
+  },
+  {
+    "rb2d.px": -8145.621,
+    "rb2d.py": 9876.159,
+    "genes.tag": "loop",
+    "_file": "bibite_430.bb8"
+  },
+  {
+    "rb2d.px": 12902.4668,
+    "rb2d.py": -2458.5437,
+    "genes.tag": "plate",
+    "_file": "bibite_237.bb8"
+  },
+  {
+    "rb2d.px": 4022.88013,
+    "rb2d.py": -12637.2764,
+    "genes.tag": "loop",
+    "_file": "bibite_584.bb8"
+  },
+  {
+    "rb2d.px": 10225.3389,
+    "rb2d.py": -588.8815,
+    "genes.tag": "loop",
+    "_file": "bibite_538.bb8"
+  },
+  {
+    "rb2d.px": 11302.3975,
+    "rb2d.py": 2507.1062,
+    "genes.tag": "plate",
+    "_file": "bibite_894.bb8"
+  },
+  {
+    "rb2d.px": 10551.1455,
+    "rb2d.py": 7446.068,
+    "genes.tag": "loop",
+    "_file": "bibite_56.bb8"
+  },
+  {
+    "rb2d.px": -5687.86035,
+    "rb2d.py": -12305.8965,
+    "genes.tag": "plate",
+    "_file": "bibite_767.bb8"
+  },
+  {
+    "rb2d.px": 12927.334,
+    "rb2d.py": -5253.514,
+    "genes.tag": "loop",
+    "_file": "bibite_108.bb8"
+  },
+  {
+    "rb2d.px": -8689.985,
+    "rb2d.py": 10221.8242,
+    "genes.tag": "loop",
+    "_file": "bibite_296.bb8"
+  },
+  {
+    "rb2d.px": -10515.5371,
+    "rb2d.py": -12498.05,
+    "genes.tag": "loop",
+    "_file": "bibite_612.bb8"
+  },
+  {
+    "rb2d.px": 5519.61963,
+    "rb2d.py": 12105.67,
+    "genes.tag": "loop",
+    "_file": "bibite_39.bb8"
+  },
+  {
+    "rb2d.px": 1070.38684,
+    "rb2d.py": -12818.5977,
+    "genes.tag": "loop",
+    "_file": "bibite_772.bb8"
+  },
+  {
+    "rb2d.px": -7650.27539,
+    "rb2d.py": 7509.307,
+    "genes.tag": "loop",
+    "_file": "bibite_683.bb8"
+  },
+  {
+    "rb2d.px": 11656.52,
+    "rb2d.py": -2641.79663,
+    "genes.tag": "plate",
+    "_file": "bibite_34.bb8"
+  },
+  {
+    "rb2d.px": -4473.68,
+    "rb2d.py": 11916.6836,
+    "genes.tag": "loop",
+    "_file": "bibite_569.bb8"
+  },
+  {
+    "rb2d.px": -6501.095,
+    "rb2d.py": -6790.28125,
+    "genes.tag": "plate",
+    "_file": "bibite_323.bb8"
+  },
+  {
+    "rb2d.px": -8739.299,
+    "rb2d.py": -9884.559,
+    "genes.tag": "plate",
+    "_file": "bibite_12.bb8"
+  },
+  {
+    "rb2d.px": -9154.024,
+    "rb2d.py": 14330.48,
+    "genes.tag": "creep",
+    "_file": "bibite_300.bb8"
+  },
+  {
+    "rb2d.px": -8811.258,
+    "rb2d.py": 9435.082,
+    "genes.tag": "loop",
+    "_file": "bibite_872.bb8"
+  },
+  {
+    "rb2d.px": 13038.5342,
+    "rb2d.py": 3292.419,
+    "genes.tag": "loop",
+    "_file": "bibite_126.bb8"
+  },
+  {
+    "rb2d.px": -12194.8057,
+    "rb2d.py": -6327.322,
+    "genes.tag": "loop",
+    "_file": "bibite_273.bb8"
+  },
+  {
+    "rb2d.px": -6300.40869,
+    "rb2d.py": -13849.1719,
+    "genes.tag": "loop",
+    "_file": "bibite_73.bb8"
+  },
+  {
+    "rb2d.px": -7850.62354,
+    "rb2d.py": 9121.89551,
+    "genes.tag": "loop",
+    "_file": "bibite_708.bb8"
+  },
+  {
+    "rb2d.px": -10604.2051,
+    "rb2d.py": -12591.9443,
+    "genes.tag": "loop",
+    "_file": "bibite_732.bb8"
+  },
+  {
+    "rb2d.px": 11476.22,
+    "rb2d.py": -5517.58447,
+    "genes.tag": "loop",
+    "_file": "bibite_109.bb8"
+  },
+  {
+    "rb2d.px": -11419.54,
+    "rb2d.py": 8112.758,
+    "genes.tag": "loop",
+    "_file": "bibite_449.bb8"
+  },
+  {
+    "rb2d.px": -8728.032,
+    "rb2d.py": 11581.1191,
+    "genes.tag": "loop",
+    "_file": "bibite_254.bb8"
+  },
+  {
+    "rb2d.px": 4993.41,
+    "rb2d.py": -12719.96,
+    "genes.tag": "loop",
+    "_file": "bibite_536.bb8"
+  },
+  {
+    "rb2d.px": 10828.3994,
+    "rb2d.py": 8431.51,
+    "genes.tag": "loop",
+    "_file": "bibite_16.bb8"
+  },
+  {
+    "rb2d.px": -12931.4863,
+    "rb2d.py": 1995.12866,
+    "genes.tag": "loop",
+    "_file": "bibite_448.bb8"
+  },
+  {
+    "rb2d.px": 13364.9795,
+    "rb2d.py": 1993.08594,
+    "genes.tag": "loop",
+    "_file": "bibite_647.bb8"
+  },
+  {
+    "rb2d.px": 12515.28,
+    "rb2d.py": -2580.63232,
+    "genes.tag": "plate",
+    "_file": "bibite_566.bb8"
+  },
+  {
+    "rb2d.px": 13321.2734,
+    "rb2d.py": 3338.1416,
+    "genes.tag": "loop",
+    "_file": "bibite_542.bb8"
+  },
+  {
+    "rb2d.px": 13525.2109,
+    "rb2d.py": -1116.42883,
+    "genes.tag": "loop",
+    "_file": "bibite_596.bb8"
+  },
+  {
+    "rb2d.px": -6595.50732,
+    "rb2d.py": 7032.30469,
+    "genes.tag": "creep",
+    "_file": "bibite_179.bb8"
+  },
+  {
+    "rb2d.px": -1235.78345,
+    "rb2d.py": -13343.4941,
+    "genes.tag": "loop",
+    "_file": "bibite_486.bb8"
+  },
+  {
+    "rb2d.px": 8856.624,
+    "rb2d.py": 9520.344,
+    "genes.tag": "loop",
+    "_file": "bibite_101.bb8"
+  },
+  {
+    "rb2d.px": -7220.505,
+    "rb2d.py": 10363.98,
+    "genes.tag": "loop",
+    "_file": "bibite_194.bb8"
+  },
+  {
+    "rb2d.px": -12130.5117,
+    "rb2d.py": -6208.13037,
+    "genes.tag": "loop",
+    "_file": "bibite_877.bb8"
+  },
+  {
+    "rb2d.px": -10343.4961,
+    "rb2d.py": -12089.1182,
+    "genes.tag": "loop",
+    "_file": "bibite_763.bb8"
+  },
+  {
+    "rb2d.px": -7637.76465,
+    "rb2d.py": 6724.34766,
+    "genes.tag": "loop",
+    "_file": "bibite_299.bb8"
+  },
+  {
+    "rb2d.px": 12936.1006,
+    "rb2d.py": 1835.60559,
+    "genes.tag": "loop",
+    "_file": "bibite_242.bb8"
+  },
+  {
+    "rb2d.px": -2500.482,
+    "rb2d.py": -13286.9307,
+    "genes.tag": "loop",
+    "_file": "bibite_512.bb8"
+  },
+  {
+    "rb2d.px": -2672.5603,
+    "rb2d.py": 10904.7539,
+    "genes.tag": "loop",
+    "_file": "bibite_230.bb8"
+  },
+  {
+    "rb2d.px": -13200.6982,
+    "rb2d.py": 75.60539,
+    "genes.tag": "loop",
+    "_file": "bibite_606.bb8"
+  },
+  {
+    "rb2d.px": 10755.45,
+    "rb2d.py": -1371.49817,
+    "genes.tag": "loop",
+    "_file": "bibite_781.bb8"
+  },
+  {
+    "rb2d.px": -4416.77441,
+    "rb2d.py": 7186.804,
+    "genes.tag": "loop",
+    "_file": "bibite_535.bb8"
+  },
+  {
+    "rb2d.px": 2364.933,
+    "rb2d.py": -12346.2021,
+    "genes.tag": "loop",
+    "_file": "bibite_618.bb8"
+  },
+  {
+    "rb2d.px": -6293.85742,
+    "rb2d.py": -7845.395,
+    "genes.tag": "plate",
+    "_file": "bibite_485.bb8"
+  },
+  {
+    "rb2d.px": 8029.48047,
+    "rb2d.py": 12108.9092,
+    "genes.tag": "loop",
+    "_file": "bibite_110.bb8"
+  },
+  {
+    "rb2d.px": 3276.4856,
+    "rb2d.py": -12570.2686,
+    "genes.tag": "loop",
+    "_file": "bibite_680.bb8"
+  },
+  {
+    "rb2d.px": 7965.549,
+    "rb2d.py": 11090.5186,
+    "genes.tag": "loop",
+    "_file": "bibite_729.bb8"
+  },
+  {
+    "rb2d.px": -8498.158,
+    "rb2d.py": -8754.206,
+    "genes.tag": "plate",
+    "_file": "bibite_616.bb8"
+  },
+  {
+    "rb2d.px": -7697.18359,
+    "rb2d.py": 11324.8711,
+    "genes.tag": "loop",
+    "_file": "bibite_845.bb8"
+  },
+  {
+    "rb2d.px": -5956.05469,
+    "rb2d.py": 6601.39355,
+    "genes.tag": "creep",
+    "_file": "bibite_467.bb8"
+  },
+  {
+    "rb2d.px": 5644.252,
+    "rb2d.py": 11889.8809,
+    "genes.tag": "loop",
+    "_file": "bibite_573.bb8"
+  },
+  {
+    "rb2d.px": 3473.17456,
+    "rb2d.py": 12617.8516,
+    "genes.tag": "loop",
+    "_file": "bibite_390.bb8"
+  },
+  {
+    "rb2d.px": 4655.74658,
+    "rb2d.py": 11954.5107,
+    "genes.tag": "loop",
+    "_file": "bibite_808.bb8"
+  },
+  {
+    "rb2d.px": -3807.43042,
+    "rb2d.py": -12969.5391,
+    "genes.tag": "loop",
+    "_file": "bibite_312.bb8"
+  },
+  {
+    "rb2d.px": -1236.24744,
+    "rb2d.py": 13615.29,
+    "genes.tag": "loop",
+    "_file": "bibite_717.bb8"
+  },
+  {
+    "rb2d.px": -11148.0039,
+    "rb2d.py": -11459.0332,
+    "genes.tag": "loop",
+    "_file": "bibite_469.bb8"
+  },
+  {
+    "rb2d.px": -12360.9639,
+    "rb2d.py": -4451.33154,
+    "genes.tag": "loop",
+    "_file": "bibite_96.bb8"
+  },
+  {
+    "rb2d.px": 11963.0127,
+    "rb2d.py": -4907.807,
+    "genes.tag": "loop",
+    "_file": "bibite_697.bb8"
+  },
+  {
+    "rb2d.px": -11901.4063,
+    "rb2d.py": 1768.49573,
+    "genes.tag": "loop",
+    "_file": "bibite_13.bb8"
+  },
+  {
+    "rb2d.px": -13301.7148,
+    "rb2d.py": 845.2465,
+    "genes.tag": "loop",
+    "_file": "bibite_745.bb8"
+  },
+  {
+    "rb2d.px": -2511.97485,
+    "rb2d.py": 13271.5732,
+    "genes.tag": "loop",
+    "_file": "bibite_474.bb8"
+  },
+  {
+    "rb2d.px": 14046.5674,
+    "rb2d.py": 1202.49463,
+    "genes.tag": "plate",
+    "_file": "bibite_885.bb8"
+  },
+  {
+    "rb2d.px": 12641.9434,
+    "rb2d.py": -1543.98193,
+    "genes.tag": "plate",
+    "_file": "bibite_473.bb8"
+  },
+  {
+    "rb2d.px": 9628.801,
+    "rb2d.py": -8825.262,
+    "genes.tag": "loop",
+    "_file": "bibite_95.bb8"
+  },
+  {
+    "rb2d.px": 1673.193,
+    "rb2d.py": -13021.5537,
+    "genes.tag": "loop",
+    "_file": "bibite_41.bb8"
+  },
+  {
+    "rb2d.px": -10850.0654,
+    "rb2d.py": -8688.229,
+    "genes.tag": "loop",
+    "_file": "bibite_758.bb8"
+  },
+  {
+    "rb2d.px": 8671.932,
+    "rb2d.py": 10114.6826,
+    "genes.tag": "loop",
+    "_file": "bibite_799.bb8"
+  },
+  {
+    "rb2d.px": 13469.7666,
+    "rb2d.py": -2024.95776,
+    "genes.tag": "plate",
+    "_file": "bibite_706.bb8"
+  },
+  {
+    "rb2d.px": -3208.05127,
+    "rb2d.py": -10944.7207,
+    "genes.tag": "loop",
+    "_file": "bibite_208.bb8"
+  },
+  {
+    "rb2d.px": -8205.188,
+    "rb2d.py": 10473.33,
+    "genes.tag": "loop",
+    "_file": "bibite_670.bb8"
+  },
+  {
+    "rb2d.px": 10874.7334,
+    "rb2d.py": -1224.02185,
+    "genes.tag": "loop",
+    "_file": "bibite_523.bb8"
+  },
+  {
+    "rb2d.px": -10749.3994,
+    "rb2d.py": -12156.5225,
+    "genes.tag": "loop",
+    "_file": "bibite_644.bb8"
+  },
+  {
+    "rb2d.px": -4096.796,
+    "rb2d.py": 10345.8447,
+    "genes.tag": "loop",
+    "_file": "bibite_407.bb8"
+  },
+  {
+    "rb2d.px": 12181.4229,
+    "rb2d.py": 254.415939,
+    "genes.tag": "plate",
+    "_file": "bibite_878.bb8"
+  },
+  {
+    "rb2d.px": -5614.459,
+    "rb2d.py": -12823.6992,
+    "genes.tag": "plate",
+    "_file": "bibite_150.bb8"
+  },
+  {
+    "rb2d.px": 5577.03564,
+    "rb2d.py": 12606.3994,
+    "genes.tag": "loop",
+    "_file": "bibite_111.bb8"
+  },
+  {
+    "rb2d.px": -7173.259,
+    "rb2d.py": 7175.266,
+    "genes.tag": "loop",
+    "_file": "bibite_384.bb8"
+  },
+  {
+    "rb2d.px": 12246.7314,
+    "rb2d.py": -267.091858,
+    "genes.tag": "plate",
+    "_file": "bibite_24.bb8"
+  },
+  {
+    "rb2d.px": 13768.7324,
+    "rb2d.py": -1528.47229,
+    "genes.tag": "plate",
+    "_file": "bibite_487.bb8"
+  },
+  {
+    "rb2d.px": 11299.3633,
+    "rb2d.py": 5549.378,
+    "genes.tag": "loop",
+    "_file": "bibite_25.bb8"
+  },
+  {
+    "rb2d.px": -3531.427,
+    "rb2d.py": 11887.0547,
+    "genes.tag": "loop",
+    "_file": "bibite_456.bb8"
+  },
+  {
+    "rb2d.px": -12029.6279,
+    "rb2d.py": -5649.48633,
+    "genes.tag": "loop",
+    "_file": "bibite_153.bb8"
+  },
+  {
+    "rb2d.px": -5038.756,
+    "rb2d.py": -8377.853,
+    "genes.tag": "loop",
+    "_file": "bibite_823.bb8"
+  },
+  {
+    "rb2d.px": 12775.74,
+    "rb2d.py": -3899.62451,
+    "genes.tag": "loop",
+    "_file": "bibite_789.bb8"
+  },
+  {
+    "rb2d.px": -3934.68237,
+    "rb2d.py": -12027.4561,
+    "genes.tag": "loop",
+    "_file": "bibite_202.bb8"
+  },
+  {
+    "rb2d.px": -3971.02539,
+    "rb2d.py": -12155.0469,
+    "genes.tag": "plate",
+    "_file": "bibite_171.bb8"
+  },
+  {
+    "rb2d.px": -4188.924,
+    "rb2d.py": 11877.4287,
+    "genes.tag": "loop",
+    "_file": "bibite_517.bb8"
+  },
+  {
+    "rb2d.px": -9278.979,
+    "rb2d.py": -10100.5889,
+    "genes.tag": "loop",
+    "_file": "bibite_336.bb8"
+  },
+  {
+    "rb2d.px": 13107.249,
+    "rb2d.py": -3715.47681,
+    "genes.tag": "loop",
+    "_file": "bibite_736.bb8"
+  },
+  {
+    "rb2d.px": -4929.96045,
+    "rb2d.py": 11889.0107,
+    "genes.tag": "loop",
+    "_file": "bibite_693.bb8"
+  },
+  {
+    "rb2d.px": -8036.042,
+    "rb2d.py": 7912.822,
+    "genes.tag": "loop",
+    "_file": "bibite_734.bb8"
+  },
+  {
+    "rb2d.px": -6068.277,
+    "rb2d.py": -11511.876,
+    "genes.tag": "loop",
+    "_file": "bibite_330.bb8"
+  },
+  {
+    "rb2d.px": -11282.22,
+    "rb2d.py": -7188.32275,
+    "genes.tag": "loop",
+    "_file": "bibite_435.bb8"
+  },
+  {
+    "rb2d.px": -11961.9863,
+    "rb2d.py": -5781.56738,
+    "genes.tag": "loop",
+    "_file": "bibite_804.bb8"
+  },
+  {
+    "rb2d.px": -6709.291,
+    "rb2d.py": -8843.776,
+    "genes.tag": "loop",
+    "_file": "bibite_895.bb8"
+  },
+  {
+    "rb2d.px": -10234.5469,
+    "rb2d.py": -12587.0557,
+    "genes.tag": "loop",
+    "_file": "bibite_792.bb8"
+  },
+  {
+    "rb2d.px": 13585.7969,
+    "rb2d.py": 1406.14453,
+    "genes.tag": "plate",
+    "_file": "bibite_494.bb8"
+  },
+  {
+    "rb2d.px": 12924.5029,
+    "rb2d.py": 3607.58252,
+    "genes.tag": "loop",
+    "_file": "bibite_838.bb8"
+  },
+  {
+    "rb2d.px": -3018.1416,
+    "rb2d.py": 10895.4248,
+    "genes.tag": "loop",
+    "_file": "bibite_377.bb8"
+  },
+  {
+    "rb2d.px": -7379.918,
+    "rb2d.py": -10710.8867,
+    "genes.tag": "loop",
+    "_file": "bibite_200.bb8"
+  },
+  {
+    "rb2d.px": 2496.26147,
+    "rb2d.py": 12458.4043,
+    "genes.tag": "loop",
+    "_file": "bibite_739.bb8"
+  },
+  {
+    "rb2d.px": -3930.539,
+    "rb2d.py": 9655.127,
+    "genes.tag": "loop",
+    "_file": "bibite_424.bb8"
+  },
+  {
+    "rb2d.px": -7002.716,
+    "rb2d.py": -11182.1084,
+    "genes.tag": "loop",
+    "_file": "bibite_754.bb8"
+  },
+  {
+    "rb2d.px": -8468.693,
+    "rb2d.py": -10154.0879,
+    "genes.tag": "plate",
+    "_file": "bibite_219.bb8"
+  },
+  {
+    "rb2d.px": 3354.63184,
+    "rb2d.py": -12493.13,
+    "genes.tag": "loop",
+    "_file": "bibite_577.bb8"
+  },
+  {
+    "rb2d.px": 6028.09,
+    "rb2d.py": -12366.3428,
+    "genes.tag": "loop",
+    "_file": "bibite_511.bb8"
+  },
+  {
+    "rb2d.px": -6061.689,
+    "rb2d.py": -12721.8965,
+    "genes.tag": "loop",
+    "_file": "bibite_452.bb8"
+  },
+  {
+    "rb2d.px": 9975.023,
+    "rb2d.py": 8655.482,
+    "genes.tag": "loop",
+    "_file": "bibite_757.bb8"
+  },
+  {
+    "rb2d.px": 8380.77,
+    "rb2d.py": 1717.24292,
+    "genes.tag": "loop",
+    "_file": "bibite_553.bb8"
+  },
+  {
+    "rb2d.px": -5067.54,
+    "rb2d.py": 8069.17236,
+    "genes.tag": "creep",
+    "_file": "bibite_75.bb8"
+  },
+  {
+    "rb2d.px": -11213.7178,
+    "rb2d.py": 7221.47461,
+    "genes.tag": "loop",
+    "_file": "bibite_282.bb8"
+  },
+  {
+    "rb2d.px": 9685.197,
+    "rb2d.py": -8910.768,
+    "genes.tag": "loop",
+    "_file": "bibite_80.bb8"
+  },
+  {
+    "rb2d.px": 12569.8984,
+    "rb2d.py": 785.282837,
+    "genes.tag": "loop",
+    "_file": "bibite_359.bb8"
+  },
+  {
+    "rb2d.px": -10156.75,
+    "rb2d.py": -11288.5762,
+    "genes.tag": "loop",
+    "_file": "bibite_394.bb8"
+  },
+  {
+    "rb2d.px": 12756.3779,
+    "rb2d.py": -1919.66406,
+    "genes.tag": "loop",
+    "_file": "bibite_131.bb8"
+  },
+  {
+    "rb2d.px": -10804.7422,
+    "rb2d.py": 9301.82,
+    "genes.tag": "loop",
+    "_file": "bibite_478.bb8"
+  },
+  {
+    "rb2d.px": 4426.73633,
+    "rb2d.py": -13413.7275,
+    "genes.tag": "loop",
+    "_file": "bibite_331.bb8"
+  },
+  {
+    "rb2d.px": 11945.7383,
+    "rb2d.py": 5489.54541,
+    "genes.tag": "loop",
+    "_file": "bibite_168.bb8"
+  },
+  {
+    "rb2d.px": 8919.762,
+    "rb2d.py": 908.4661,
+    "genes.tag": "plate",
+    "_file": "bibite_585.bb8"
+  },
+  {
+    "rb2d.px": 8669.041,
+    "rb2d.py": -1236.93286,
+    "genes.tag": "plate",
+    "_file": "bibite_637.bb8"
+  },
+  {
+    "rb2d.px": -9232.089,
+    "rb2d.py": 9656.661,
+    "genes.tag": "loop",
+    "_file": "bibite_565.bb8"
+  },
+  {
+    "rb2d.px": -6189.63232,
+    "rb2d.py": 11785.1963,
+    "genes.tag": "creep",
+    "_file": "bibite_735.bb8"
+  },
+  {
+    "rb2d.px": -9831.406,
+    "rb2d.py": 9470.346,
+    "genes.tag": "loop",
+    "_file": "bibite_727.bb8"
+  },
+  {
+    "rb2d.px": -4440.59033,
+    "rb2d.py": -14394.5889,
+    "genes.tag": "loop",
+    "_file": "bibite_90.bb8"
+  },
+  {
+    "rb2d.px": -12748.5342,
+    "rb2d.py": -5535.44775,
+    "genes.tag": "loop",
+    "_file": "bibite_220.bb8"
+  },
+  {
+    "rb2d.px": -8251.254,
+    "rb2d.py": -8224.548,
+    "genes.tag": "plate",
+    "_file": "bibite_579.bb8"
+  },
+  {
+    "rb2d.px": -3729.31738,
+    "rb2d.py": -11619.4121,
+    "genes.tag": "loop",
+    "_file": "bibite_374.bb8"
+  },
+  {
+    "rb2d.px": -6067.195,
+    "rb2d.py": -11524.6309,
+    "genes.tag": "loop",
+    "_file": "bibite_665.bb8"
+  },
+  {
+    "rb2d.px": 8656.745,
+    "rb2d.py": 1087.1377,
+    "genes.tag": "loop",
+    "_file": "bibite_761.bb8"
+  },
+  {
+    "rb2d.px": -11685.08,
+    "rb2d.py": -6511.03174,
+    "genes.tag": "loop",
+    "_file": "bibite_67.bb8"
+  },
+  {
+    "rb2d.px": -3918.34,
+    "rb2d.py": 10895.415,
+    "genes.tag": "loop",
+    "_file": "bibite_446.bb8"
+  },
+  {
+    "rb2d.px": 12074.7373,
+    "rb2d.py": -2621.75586,
+    "genes.tag": "loop",
+    "_file": "bibite_142.bb8"
+  },
+  {
+    "rb2d.px": -8240.015,
+    "rb2d.py": 9309.282,
+    "genes.tag": "loop",
+    "_file": "bibite_346.bb8"
+  },
+  {
+    "rb2d.px": 12930.0869,
+    "rb2d.py": -4524.59326,
+    "genes.tag": "loop",
+    "_file": "bibite_850.bb8"
+  },
+  {
+    "rb2d.px": 12976.5078,
+    "rb2d.py": 3297.74219,
+    "genes.tag": "loop",
+    "_file": "bibite_224.bb8"
+  },
+  {
+    "rb2d.px": -7696.99463,
+    "rb2d.py": 7632.508,
+    "genes.tag": "bait",
+    "_file": "bibite_715.bb8"
+  },
+  {
+    "rb2d.px": -4096.54834,
+    "rb2d.py": -8733.648,
+    "genes.tag": "loop",
+    "_file": "bibite_539.bb8"
+  },
+  {
+    "rb2d.px": -8348.002,
+    "rb2d.py": 9642.281,
+    "genes.tag": "loop",
+    "_file": "bibite_694.bb8"
+  },
+  {
+    "rb2d.px": -3123.39673,
+    "rb2d.py": -8716.123,
+    "genes.tag": "loop",
+    "_file": "bibite_884.bb8"
+  },
+  {
+    "rb2d.px": 9558.022,
+    "rb2d.py": -9385.067,
+    "genes.tag": "loop",
+    "_file": "bibite_863.bb8"
+  },
+  {
+    "rb2d.px": -3594.70483,
+    "rb2d.py": -7061.737,
+    "genes.tag": "plate",
+    "_file": "bibite_568.bb8"
+  },
+  {
+    "rb2d.px": 7278.54932,
+    "rb2d.py": -10977.9277,
+    "genes.tag": "loop",
+    "_file": "bibite_499.bb8"
+  },
+  {
+    "rb2d.px": -3019.79175,
+    "rb2d.py": 9084.182,
+    "genes.tag": "loop",
+    "_file": "bibite_86.bb8"
+  },
+  {
+    "rb2d.px": -7891.16064,
+    "rb2d.py": -9909.782,
+    "genes.tag": "loop",
+    "_file": "bibite_498.bb8"
+  },
+  {
+    "rb2d.px": -2941.68848,
+    "rb2d.py": 10762.4775,
+    "genes.tag": "loop",
+    "_file": "bibite_545.bb8"
+  },
+  {
+    "rb2d.px": -5054.69,
+    "rb2d.py": -14633.624,
+    "genes.tag": "loop",
+    "_file": "bibite_817.bb8"
+  },
+  {
+    "rb2d.px": 10884.95,
+    "rb2d.py": 3365.60132,
+    "genes.tag": "loop",
+    "_file": "bibite_236.bb8"
+  },
+  {
+    "rb2d.px": 9979.918,
+    "rb2d.py": 2186.05029,
+    "genes.tag": "plate",
+    "_file": "bibite_575.bb8"
+  },
+  {
+    "rb2d.px": 13194.3477,
+    "rb2d.py": 561.9423,
+    "genes.tag": "loop",
+    "_file": "bibite_893.bb8"
+  },
+  {
+    "rb2d.px": -6900.158,
+    "rb2d.py": 11216.8867,
+    "genes.tag": "loop",
+    "_file": "bibite_718.bb8"
+  },
+  {
+    "rb2d.px": 9981.195,
+    "rb2d.py": -341.198242,
+    "genes.tag": "loop",
+    "_file": "bibite_441.bb8"
+  },
+  {
+    "rb2d.px": 7880.21875,
+    "rb2d.py": 459.751129,
+    "genes.tag": "plate",
+    "_file": "bibite_604.bb8"
+  },
+  {
+    "rb2d.px": -5687.2124,
+    "rb2d.py": 12046.6553,
+    "genes.tag": "eng",
+    "_file": "bibite_543.bb8"
+  },
+  {
+    "rb2d.px": -3809.4104,
+    "rb2d.py": 7715.21729,
+    "genes.tag": "creep",
+    "_file": "bibite_514.bb8"
+  },
+  {
+    "rb2d.px": -2953.75049,
+    "rb2d.py": -10027.8281,
+    "genes.tag": "loop",
+    "_file": "bibite_221.bb8"
+  },
+  {
+    "rb2d.px": 9322.87,
+    "rb2d.py": -1122.302,
+    "genes.tag": "plate",
+    "_file": "bibite_158.bb8"
+  },
+  {
+    "rb2d.px": -8399.219,
+    "rb2d.py": 5395.35547,
+    "genes.tag": "loop",
+    "_file": "bibite_138.bb8"
+  },
+  {
+    "rb2d.px": -3184.31445,
+    "rb2d.py": 10970.86,
+    "genes.tag": "loop",
+    "_file": "bibite_117.bb8"
+  },
+  {
+    "rb2d.px": 11055.5449,
+    "rb2d.py": -629.495056,
+    "genes.tag": "loop",
+    "_file": "bibite_91.bb8"
+  },
+  {
+    "rb2d.px": -9456.513,
+    "rb2d.py": 9525.392,
+    "genes.tag": "loop",
+    "_file": "bibite_555.bb8"
+  },
+  {
+    "rb2d.px": -3066.45581,
+    "rb2d.py": -11265.8477,
+    "genes.tag": "plate",
+    "_file": "bibite_14.bb8"
+  },
+  {
+    "rb2d.px": -7970.00439,
+    "rb2d.py": 12784.4268,
+    "genes.tag": "loop",
+    "_file": "bibite_302.bb8"
+  },
+  {
+    "rb2d.px": 11785.5332,
+    "rb2d.py": 4895.92041,
+    "genes.tag": "loop",
+    "_file": "bibite_867.bb8"
+  },
+  {
+    "rb2d.px": 12653.0664,
+    "rb2d.py": 4777.824,
+    "genes.tag": "loop",
+    "_file": "bibite_700.bb8"
+  },
+  {
+    "rb2d.px": -7271.874,
+    "rb2d.py": 8391.373,
+    "genes.tag": "creep",
+    "_file": "bibite_785.bb8"
+  },
+  {
+    "rb2d.px": -7222.40869,
+    "rb2d.py": -10382.8506,
+    "genes.tag": "loop",
+    "_file": "bibite_806.bb8"
+  },
+  {
+    "rb2d.px": 1297.80078,
+    "rb2d.py": 12260.47,
+    "genes.tag": "loop",
+    "_file": "bibite_63.bb8"
+  },
+  {
+    "rb2d.px": -7450.35449,
+    "rb2d.py": 7383.132,
+    "genes.tag": "loop",
+    "_file": "bibite_782.bb8"
+  },
+  {
+    "rb2d.px": -5456.18848,
+    "rb2d.py": -6960.15137,
+    "genes.tag": "plate",
+    "_file": "bibite_472.bb8"
+  },
+  {
+    "rb2d.px": -3803.64819,
+    "rb2d.py": 10293.2031,
+    "genes.tag": "loop",
+    "_file": "bibite_161.bb8"
+  },
+  {
+    "rb2d.px": -6596.14844,
+    "rb2d.py": -13794.0205,
+    "genes.tag": "loop",
+    "_file": "bibite_685.bb8"
+  },
+  {
+    "rb2d.px": 11677.6387,
+    "rb2d.py": -6130.05664,
+    "genes.tag": "loop",
+    "_file": "bibite_9.bb8"
+  },
+  {
+    "rb2d.px": 10230.6025,
+    "rb2d.py": -8098.5293,
+    "genes.tag": "loop",
+    "_file": "bibite_861.bb8"
+  },
+  {
+    "rb2d.px": -4906.35547,
+    "rb2d.py": 9996.39551,
+    "genes.tag": "creep",
+    "_file": "bibite_349.bb8"
+  },
+  {
+    "rb2d.px": -7006.57227,
+    "rb2d.py": -12369.543,
+    "genes.tag": "plate",
+    "_file": "bibite_504.bb8"
+  },
+  {
+    "rb2d.px": -8329.028,
+    "rb2d.py": 7077.67432,
+    "genes.tag": "loop",
+    "_file": "bibite_297.bb8"
+  },
+  {
+    "rb2d.px": -8456.314,
+    "rb2d.py": 12379.6465,
+    "genes.tag": "loop",
+    "_file": "bibite_65.bb8"
+  },
+  {
+    "rb2d.px": -12348.207,
+    "rb2d.py": -4272.57275,
+    "genes.tag": "loop",
+    "_file": "bibite_805.bb8"
+  },
+  {
+    "rb2d.px": -7463.04834,
+    "rb2d.py": -8505.268,
+    "genes.tag": "loop",
+    "_file": "bibite_509.bb8"
+  },
+  {
+    "rb2d.px": -3289.035,
+    "rb2d.py": -7757.37451,
+    "genes.tag": "plate",
+    "_file": "bibite_505.bb8"
+  },
+  {
+    "rb2d.px": 9357.185,
+    "rb2d.py": -1790.22229,
+    "genes.tag": "loop",
+    "_file": "bibite_46.bb8"
+  },
+  {
+    "rb2d.px": -3976.56641,
+    "rb2d.py": 12100.2227,
+    "genes.tag": "loop",
+    "_file": "bibite_94.bb8"
+  },
+  {
+    "rb2d.px": -2040.96094,
+    "rb2d.py": 10525.6436,
+    "genes.tag": "loop",
+    "_file": "bibite_417.bb8"
+  },
+  {
+    "rb2d.px": -6065.716,
+    "rb2d.py": -11628.6514,
+    "genes.tag": "loop",
+    "_file": "bibite_724.bb8"
+  },
+  {
+    "rb2d.px": -5330.992,
+    "rb2d.py": -10797.7715,
+    "genes.tag": "loop",
+    "_file": "bibite_762.bb8"
+  },
+  {
+    "rb2d.px": 9493.39,
+    "rb2d.py": 8940.226,
+    "genes.tag": "loop",
+    "_file": "bibite_175.bb8"
+  },
+  {
+    "rb2d.px": -1247.19666,
+    "rb2d.py": 13469.9023,
+    "genes.tag": "loop",
+    "_file": "bibite_113.bb8"
+  },
+  {
+    "rb2d.px": 3745.691,
+    "rb2d.py": 11684.8506,
+    "genes.tag": "loop",
+    "_file": "bibite_72.bb8"
+  },
+  {
+    "rb2d.px": -9233.136,
+    "rb2d.py": 9395.428,
+    "genes.tag": "loop",
+    "_file": "bibite_116.bb8"
+  },
+  {
+    "rb2d.px": 4539.746,
+    "rb2d.py": 13182.8906,
+    "genes.tag": "loop",
+    "_file": "bibite_198.bb8"
+  },
+  {
+    "rb2d.px": -8365.086,
+    "rb2d.py": 10754.4873,
+    "genes.tag": "loop",
+    "_file": "bibite_78.bb8"
+  },
+  {
+    "rb2d.px": 1376.9397,
+    "rb2d.py": 13811.8447,
+    "genes.tag": "creep",
+    "_file": "bibite_227.bb8"
+  },
+  {
+    "rb2d.px": 1204.06738,
+    "rb2d.py": 11985.1084,
+    "genes.tag": "loop",
+    "_file": "bibite_609.bb8"
+  },
+  {
+    "rb2d.px": -4426.462,
+    "rb2d.py": 7204.03955,
+    "genes.tag": "loop",
+    "_file": "bibite_389.bb8"
+  },
+  {
+    "rb2d.px": 12043.4844,
+    "rb2d.py": -4965.37256,
+    "genes.tag": "loop",
+    "_file": "bibite_866.bb8"
+  },
+  {
+    "rb2d.px": -6127.4585,
+    "rb2d.py": 9786.116,
+    "genes.tag": "creep",
+    "_file": "bibite_306.bb8"
+  },
+  {
+    "rb2d.px": 11475.1182,
+    "rb2d.py": -1213.86011,
+    "genes.tag": "loop",
+    "_file": "bibite_447.bb8"
+  },
+  {
+    "rb2d.px": -2919.12427,
+    "rb2d.py": 10601.209,
+    "genes.tag": "loop",
+    "_file": "bibite_834.bb8"
+  },
+  {
+    "rb2d.px": -4118.22,
+    "rb2d.py": 7040.89258,
+    "genes.tag": "loop",
+    "_file": "bibite_831.bb8"
+  },
+  {
+    "rb2d.px": 12220.9951,
+    "rb2d.py": -2463.51758,
+    "genes.tag": "plate",
+    "_file": "bibite_162.bb8"
+  },
+  {
+    "rb2d.px": -425.501038,
+    "rb2d.py": 8240.201,
+    "genes.tag": "loop",
+    "_file": "bibite_468.bb8"
+  },
+  {
+    "rb2d.px": -5225.469,
+    "rb2d.py": -12144.0156,
+    "genes.tag": "loop",
+    "_file": "bibite_598.bb8"
+  },
+  {
+    "rb2d.px": -7795.002,
+    "rb2d.py": 7825.6333,
+    "genes.tag": "loop",
+    "_file": "bibite_652.bb8"
+  },
+  {
+    "rb2d.px": 1654.04553,
+    "rb2d.py": 11923.2188,
+    "genes.tag": "loop",
+    "_file": "bibite_185.bb8"
+  },
+  {
+    "rb2d.px": -4908.1416,
+    "rb2d.py": 8970.285,
+    "genes.tag": "creep",
+    "_file": "bibite_283.bb8"
+  },
+  {
+    "rb2d.px": -5068.48,
+    "rb2d.py": 12698.9775,
+    "genes.tag": "creep",
+    "_file": "bibite_268.bb8"
+  },
+  {
+    "rb2d.px": -2899.24268,
+    "rb2d.py": -12728.3027,
+    "genes.tag": "loop",
+    "_file": "bibite_774.bb8"
+  },
+  {
+    "rb2d.px": 11921.0742,
+    "rb2d.py": -2486.16382,
+    "genes.tag": "plate",
+    "_file": "bibite_815.bb8"
+  },
+  {
+    "rb2d.px": -6457.985,
+    "rb2d.py": 11882.8213,
+    "genes.tag": "eng",
+    "_file": "bibite_339.bb8"
+  },
+  {
+    "rb2d.px": -11285.6162,
+    "rb2d.py": -6782.781,
+    "genes.tag": "loop",
+    "_file": "bibite_832.bb8"
+  },
+  {
+    "rb2d.px": -7474.735,
+    "rb2d.py": 7790.19775,
+    "genes.tag": "loop",
+    "_file": "bibite_82.bb8"
+  },
+  {
+    "rb2d.px": -6892.251,
+    "rb2d.py": -7281.76465,
+    "genes.tag": "plate",
+    "_file": "bibite_531.bb8"
+  },
+  {
+    "rb2d.px": -3743.43457,
+    "rb2d.py": 12517.2041,
+    "genes.tag": "creep",
+    "_file": "bibite_391.bb8"
+  },
+  {
+    "rb2d.px": 7479.955,
+    "rb2d.py": -11220.9092,
+    "genes.tag": "loop",
+    "_file": "bibite_813.bb8"
+  },
+  {
+    "rb2d.px": -9138.838,
+    "rb2d.py": -10276.2568,
+    "genes.tag": "loop",
+    "_file": "bibite_55.bb8"
+  },
+  {
+    "rb2d.px": -7800.27051,
+    "rb2d.py": 10710.33,
+    "genes.tag": "creep",
+    "_file": "bibite_187.bb8"
+  },
+  {
+    "rb2d.px": 5888.97852,
+    "rb2d.py": -11699.3184,
+    "genes.tag": "loop",
+    "_file": "bibite_699.bb8"
+  },
+  {
+    "rb2d.px": -8675.82,
+    "rb2d.py": 9990.85449,
+    "genes.tag": "loop",
+    "_file": "bibite_610.bb8"
+  },
+  {
+    "rb2d.px": 8575.088,
+    "rb2d.py": 1106.27563,
+    "genes.tag": "loop",
+    "_file": "bibite_594.bb8"
+  },
+  {
+    "rb2d.px": 11215.7051,
+    "rb2d.py": -282.775421,
+    "genes.tag": "loop",
+    "_file": "bibite_614.bb8"
+  },
+  {
+    "rb2d.px": -5206.94873,
+    "rb2d.py": 13602.7051,
+    "genes.tag": "loop",
+    "_file": "bibite_261.bb8"
+  },
+  {
+    "rb2d.px": -4292.84229,
+    "rb2d.py": 13266.7842,
+    "genes.tag": "loop",
+    "_file": "bibite_798.bb8"
+  },
+  {
+    "rb2d.px": -4144.63232,
+    "rb2d.py": -11463.4219,
+    "genes.tag": "plate",
+    "_file": "bibite_580.bb8"
+  },
+  {
+    "rb2d.px": -8764.081,
+    "rb2d.py": 6254.658,
+    "genes.tag": "loop",
+    "_file": "bibite_571.bb8"
+  },
+  {
+    "rb2d.px": -11963.5225,
+    "rb2d.py": -5960.039,
+    "genes.tag": "loop",
+    "_file": "bibite_748.bb8"
+  },
+  {
+    "rb2d.px": -78.25136,
+    "rb2d.py": 12025.7861,
+    "genes.tag": "loop",
+    "_file": "bibite_588.bb8"
+  },
+  {
+    "rb2d.px": -8240.972,
+    "rb2d.py": 9509.844,
+    "genes.tag": "eng",
+    "_file": "bibite_590.bb8"
+  },
+  {
+    "rb2d.px": 10427.3848,
+    "rb2d.py": -1246.05457,
+    "genes.tag": "loop",
+    "_file": "bibite_398.bb8"
+  },
+  {
+    "rb2d.px": -10494.0723,
+    "rb2d.py": -12284.9756,
+    "genes.tag": "loop",
+    "_file": "bibite_437.bb8"
+  },
+  {
+    "rb2d.px": -3348.50415,
+    "rb2d.py": 9034.319,
+    "genes.tag": "creep",
+    "_file": "bibite_369.bb8"
+  },
+  {
+    "rb2d.px": -1290.365,
+    "rb2d.py": 13580.6982,
+    "genes.tag": "loop",
+    "_file": "bibite_631.bb8"
+  },
+  {
+    "rb2d.px": -2708.20532,
+    "rb2d.py": 10311.2285,
+    "genes.tag": "creep",
+    "_file": "bibite_366.bb8"
+  },
+  {
+    "rb2d.px": -11707.6182,
+    "rb2d.py": -4618.62939,
+    "genes.tag": "loop",
+    "_file": "bibite_238.bb8"
+  },
+  {
+    "rb2d.px": -4460.587,
+    "rb2d.py": 7167.972,
+    "genes.tag": "loop",
+    "_file": "bibite_770.bb8"
+  },
+  {
+    "rb2d.px": -7102.387,
+    "rb2d.py": -11512.3447,
+    "genes.tag": "loop",
+    "_file": "bibite_705.bb8"
+  },
+  {
+    "rb2d.px": 10941.9473,
+    "rb2d.py": -214.629211,
+    "genes.tag": "loop",
+    "_file": "bibite_544.bb8"
+  },
+  {
+    "rb2d.px": 11786.3809,
+    "rb2d.py": 4666.091,
+    "genes.tag": "loop",
+    "_file": "bibite_68.bb8"
+  },
+  {
+    "rb2d.px": -13261.9766,
+    "rb2d.py": -2004.90662,
+    "genes.tag": "loop",
+    "_file": "bibite_360.bb8"
+  },
+  {
+    "rb2d.px": -5440.549,
+    "rb2d.py": 10486.4873,
+    "genes.tag": "creep",
+    "_file": "bibite_325.bb8"
+  },
+  {
+    "rb2d.px": 12624.6025,
+    "rb2d.py": -4717.115,
+    "genes.tag": "loop",
+    "_file": "bibite_207.bb8"
+  },
+  {
+    "rb2d.px": 10729.958,
+    "rb2d.py": -3131.64746,
+    "genes.tag": "plate",
+    "_file": "bibite_547.bb8"
+  },
+  {
+    "rb2d.px": 9013.44,
+    "rb2d.py": 8547.86,
+    "genes.tag": "loop",
+    "_file": "bibite_181.bb8"
+  },
+  {
+    "rb2d.px": -6438.85547,
+    "rb2d.py": 11457.37,
+    "genes.tag": "eng",
+    "_file": "bibite_362.bb8"
+  },
+  {
+    "rb2d.px": 2479.334,
+    "rb2d.py": 13313.5586,
+    "genes.tag": "loop",
+    "_file": "bibite_530.bb8"
+  },
+  {
+    "rb2d.px": 8710.797,
+    "rb2d.py": 9893.467,
+    "genes.tag": "loop",
+    "_file": "bibite_765.bb8"
+  },
+  {
+    "rb2d.px": 10807.834,
+    "rb2d.py": 6473.60742,
+    "genes.tag": "loop",
+    "_file": "bibite_143.bb8"
+  },
+  {
+    "rb2d.px": -4451.37061,
+    "rb2d.py": -12105.251,
+    "genes.tag": "loop",
+    "_file": "bibite_769.bb8"
+  },
+  {
+    "rb2d.px": -6827.464,
+    "rb2d.py": 4724.765,
+    "genes.tag": "loop",
+    "_file": "bibite_133.bb8"
+  },
+  {
+    "rb2d.px": -10661.6533,
+    "rb2d.py": -12471.45,
+    "genes.tag": "loop",
+    "_file": "bibite_874.bb8"
+  },
+  {
+    "rb2d.px": 8656.794,
+    "rb2d.py": -3350.702,
+    "genes.tag": "loop",
+    "_file": "bibite_668.bb8"
+  },
+  {
+    "rb2d.px": -2870.97144,
+    "rb2d.py": 13582.0977,
+    "genes.tag": "loop",
+    "_file": "bibite_217.bb8"
+  },
+  {
+    "rb2d.px": -1620.62085,
+    "rb2d.py": 13333.4922,
+    "genes.tag": "loop",
+    "_file": "bibite_681.bb8"
+  },
+  {
+    "rb2d.px": 873.741455,
+    "rb2d.py": -12891.4775,
+    "genes.tag": "loop",
+    "_file": "bibite_858.bb8"
+  },
+  {
+    "rb2d.px": -7579.724,
+    "rb2d.py": -11111.3623,
+    "genes.tag": "loop",
+    "_file": "bibite_662.bb8"
+  },
+  {
+    "rb2d.px": 11043.6465,
+    "rb2d.py": 6600.264,
+    "genes.tag": "loop",
+    "_file": "bibite_721.bb8"
+  },
+  {
+    "rb2d.px": -6232.977,
+    "rb2d.py": -11227.3066,
+    "genes.tag": "loop",
+    "_file": "bibite_835.bb8"
+  },
+  {
+    "rb2d.px": 13009.0986,
+    "rb2d.py": -94.29358,
+    "genes.tag": "loop",
+    "_file": "bibite_891.bb8"
+  },
+  {
+    "rb2d.px": -3590.604,
+    "rb2d.py": 12183.5635,
+    "genes.tag": "loop",
+    "_file": "bibite_589.bb8"
+  },
+  {
+    "rb2d.px": -1447.12842,
+    "rb2d.py": -11855.71,
+    "genes.tag": "loop",
+    "_file": "bibite_53.bb8"
+  },
+  {
+    "rb2d.px": 11129.2646,
+    "rb2d.py": 6645.68262,
+    "genes.tag": "loop",
+    "_file": "bibite_603.bb8"
+  },
+  {
+    "rb2d.px": -7890.40771,
+    "rb2d.py": 10829.7393,
+    "genes.tag": "loop",
+    "_file": "bibite_502.bb8"
+  },
+  {
+    "rb2d.px": -13578.957,
+    "rb2d.py": 393.290375,
+    "genes.tag": "loop",
+    "_file": "bibite_582.bb8"
+  },
+  {
+    "rb2d.px": -2609.23755,
+    "rb2d.py": -14741.2021,
+    "genes.tag": "loop",
+    "_file": "bibite_164.bb8"
+  },
+  {
+    "rb2d.px": -6858.58,
+    "rb2d.py": -9956.731,
+    "genes.tag": "plate",
+    "_file": "bibite_818.bb8"
+  },
+  {
+    "rb2d.px": -4354.18652,
+    "rb2d.py": 12427.0361,
+    "genes.tag": "loop",
+    "_file": "bibite_723.bb8"
+  },
+  {
+    "rb2d.px": -4636.94336,
+    "rb2d.py": 11832.3174,
+    "genes.tag": "loop",
+    "_file": "bibite_869.bb8"
+  },
+  {
+    "rb2d.px": 9478.642,
+    "rb2d.py": 9606.061,
+    "genes.tag": "loop",
+    "_file": "bibite_400.bb8"
+  },
+  {
+    "rb2d.px": -4949.403,
+    "rb2d.py": -11640.4668,
+    "genes.tag": "loop",
+    "_file": "bibite_722.bb8"
+  },
+  {
+    "rb2d.px": -5900.31445,
+    "rb2d.py": 9710.814,
+    "genes.tag": "eng",
+    "_file": "bibite_253.bb8"
+  },
+  {
+    "rb2d.px": -7179.808,
+    "rb2d.py": -12576.4395,
+    "genes.tag": "loop",
+    "_file": "bibite_479.bb8"
+  },
+  {
+    "rb2d.px": -8980.806,
+    "rb2d.py": 10287.2979,
+    "genes.tag": "loop",
+    "_file": "bibite_226.bb8"
+  },
+  {
+    "rb2d.px": -9927.16,
+    "rb2d.py": 8680.582,
+    "genes.tag": "creep",
+    "_file": "bibite_269.bb8"
+  },
+  {
+    "rb2d.px": 13871.6025,
+    "rb2d.py": 1120.50439,
+    "genes.tag": "loop",
+    "_file": "bibite_310.bb8"
+  },
+  {
+    "rb2d.px": -3534.30518,
+    "rb2d.py": -11752.5293,
+    "genes.tag": "loop",
+    "_file": "bibite_465.bb8"
+  },
+  {
+    "rb2d.px": -4648.245,
+    "rb2d.py": -12338.2813,
+    "genes.tag": "loop",
+    "_file": "bibite_673.bb8"
+  },
+  {
+    "rb2d.px": -9319.479,
+    "rb2d.py": 9792.032,
+    "genes.tag": "loop",
+    "_file": "bibite_280.bb8"
+  },
+  {
+    "rb2d.px": -12314.625,
+    "rb2d.py": -4860.144,
+    "genes.tag": "loop",
+    "_file": "bibite_726.bb8"
+  },
+  {
+    "rb2d.px": -10730.0137,
+    "rb2d.py": -12251.7461,
+    "genes.tag": "loop",
+    "_file": "bibite_848.bb8"
+  },
+  {
+    "rb2d.px": -3253.613,
+    "rb2d.py": -11911.3242,
+    "genes.tag": "loop",
+    "_file": "bibite_3.bb8"
+  },
+  {
+    "rb2d.px": 10064.8037,
+    "rb2d.py": -2621.15747,
+    "genes.tag": "plate",
+    "_file": "bibite_120.bb8"
+  },
+  {
+    "rb2d.px": 10297.2988,
+    "rb2d.py": -1212.70361,
+    "genes.tag": "loop",
+    "_file": "bibite_519.bb8"
+  },
+  {
+    "rb2d.px": -8843.406,
+    "rb2d.py": 6359.334,
+    "genes.tag": "loop",
+    "_file": "bibite_692.bb8"
+  },
+  {
+    "rb2d.px": -18.3672638,
+    "rb2d.py": -12883.1826,
+    "genes.tag": "loop",
+    "_file": "bibite_212.bb8"
+  },
+  {
+    "rb2d.px": -7690.16553,
+    "rb2d.py": -11582.4736,
+    "genes.tag": "loop",
+    "_file": "bibite_372.bb8"
+  },
+  {
+    "rb2d.px": -9459.295,
+    "rb2d.py": 9522.064,
+    "genes.tag": "loop",
+    "_file": "bibite_503.bb8"
+  },
+  {
+    "rb2d.px": -9470.814,
+    "rb2d.py": -8280.529,
+    "genes.tag": "loop",
+    "_file": "bibite_135.bb8"
+  },
+  {
+    "rb2d.px": -9394.661,
+    "rb2d.py": 10146.6084,
+    "genes.tag": "loop",
+    "_file": "bibite_118.bb8"
+  },
+  {
+    "rb2d.px": 12696.585,
+    "rb2d.py": -3897.88965,
+    "genes.tag": "loop",
+    "_file": "bibite_684.bb8"
+  },
+  {
+    "rb2d.px": -6569.926,
+    "rb2d.py": 6950.324,
+    "genes.tag": "eng",
+    "_file": "bibite_856.bb8"
+  },
+  {
+    "rb2d.px": 9287.341,
+    "rb2d.py": -7855.04053,
+    "genes.tag": "loop",
+    "_file": "bibite_22.bb8"
+  },
+  {
+    "rb2d.px": 11675.833,
+    "rb2d.py": -535.318054,
+    "genes.tag": "loop",
+    "_file": "bibite_549.bb8"
+  },
+  {
+    "rb2d.px": -6877.7417,
+    "rb2d.py": -11064.2686,
+    "genes.tag": "loop",
+    "_file": "bibite_883.bb8"
+  },
+  {
+    "rb2d.px": -7051.459,
+    "rb2d.py": 11270.4736,
+    "genes.tag": "loop",
+    "_file": "bibite_675.bb8"
+  },
+  {
+    "rb2d.px": 692.6508,
+    "rb2d.py": 11408.3564,
+    "genes.tag": "loop",
+    "_file": "bibite_244.bb8"
+  },
+  {
+    "rb2d.px": -7732.52246,
+    "rb2d.py": 7368.143,
+    "genes.tag": "loop",
+    "_file": "bibite_77.bb8"
+  },
+  {
+    "rb2d.px": -4882.854,
+    "rb2d.py": 10293.8223,
+    "genes.tag": "loop",
+    "_file": "bibite_148.bb8"
+  },
+  {
+    "rb2d.px": -7095.90869,
+    "rb2d.py": -10629.3486,
+    "genes.tag": "plate",
+    "_file": "bibite_89.bb8"
+  },
+  {
+    "rb2d.px": -13468.48,
+    "rb2d.py": 4982.22949,
+    "genes.tag": "loop",
+    "_file": "bibite_49.bb8"
+  },
+  {
+    "rb2d.px": -4040.61768,
+    "rb2d.py": 11496.17,
+    "genes.tag": "loop",
+    "_file": "bibite_696.bb8"
+  },
+  {
+    "rb2d.px": 9250.108,
+    "rb2d.py": -2608.58521,
+    "genes.tag": "plate",
+    "_file": "bibite_658.bb8"
+  },
+  {
+    "rb2d.px": 5415.61328,
+    "rb2d.py": 12193.333,
+    "genes.tag": "loop",
+    "_file": "bibite_19.bb8"
+  },
+  {
+    "rb2d.px": -11109.9814,
+    "rb2d.py": -6262.42529,
+    "genes.tag": "loop",
+    "_file": "bibite_338.bb8"
+  },
+  {
+    "rb2d.px": -6993.43066,
+    "rb2d.py": -12717.1826,
+    "genes.tag": "loop",
+    "_file": "bibite_622.bb8"
+  },
+  {
+    "rb2d.px": 13716.125,
+    "rb2d.py": -1445.60278,
+    "genes.tag": "loop",
+    "_file": "bibite_570.bb8"
+  },
+  {
+    "rb2d.px": 12738.5713,
+    "rb2d.py": 1388.721,
+    "genes.tag": "plate",
+    "_file": "bibite_10.bb8"
+  },
+  {
+    "rb2d.px": -4310.2627,
+    "rb2d.py": -7273.42139,
+    "genes.tag": "plate",
+    "_file": "bibite_830.bb8"
+  },
+  {
+    "rb2d.px": 11167.9365,
+    "rb2d.py": -672.5735,
+    "genes.tag": "loop",
+    "_file": "bibite_656.bb8"
+  },
+  {
+    "rb2d.px": -10432.6523,
+    "rb2d.py": -12389.3838,
+    "genes.tag": "loop",
+    "_file": "bibite_801.bb8"
+  },
+  {
+    "rb2d.px": 13290.7666,
+    "rb2d.py": 1702.8092,
+    "genes.tag": "plate",
+    "_file": "bibite_327.bb8"
+  },
+  {
+    "rb2d.px": -7949.44727,
+    "rb2d.py": 7577.25439,
+    "genes.tag": "loop",
+    "_file": "bibite_601.bb8"
+  },
+  {
+    "rb2d.px": -8744.983,
+    "rb2d.py": 11070.9316,
+    "genes.tag": "loop",
+    "_file": "bibite_351.bb8"
+  },
+  {
+    "rb2d.px": 9138.549,
+    "rb2d.py": -8843.985,
+    "genes.tag": "loop",
+    "_file": "bibite_423.bb8"
+  },
+  {
+    "rb2d.px": -7675.742,
+    "rb2d.py": -8032.386,
+    "genes.tag": "plate",
+    "_file": "bibite_180.bb8"
+  },
+  {
+    "rb2d.px": 9656.953,
+    "rb2d.py": -2058.622,
+    "genes.tag": "loop",
+    "_file": "bibite_328.bb8"
+  },
+  {
+    "rb2d.px": 6279.05566,
+    "rb2d.py": 10139.3848,
+    "genes.tag": "loop",
+    "_file": "bibite_2.bb8"
+  },
+  {
+    "rb2d.px": -9877.088,
+    "rb2d.py": -8991.658,
+    "genes.tag": "loop",
+    "_file": "bibite_304.bb8"
+  },
+  {
+    "rb2d.px": -9993.084,
+    "rb2d.py": -12114.9746,
+    "genes.tag": "loop",
+    "_file": "bibite_676.bb8"
+  },
+  {
+    "rb2d.px": -5939.23438,
+    "rb2d.py": 12220.748,
+    "genes.tag": "creep",
+    "_file": "bibite_416.bb8"
+  },
+  {
+    "rb2d.px": 100.422638,
+    "rb2d.py": -9688.551,
+    "genes.tag": "bait",
+    "_file": "bibite_322.bb8"
+  },
+  {
+    "rb2d.px": 8881.002,
+    "rb2d.py": 8535.498,
+    "genes.tag": "loop",
+    "_file": "bibite_480.bb8"
+  },
+  {
+    "rb2d.px": 1154.78113,
+    "rb2d.py": -13629.6748,
+    "genes.tag": "loop",
+    "_file": "bibite_258.bb8"
+  },
+  {
+    "rb2d.px": -2733.05371,
+    "rb2d.py": -9048.095,
+    "genes.tag": "bait",
+    "_file": "bibite_640.bb8"
+  },
+  {
+    "rb2d.px": -10236.3145,
+    "rb2d.py": -11161.9551,
+    "genes.tag": "loop",
+    "_file": "bibite_307.bb8"
+  },
+  {
+    "rb2d.px": 8910.907,
+    "rb2d.py": 1728.2749,
+    "genes.tag": "plate",
+    "_file": "bibite_83.bb8"
+  },
+  {
+    "rb2d.px": -7397.73047,
+    "rb2d.py": 11890.6475,
+    "genes.tag": "creep",
+    "_file": "bibite_373.bb8"
+  },
+  {
+    "rb2d.px": 11099.7979,
+    "rb2d.py": 2077.82031,
+    "genes.tag": "plate",
+    "_file": "bibite_188.bb8"
+  },
+  {
+    "rb2d.px": 149.908325,
+    "rb2d.py": 11905.3379,
+    "genes.tag": "loop",
+    "_file": "bibite_888.bb8"
+  },
+  {
+    "rb2d.px": -6853.70361,
+    "rb2d.py": -13518.3027,
+    "genes.tag": "loop",
+    "_file": "bibite_141.bb8"
+  },
+  {
+    "rb2d.px": -4459.8374,
+    "rb2d.py": -12315.1211,
+    "genes.tag": "loop",
+    "_file": "bibite_483.bb8"
+  },
+  {
+    "rb2d.px": -3738.0647,
+    "rb2d.py": -10069.8838,
+    "genes.tag": "plate",
+    "_file": "bibite_60.bb8"
+  },
+  {
+    "rb2d.px": -11004.1914,
+    "rb2d.py": -11611.2588,
+    "genes.tag": "loop",
+    "_file": "bibite_605.bb8"
+  },
+  {
+    "rb2d.px": 12663.8418,
+    "rb2d.py": -3421.991,
+    "genes.tag": "loop",
+    "_file": "bibite_651.bb8"
+  },
+  {
+    "rb2d.px": -8617.402,
+    "rb2d.py": 9861.66,
+    "genes.tag": "loop",
+    "_file": "bibite_728.bb8"
+  },
+  {
+    "rb2d.px": -3360.88623,
+    "rb2d.py": 12734.0283,
+    "genes.tag": "loop",
+    "_file": "bibite_152.bb8"
+  },
+  {
+    "rb2d.px": -4988.9917,
+    "rb2d.py": 6934.48438,
+    "genes.tag": "creep",
+    "_file": "bibite_256.bb8"
+  },
+  {
+    "rb2d.px": -7504.04834,
+    "rb2d.py": -13438.4941,
+    "genes.tag": "plate",
+    "_file": "bibite_470.bb8"
+  },
+  {
+    "rb2d.px": -6997.67725,
+    "rb2d.py": -12352.668,
+    "genes.tag": "plate",
+    "_file": "bibite_222.bb8"
+  },
+  {
+    "rb2d.px": 9090.354,
+    "rb2d.py": -1650.20288,
+    "genes.tag": "plate",
+    "_file": "bibite_235.bb8"
+  },
+  {
+    "rb2d.px": -7020.45459,
+    "rb2d.py": -11392.9883,
+    "genes.tag": "loop",
+    "_file": "bibite_255.bb8"
+  },
+  {
+    "rb2d.px": 9041.054,
+    "rb2d.py": 9954.912,
+    "genes.tag": "loop",
+    "_file": "bibite_868.bb8"
+  },
+  {
+    "rb2d.px": -8223.977,
+    "rb2d.py": 11296.6279,
+    "genes.tag": "creep",
+    "_file": "bibite_249.bb8"
+  },
+  {
+    "rb2d.px": 12419.8564,
+    "rb2d.py": -4955.47,
+    "genes.tag": "loop",
+    "_file": "bibite_534.bb8"
+  },
+  {
+    "rb2d.px": -8469.26,
+    "rb2d.py": -8143.59961,
+    "genes.tag": "plate",
+    "_file": "bibite_93.bb8"
+  },
+  {
+    "rb2d.px": -1294.67114,
+    "rb2d.py": -11565.3809,
+    "genes.tag": "loop",
+    "_file": "bibite_305.bb8"
+  },
+  {
+    "rb2d.px": -3955.17261,
+    "rb2d.py": 8968.583,
+    "genes.tag": "creep",
+    "_file": "bibite_363.bb8"
+  },
+  {
+    "rb2d.px": -3252.132,
+    "rb2d.py": -11060.0869,
+    "genes.tag": "loop",
+    "_file": "bibite_260.bb8"
+  },
+  {
+    "rb2d.px": -5152.92627,
+    "rb2d.py": 11880.1387,
+    "genes.tag": "creep",
+    "_file": "bibite_288.bb8"
+  },
+  {
+    "rb2d.px": 10995.8711,
+    "rb2d.py": -1035.8363,
+    "genes.tag": "loop",
+    "_file": "bibite_276.bb8"
+  },
+  {
+    "rb2d.px": -11631.6143,
+    "rb2d.py": 7932.352,
+    "genes.tag": "loop",
+    "_file": "bibite_243.bb8"
+  },
+  {
+    "rb2d.px": 12769.9414,
+    "rb2d.py": -5351.973,
+    "genes.tag": "loop",
+    "_file": "bibite_747.bb8"
+  },
+  {
+    "rb2d.px": 8026.204,
+    "rb2d.py": -2573.90942,
+    "genes.tag": "loop",
+    "_file": "bibite_199.bb8"
+  },
+  {
+    "rb2d.px": -6030.27539,
+    "rb2d.py": -11364.9541,
+    "genes.tag": "loop",
+    "_file": "bibite_771.bb8"
+  },
+  {
+    "rb2d.px": -12092.2871,
+    "rb2d.py": -5387.38428,
+    "genes.tag": "loop",
+    "_file": "bibite_852.bb8"
+  },
+  {
+    "rb2d.px": -9314.881,
+    "rb2d.py": 9788.28,
+    "genes.tag": "loop",
+    "_file": "bibite_886.bb8"
+  },
+  {
+    "rb2d.px": -6853.25928,
+    "rb2d.py": -9296.053,
+    "genes.tag": "loop",
+    "_file": "bibite_628.bb8"
+  },
+  {
+    "rb2d.px": 14214.3555,
+    "rb2d.py": -1428.708,
+    "genes.tag": "loop",
+    "_file": "bibite_293.bb8"
+  },
+  {
+    "rb2d.px": -10496.58,
+    "rb2d.py": -12281.252,
+    "genes.tag": "loop",
+    "_file": "bibite_368.bb8"
+  },
+  {
+    "rb2d.px": -12897.5508,
+    "rb2d.py": -7259.82031,
+    "genes.tag": "loop",
+    "_file": "bibite_51.bb8"
+  },
+  {
+    "rb2d.px": 13633.16,
+    "rb2d.py": -869.6612,
+    "genes.tag": "plate",
+    "_file": "bibite_210.bb8"
+  },
+  {
+    "rb2d.px": -5783.987,
+    "rb2d.py": -12357.67,
+    "genes.tag": "plate",
+    "_file": "bibite_136.bb8"
+  },
+  {
+    "rb2d.px": -4927.32,
+    "rb2d.py": 7183.75635,
+    "genes.tag": "loop",
+    "_file": "bibite_666.bb8"
+  },
+  {
+    "rb2d.px": 11465.9189,
+    "rb2d.py": -1771.25256,
+    "genes.tag": "loop",
+    "_file": "bibite_690.bb8"
+  },
+  {
+    "rb2d.px": 9871.13,
+    "rb2d.py": 2584.22168,
+    "genes.tag": "plate",
+    "_file": "bibite_140.bb8"
+  },
+  {
+    "rb2d.px": -1917.92407,
+    "rb2d.py": 12330.8857,
+    "genes.tag": "loop",
+    "_file": "bibite_395.bb8"
+  },
+  {
+    "rb2d.px": -4241.80859,
+    "rb2d.py": 12777.3057,
+    "genes.tag": "loop",
+    "_file": "bibite_768.bb8"
+  },
+  {
+    "rb2d.px": -3038.59668,
+    "rb2d.py": -8814.752,
+    "genes.tag": "loop",
+    "_file": "bibite_615.bb8"
+  },
+  {
+    "rb2d.px": -4990.135,
+    "rb2d.py": 11540.2959,
+    "genes.tag": "creep",
+    "_file": "bibite_567.bb8"
+  },
+  {
+    "rb2d.px": -947.4693,
+    "rb2d.py": 9728.565,
+    "genes.tag": "loop",
+    "_file": "bibite_40.bb8"
+  },
+  {
+    "rb2d.px": 11440.6738,
+    "rb2d.py": 2573.95044,
+    "genes.tag": "loop",
+    "_file": "bibite_228.bb8"
+  },
+  {
+    "rb2d.px": 7905.21338,
+    "rb2d.py": -10748.7744,
+    "genes.tag": "loop",
+    "_file": "bibite_537.bb8"
+  },
+  {
+    "rb2d.px": 6485.659,
+    "rb2d.py": 11296.7656,
+    "genes.tag": "loop",
+    "_file": "bibite_100.bb8"
+  },
+  {
+    "rb2d.px": -7916.63428,
+    "rb2d.py": -9096.167,
+    "genes.tag": "plate",
+    "_file": "bibite_32.bb8"
+  },
+  {
+    "rb2d.px": -9443.249,
+    "rb2d.py": 10504.6514,
+    "genes.tag": "loop",
+    "_file": "bibite_420.bb8"
+  },
+  {
+    "rb2d.px": -8047.184,
+    "rb2d.py": 9650.515,
+    "genes.tag": "loop",
+    "_file": "bibite_829.bb8"
+  },
+  {
+    "rb2d.px": 7015.10059,
+    "rb2d.py": 11004.3809,
+    "genes.tag": "loop",
+    "_file": "bibite_52.bb8"
+  },
+  {
+    "rb2d.px": -8003.485,
+    "rb2d.py": 8316.077,
+    "genes.tag": "creep",
+    "_file": "bibite_563.bb8"
+  },
+  {
+    "rb2d.px": -12779.1885,
+    "rb2d.py": -4291.197,
+    "genes.tag": "loop",
+    "_file": "bibite_31.bb8"
+  },
+  {
+    "rb2d.px": -10636.1357,
+    "rb2d.py": -11658.0459,
+    "genes.tag": "loop",
+    "_file": "bibite_173.bb8"
+  },
+  {
+    "rb2d.px": -8353.154,
+    "rb2d.py": 9952.97,
+    "genes.tag": "loop",
+    "_file": "bibite_759.bb8"
+  },
+  {
+    "rb2d.px": -7440.005,
+    "rb2d.py": -10658.1523,
+    "genes.tag": "loop",
+    "_file": "bibite_860.bb8"
+  },
+  {
+    "rb2d.px": -5968.80664,
+    "rb2d.py": -14017.2568,
+    "genes.tag": "loop",
+    "_file": "bibite_802.bb8"
+  },
+  {
+    "rb2d.px": 12285.4346,
+    "rb2d.py": 5370.68555,
+    "genes.tag": "loop",
+    "_file": "bibite_635.bb8"
+  },
+  {
+    "rb2d.px": -3602.94165,
+    "rb2d.py": 11023.1895,
+    "genes.tag": "creep",
+    "_file": "bibite_252.bb8"
+  },
+  {
+    "rb2d.px": -8157.357,
+    "rb2d.py": 10010.3594,
+    "genes.tag": "loop",
+    "_file": "bibite_633.bb8"
+  },
+  {
+    "rb2d.px": -7877.63428,
+    "rb2d.py": 11137.0947,
+    "genes.tag": "bait",
+    "_file": "bibite_321.bb8"
+  },
+  {
+    "rb2d.px": 12722.0,
+    "rb2d.py": 2607.686,
+    "genes.tag": "plate",
+    "_file": "bibite_428.bb8"
+  },
+  {
+    "rb2d.px": -5968.10156,
+    "rb2d.py": -9026.011,
+    "genes.tag": "plate",
+    "_file": "bibite_21.bb8"
+  },
+  {
+    "rb2d.px": -4584.63,
+    "rb2d.py": 7692.17334,
+    "genes.tag": "loop",
+    "_file": "bibite_365.bb8"
+  },
+  {
+    "rb2d.px": 3215.56738,
+    "rb2d.py": 12409.2188,
+    "genes.tag": "loop",
+    "_file": "bibite_30.bb8"
+  },
+  {
+    "rb2d.px": -4943.40967,
+    "rb2d.py": 8680.908,
+    "genes.tag": "creep",
+    "_file": "bibite_250.bb8"
+  },
+  {
+    "rb2d.px": 6713.32861,
+    "rb2d.py": 11614.1826,
+    "genes.tag": "loop",
+    "_file": "bibite_350.bb8"
+  },
+  {
+    "rb2d.px": -11598.5938,
+    "rb2d.py": 5925.33,
+    "genes.tag": "loop",
+    "_file": "bibite_274.bb8"
+  },
+  {
+    "rb2d.px": -8071.683,
+    "rb2d.py": 11167.5146,
+    "genes.tag": "loop",
+    "_file": "bibite_741.bb8"
+  },
+  {
+    "rb2d.px": 10920.7773,
+    "rb2d.py": 8440.585,
+    "genes.tag": "loop",
+    "_file": "bibite_436.bb8"
+  },
+  {
+    "rb2d.px": -4692.971,
+    "rb2d.py": -12001.0049,
+    "genes.tag": "loop",
+    "_file": "bibite_825.bb8"
+  },
+  {
+    "rb2d.px": -10741.12,
+    "rb2d.py": -12623.0283,
+    "genes.tag": "loop",
+    "_file": "bibite_828.bb8"
+  },
+  {
+    "rb2d.px": -12019.3643,
+    "rb2d.py": 3784.939,
+    "genes.tag": "loop",
+    "_file": "bibite_69.bb8"
+  },
+  {
+    "rb2d.px": 9339.754,
+    "rb2d.py": -2021.74561,
+    "genes.tag": "plate",
+    "_file": "bibite_698.bb8"
+  },
+  {
+    "rb2d.px": -4227.03467,
+    "rb2d.py": -8749.99,
+    "genes.tag": "plate",
+    "_file": "bibite_6.bb8"
+  },
+  {
+    "rb2d.px": -9598.385,
+    "rb2d.py": 9114.341,
+    "genes.tag": "loop",
+    "_file": "bibite_410.bb8"
+  },
+  {
+    "rb2d.px": -9723.422,
+    "rb2d.py": 9010.002,
+    "genes.tag": "loop",
+    "_file": "bibite_61.bb8"
+  },
+  {
+    "rb2d.px": 9235.791,
+    "rb2d.py": -1228.44873,
+    "genes.tag": "plate",
+    "_file": "bibite_873.bb8"
+  },
+  {
+    "rb2d.px": -6617.60547,
+    "rb2d.py": 6997.04834,
+    "genes.tag": "creep",
+    "_file": "bibite_340.bb8"
+  },
+  {
+    "rb2d.px": -8382.583,
+    "rb2d.py": 10773.4941,
+    "genes.tag": "loop",
+    "_file": "bibite_520.bb8"
+  },
+  {
+    "rb2d.px": 8748.21,
+    "rb2d.py": -1913.04346,
+    "genes.tag": "plate",
+    "_file": "bibite_889.bb8"
+  },
+  {
+    "rb2d.px": 3945.83179,
+    "rb2d.py": 12489.5537,
+    "genes.tag": "loop",
+    "_file": "bibite_561.bb8"
+  },
+  {
+    "rb2d.px": -3316.61768,
+    "rb2d.py": -8779.809,
+    "genes.tag": "loop",
+    "_file": "bibite_687.bb8"
+  },
+  {
+    "rb2d.px": 9549.968,
+    "rb2d.py": -128.89827,
+    "genes.tag": "loop",
+    "_file": "bibite_880.bb8"
+  },
+  {
+    "rb2d.px": 10243.9561,
+    "rb2d.py": -692.4362,
+    "genes.tag": "loop",
+    "_file": "bibite_380.bb8"
+  },
+  {
+    "rb2d.px": -6222.252,
+    "rb2d.py": 10432.251,
+    "genes.tag": "loop",
+    "_file": "bibite_105.bb8"
+  },
+  {
+    "rb2d.px": -11282.14,
+    "rb2d.py": -12389.2148,
+    "genes.tag": "loop",
+    "_file": "bibite_650.bb8"
+  },
+  {
+    "rb2d.px": -10165.1885,
+    "rb2d.py": 9891.354,
+    "genes.tag": "loop",
+    "_file": "bibite_550.bb8"
+  },
+  {
+    "rb2d.px": -3776.555,
+    "rb2d.py": 7974.20068,
+    "genes.tag": "bait",
+    "_file": "bibite_239.bb8"
+  },
+  {
+    "rb2d.px": -4021.83667,
+    "rb2d.py": 7199.29932,
+    "genes.tag": "creep",
+    "_file": "bibite_381.bb8"
+  },
+  {
+    "rb2d.px": 11916.8633,
+    "rb2d.py": 1483.39648,
+    "genes.tag": "loop",
+    "_file": "bibite_246.bb8"
+  },
+  {
+    "rb2d.px": 10107.4277,
+    "rb2d.py": -2860.4502,
+    "genes.tag": "plate",
+    "_file": "bibite_882.bb8"
+  },
+  {
+    "rb2d.px": -7609.36,
+    "rb2d.py": 11134.1719,
+    "genes.tag": "loop",
+    "_file": "bibite_425.bb8"
+  },
+  {
+    "rb2d.px": -4021.167,
+    "rb2d.py": -9606.395,
+    "genes.tag": "plate",
+    "_file": "bibite_591.bb8"
+  },
+  {
+    "rb2d.px": -5765.48438,
+    "rb2d.py": 11388.4727,
+    "genes.tag": "loop",
+    "_file": "bibite_740.bb8"
+  },
+  {
+    "rb2d.px": 11747.9922,
+    "rb2d.py": 2899.40356,
+    "genes.tag": "plate",
+    "_file": "bibite_29.bb8"
+  },
+  {
+    "rb2d.px": 10361.1445,
+    "rb2d.py": -9360.729,
+    "genes.tag": "loop",
+    "_file": "bibite_689.bb8"
+  },
+  {
+    "rb2d.px": 237.048752,
+    "rb2d.py": -13790.875,
+    "genes.tag": "loop",
+    "_file": "bibite_458.bb8"
+  },
+  {
+    "rb2d.px": -7979.943,
+    "rb2d.py": 7289.04,
+    "genes.tag": "loop",
+    "_file": "bibite_629.bb8"
+  },
+  {
+    "rb2d.px": 11184.0547,
+    "rb2d.py": 6985.577,
+    "genes.tag": "loop",
+    "_file": "bibite_129.bb8"
+  },
+  {
+    "rb2d.px": -7873.05664,
+    "rb2d.py": 12318.127,
+    "genes.tag": "loop",
+    "_file": "bibite_533.bb8"
+  },
+  {
+    "rb2d.px": -10320.5859,
+    "rb2d.py": -7172.56,
+    "genes.tag": "loop",
+    "_file": "bibite_70.bb8"
+  },
+  {
+    "rb2d.px": -5086.38574,
+    "rb2d.py": -6869.791,
+    "genes.tag": "plate",
+    "_file": "bibite_167.bb8"
+  },
+  {
+    "rb2d.px": 12920.5039,
+    "rb2d.py": -2358.67871,
+    "genes.tag": "plate",
+    "_file": "bibite_311.bb8"
+  },
+  {
+    "rb2d.px": -9387.031,
+    "rb2d.py": -8007.96,
+    "genes.tag": "loop",
+    "_file": "bibite_4.bb8"
+  },
+  {
+    "rb2d.px": -10799.71,
+    "rb2d.py": -12351.4219,
+    "genes.tag": "loop",
+    "_file": "bibite_688.bb8"
+  },
+  {
+    "rb2d.px": -12508.25,
+    "rb2d.py": -4567.56641,
+    "genes.tag": "loop",
+    "_file": "bibite_849.bb8"
+  },
+  {
+    "rb2d.px": -3115.53516,
+    "rb2d.py": 10762.9482,
+    "genes.tag": "creep",
+    "_file": "bibite_347.bb8"
+  },
+  {
+    "rb2d.px": -6638.32666,
+    "rb2d.py": 7070.44629,
+    "genes.tag": "creep",
+    "_file": "bibite_506.bb8"
+  },
+  {
+    "rb2d.px": -3305.22168,
+    "rb2d.py": 12277.583,
+    "genes.tag": "loop",
+    "_file": "bibite_497.bb8"
+  },
+  {
+    "rb2d.px": -10530.4766,
+    "rb2d.py": -8143.23,
+    "genes.tag": "loop",
+    "_file": "bibite_481.bb8"
+  },
+  {
+    "rb2d.px": -830.8587,
+    "rb2d.py": 12787.0254,
+    "genes.tag": "loop",
+    "_file": "bibite_645.bb8"
+  },
+  {
+    "rb2d.px": -8310.213,
+    "rb2d.py": 9554.502,
+    "genes.tag": "loop",
+    "_file": "bibite_669.bb8"
+  },
+  {
+    "rb2d.px": -4779.4834,
+    "rb2d.py": -12340.7783,
+    "genes.tag": "loop",
+    "_file": "bibite_367.bb8"
+  },
+  {
+    "rb2d.px": 11235.0469,
+    "rb2d.py": 73.17998,
+    "genes.tag": "loop",
+    "_file": "bibite_500.bb8"
+  },
+  {
+    "rb2d.px": -10888.5732,
+    "rb2d.py": -12221.9766,
+    "genes.tag": "loop",
+    "_file": "bibite_672.bb8"
+  },
+  {
+    "rb2d.px": -783.1908,
+    "rb2d.py": 12912.3789,
+    "genes.tag": "loop",
+    "_file": "bibite_576.bb8"
+  },
+  {
+    "rb2d.px": 13816.46,
+    "rb2d.py": 2298.65552,
+    "genes.tag": "loop",
+    "_file": "bibite_613.bb8"
+  },
+  {
+    "rb2d.px": -2945.03955,
+    "rb2d.py": 10767.248,
+    "genes.tag": "creep",
+    "_file": "bibite_264.bb8"
+  },
+  {
+    "rb2d.px": -7342.70459,
+    "rb2d.py": -7875.767,
+    "genes.tag": "plate",
+    "_file": "bibite_649.bb8"
+  },
+  {
+    "rb2d.px": 11449.8,
+    "rb2d.py": -1605.14087,
+    "genes.tag": "loop",
+    "_file": "bibite_812.bb8"
+  },
+  {
+    "rb2d.px": -2289.874,
+    "rb2d.py": 13328.2744,
+    "genes.tag": "loop",
+    "_file": "bibite_79.bb8"
+  },
+  {
+    "rb2d.px": -2851.28882,
+    "rb2d.py": 9646.528,
+    "genes.tag": "creep",
+    "_file": "bibite_309.bb8"
+  },
+  {
+    "rb2d.px": -5514.6665,
+    "rb2d.py": -8352.762,
+    "genes.tag": "plate",
+    "_file": "bibite_890.bb8"
+  },
+  {
+    "rb2d.px": -5120.18555,
+    "rb2d.py": -12397.6924,
+    "genes.tag": "loop",
+    "_file": "bibite_648.bb8"
+  },
+  {
+    "rb2d.px": -6574.885,
+    "rb2d.py": 6339.548,
+    "genes.tag": "loop",
+    "_file": "bibite_286.bb8"
+  },
+  {
+    "rb2d.px": -3212.61963,
+    "rb2d.py": 13394.5459,
+    "genes.tag": "loop",
+    "_file": "bibite_507.bb8"
+  },
+  {
+    "rb2d.px": 8100.1416,
+    "rb2d.py": 12254.375,
+    "genes.tag": "loop",
+    "_file": "bibite_289.bb8"
+  },
+  {
+    "rb2d.px": 5682.05371,
+    "rb2d.py": -12619.3828,
+    "genes.tag": "loop",
+    "_file": "bibite_218.bb8"
+  },
+  {
+    "rb2d.px": 7712.76025,
+    "rb2d.py": -10720.2822,
+    "genes.tag": "loop",
+    "_file": "bibite_627.bb8"
+  },
+  {
+    "rb2d.px": -4764.64355,
+    "rb2d.py": 6726.63867,
+    "genes.tag": "eng",
+    "_file": "bibite_429.bb8"
+  },
+  {
+    "rb2d.px": 8241.765,
+    "rb2d.py": 314.6057,
+    "genes.tag": "plate",
+    "_file": "bibite_418.bb8"
+  },
+  {
+    "rb2d.px": 10883.77,
+    "rb2d.py": -1251.35522,
+    "genes.tag": "loop",
+    "_file": "bibite_731.bb8"
+  },
+  {
+    "rb2d.px": 430.5678,
+    "rb2d.py": 11683.0332,
+    "genes.tag": "loop",
+    "_file": "bibite_819.bb8"
+  },
+  {
+    "rb2d.px": 7344.61768,
+    "rb2d.py": -11066.9766,
+    "genes.tag": "loop",
+    "_file": "bibite_450.bb8"
+  },
+  {
+    "rb2d.px": -4431.299,
+    "rb2d.py": -7544.889,
+    "genes.tag": "plate",
+    "_file": "bibite_20.bb8"
+  },
+  {
+    "rb2d.px": -13219.76,
+    "rb2d.py": -2272.09619,
+    "genes.tag": "loop",
+    "_file": "bibite_881.bb8"
+  },
+  {
+    "rb2d.px": 9569.073,
+    "rb2d.py": -9404.174,
+    "genes.tag": "loop",
+    "_file": "bibite_186.bb8"
+  },
+  {
+    "rb2d.px": -7299.13037,
+    "rb2d.py": -12590.91,
+    "genes.tag": "loop",
+    "_file": "bibite_476.bb8"
+  },
+  {
+    "rb2d.px": 11238.9951,
+    "rb2d.py": -2241.71338,
+    "genes.tag": "plate",
+    "_file": "bibite_278.bb8"
+  },
+  {
+    "rb2d.px": -2909.26538,
+    "rb2d.py": 12591.4814,
+    "genes.tag": "loop",
+    "_file": "bibite_532.bb8"
+  },
+  {
+    "rb2d.px": -6969.262,
+    "rb2d.py": 7387.329,
+    "genes.tag": "loop",
+    "_file": "bibite_59.bb8"
+  },
+  {
+    "rb2d.px": -1763.53516,
+    "rb2d.py": 13246.0488,
+    "genes.tag": "loop",
+    "_file": "bibite_611.bb8"
+  },
+  {
+    "rb2d.px": 11642.1621,
+    "rb2d.py": 5012.999,
+    "genes.tag": "loop",
+    "_file": "bibite_28.bb8"
+  },
+  {
+    "rb2d.px": 1113.048,
+    "rb2d.py": 12617.9014,
+    "genes.tag": "loop",
+    "_file": "bibite_791.bb8"
+  },
+  {
+    "rb2d.px": -2972.70215,
+    "rb2d.py": 8991.88,
+    "genes.tag": "loop",
+    "_file": "bibite_482.bb8"
+  },
+  {
+    "rb2d.px": -7792.37256,
+    "rb2d.py": 10385.6982,
+    "genes.tag": "loop",
+    "_file": "bibite_371.bb8"
+  },
+  {
+    "rb2d.px": -9273.929,
+    "rb2d.py": 9842.238,
+    "genes.tag": "loop",
+    "_file": "bibite_491.bb8"
+  },
+  {
+    "rb2d.px": -10922.2432,
+    "rb2d.py": 8436.427,
+    "genes.tag": "loop",
+    "_file": "bibite_405.bb8"
+  },
+  {
+    "rb2d.px": -7313.34766,
+    "rb2d.py": 8753.777,
+    "genes.tag": "creep",
+    "_file": "bibite_453.bb8"
+  },
+  {
+    "rb2d.px": -3560.667,
+    "rb2d.py": 11078.9883,
+    "genes.tag": "bait",
+    "_file": "bibite_639.bb8"
+  },
+  {
+    "rb2d.px": -7465.306,
+    "rb2d.py": -8774.037,
+    "genes.tag": "plate",
+    "_file": "bibite_457.bb8"
+  },
+  {
+    "rb2d.px": -3384.89868,
+    "rb2d.py": 12725.5742,
+    "genes.tag": "loop",
+    "_file": "bibite_822.bb8"
+  },
+  {
+    "rb2d.px": -7604.413,
+    "rb2d.py": 7466.74365,
+    "genes.tag": "loop",
+    "_file": "bibite_862.bb8"
+  },
+  {
+    "rb2d.px": 7913.947,
+    "rb2d.py": 10726.24,
+    "genes.tag": "loop",
+    "_file": "bibite_843.bb8"
+  },
+  {
+    "rb2d.px": -2054.371,
+    "rb2d.py": 12500.3418,
+    "genes.tag": "loop",
+    "_file": "bibite_295.bb8"
+  },
+  {
+    "rb2d.px": 8640.527,
+    "rb2d.py": 1086.8064,
+    "genes.tag": "loop",
+    "_file": "bibite_660.bb8"
+  },
+  {
+    "rb2d.px": -11172.77,
+    "rb2d.py": -7304.1626,
+    "genes.tag": "loop",
+    "_file": "bibite_655.bb8"
+  },
+  {
+    "rb2d.px": 8714.638,
+    "rb2d.py": -10845.7363,
+    "genes.tag": "loop",
+    "_file": "bibite_137.bb8"
+  },
+  {
+    "rb2d.px": -3020.90332,
+    "rb2d.py": -12925.4277,
+    "genes.tag": "loop",
+    "_file": "bibite_840.bb8"
+  },
+  {
+    "rb2d.px": -7674.992,
+    "rb2d.py": 7757.48145,
+    "genes.tag": "creep",
+    "_file": "bibite_597.bb8"
+  },
+  {
+    "rb2d.px": -6484.6123,
+    "rb2d.py": -13896.37,
+    "genes.tag": "loop",
+    "_file": "bibite_870.bb8"
+  },
+  {
+    "rb2d.px": 11551.7871,
+    "rb2d.py": 7137.54541,
+    "genes.tag": "loop",
+    "_file": "bibite_800.bb8"
+  },
+  {
+    "rb2d.px": 9023.375,
+    "rb2d.py": -314.098572,
+    "genes.tag": "loop",
+    "_file": "bibite_406.bb8"
+  },
+  {
+    "rb2d.px": -170.986755,
+    "rb2d.py": 11810.082,
+    "genes.tag": "loop",
+    "_file": "bibite_636.bb8"
+  },
+  {
+    "rb2d.px": -8492.705,
+    "rb2d.py": -10173.1592,
+    "genes.tag": "plate",
+    "_file": "bibite_859.bb8"
+  },
+  {
+    "rb2d.px": 11878.2354,
+    "rb2d.py": 4669.415,
+    "genes.tag": "loop",
+    "_file": "bibite_778.bb8"
+  },
+  {
+    "rb2d.px": -9259.814,
+    "rb2d.py": 9717.295,
+    "genes.tag": "loop",
+    "_file": "bibite_691.bb8"
+  },
+  {
+    "rb2d.px": -8200.921,
+    "rb2d.py": 7525.216,
+    "genes.tag": "creep",
+    "_file": "bibite_733.bb8"
+  },
+  {
+    "rb2d.px": 3610.59717,
+    "rb2d.py": -12105.94,
+    "genes.tag": "loop",
+    "_file": "bibite_223.bb8"
+  },
+  {
+    "rb2d.px": -10507.3223,
+    "rb2d.py": -12293.1465,
+    "genes.tag": "loop",
+    "_file": "bibite_427.bb8"
+  },
+  {
+    "rb2d.px": 10232.1133,
+    "rb2d.py": 3191.52759,
+    "genes.tag": "plate",
+    "_file": "bibite_345.bb8"
+  },
+  {
+    "rb2d.px": 8710.725,
+    "rb2d.py": -10510.53,
+    "genes.tag": "loop",
+    "_file": "bibite_624.bb8"
+  },
+  {
+    "rb2d.px": -2661.063,
+    "rb2d.py": 9187.736,
+    "genes.tag": "creep",
+    "_file": "bibite_364.bb8"
+  },
+  {
+    "rb2d.px": 3078.1272,
+    "rb2d.py": 13121.2646,
+    "genes.tag": "loop",
+    "_file": "bibite_358.bb8"
+  },
+  {
+    "rb2d.px": -8384.073,
+    "rb2d.py": 9642.423,
+    "genes.tag": "loop",
+    "_file": "bibite_421.bb8"
+  },
+  {
+    "rb2d.px": 9903.695,
+    "rb2d.py": -8504.112,
+    "genes.tag": "loop",
+    "_file": "bibite_743.bb8"
+  },
+  {
+    "rb2d.px": -10008.0635,
+    "rb2d.py": -12588.8428,
+    "genes.tag": "loop",
+    "_file": "bibite_275.bb8"
+  },
+  {
+    "rb2d.px": -7926.78955,
+    "rb2d.py": 13065.3555,
+    "genes.tag": "loop",
+    "_file": "bibite_508.bb8"
+  },
+  {
+    "rb2d.px": -8319.195,
+    "rb2d.py": -10439.3867,
+    "genes.tag": "bait",
+    "_file": "bibite_197.bb8"
+  },
+  {
+    "rb2d.px": 9321.718,
+    "rb2d.py": 9015.125,
+    "genes.tag": "loop",
+    "_file": "bibite_408.bb8"
+  },
+  {
+    "rb2d.px": -2785.34082,
+    "rb2d.py": -11699.35,
+    "genes.tag": "loop",
+    "_file": "bibite_74.bb8"
+  },
+  {
+    "rb2d.px": 11188.6855,
+    "rb2d.py": -1923.29419,
+    "genes.tag": "loop",
+    "_file": "bibite_756.bb8"
+  },
+  {
+    "rb2d.px": -5017.29932,
+    "rb2d.py": -12251.7617,
+    "genes.tag": "loop",
+    "_file": "bibite_564.bb8"
+  },
+  {
+    "rb2d.px": 4738.85254,
+    "rb2d.py": -12423.8965,
+    "genes.tag": "loop",
+    "_file": "bibite_156.bb8"
+  },
+  {
+    "rb2d.px": 10387.6523,
+    "rb2d.py": 9472.906,
+    "genes.tag": "loop",
+    "_file": "bibite_388.bb8"
+  },
+  {
+    "rb2d.px": 9883.54,
+    "rb2d.py": -1941.19836,
+    "genes.tag": "plate",
+    "_file": "bibite_124.bb8"
+  },
+  {
+    "rb2d.px": 12817.7559,
+    "rb2d.py": -1115.64893,
+    "genes.tag": "plate",
+    "_file": "bibite_206.bb8"
+  },
+  {
+    "rb2d.px": 12401.8525,
+    "rb2d.py": 5776.15,
+    "genes.tag": "loop",
+    "_file": "bibite_455.bb8"
+  },
+  {
+    "rb2d.px": -7958.48047,
+    "rb2d.py": -7947.503,
+    "genes.tag": "plate",
+    "_file": "bibite_787.bb8"
+  },
+  {
+    "rb2d.px": -3191.00977,
+    "rb2d.py": 12426.4814,
+    "genes.tag": "loop",
+    "_file": "bibite_144.bb8"
+  },
+  {
+    "rb2d.px": -6223.75342,
+    "rb2d.py": 12219.0342,
+    "genes.tag": "creep",
+    "_file": "bibite_581.bb8"
+  },
+  {
+    "rb2d.px": -4745.695,
+    "rb2d.py": -11019.2568,
+    "genes.tag": "loop",
+    "_file": "bibite_231.bb8"
+  },
+  {
+    "rb2d.px": 10865.6514,
+    "rb2d.py": -1226.36841,
+    "genes.tag": "loop",
+    "_file": "bibite_443.bb8"
+  },
+  {
+    "rb2d.px": 7742.14,
+    "rb2d.py": 9574.949,
+    "genes.tag": "loop",
+    "_file": "bibite_335.bb8"
+  },
+  {
+    "rb2d.px": -3640.56152,
+    "rb2d.py": 9081.79,
+    "genes.tag": "creep",
+    "_file": "bibite_151.bb8"
+  },
+  {
+    "rb2d.px": 12413.0234,
+    "rb2d.py": -3792.53662,
+    "genes.tag": "loop",
+    "_file": "bibite_438.bb8"
+  },
+  {
+    "rb2d.px": -5335.495,
+    "rb2d.py": -8126.106,
+    "genes.tag": "plate",
+    "_file": "bibite_454.bb8"
+  },
+  {
+    "rb2d.px": -10510.9277,
+    "rb2d.py": -12293.6631,
+    "genes.tag": "loop",
+    "_file": "bibite_281.bb8"
+  },
+  {
+    "rb2d.px": 10463.1592,
+    "rb2d.py": -500.931641,
+    "genes.tag": "loop",
+    "_file": "bibite_524.bb8"
+  },
+  {
+    "rb2d.px": 13653.48,
+    "rb2d.py": 206.492569,
+    "genes.tag": "loop",
+    "_file": "bibite_659.bb8"
+  },
+  {
+    "rb2d.px": -13099.0781,
+    "rb2d.py": -497.861237,
+    "genes.tag": "loop",
+    "_file": "bibite_163.bb8"
+  },
+  {
+    "rb2d.px": 10410.0117,
+    "rb2d.py": -980.4934,
+    "genes.tag": "loop",
+    "_file": "bibite_557.bb8"
+  },
+  {
+    "rb2d.px": 8774.313,
+    "rb2d.py": -2785.31152,
+    "genes.tag": "loop",
+    "_file": "bibite_641.bb8"
+  },
+  {
+    "rb2d.px": -4669.11426,
+    "rb2d.py": 10224.8047,
+    "genes.tag": "bait",
+    "_file": "bibite_353.bb8"
+  },
+  {
+    "rb2d.px": 13077.4922,
+    "rb2d.py": 925.4252,
+    "genes.tag": "plate",
+    "_file": "bibite_562.bb8"
+  },
+  {
+    "rb2d.px": -8359.187,
+    "rb2d.py": -8145.71338,
+    "genes.tag": "plate",
+    "_file": "bibite_654.bb8"
+  },
+  {
+    "rb2d.px": -8230.999,
+    "rb2d.py": 8780.874,
+    "genes.tag": "loop",
+    "_file": "bibite_165.bb8"
+  },
+  {
+    "rb2d.px": -10286.95,
+    "rb2d.py": -12493.1641,
+    "genes.tag": "loop",
+    "_file": "bibite_742.bb8"
+  },
+  {
+    "rb2d.px": -3658.12549,
+    "rb2d.py": -11917.3076,
+    "genes.tag": "plate",
+    "_file": "bibite_376.bb8"
+  },
+  {
+    "rb2d.px": -7528.11426,
+    "rb2d.py": 7945.41357,
+    "genes.tag": "creep",
+    "_file": "bibite_334.bb8"
+  },
+  {
+    "rb2d.px": -8094.65527,
+    "rb2d.py": -9390.963,
+    "genes.tag": "plate",
+    "_file": "bibite_865.bb8"
+  },
+  {
+    "rb2d.px": -10843.002,
+    "rb2d.py": -12263.0322,
+    "genes.tag": "loop",
+    "_file": "bibite_827.bb8"
+  },
+  {
+    "rb2d.px": 13109.4531,
+    "rb2d.py": -2257.33228,
+    "genes.tag": "plate",
+    "_file": "bibite_846.bb8"
+  },
+  {
+    "rb2d.px": -10077.0039,
+    "rb2d.py": 8335.708,
+    "genes.tag": "loop",
+    "_file": "bibite_599.bb8"
+  },
+  {
+    "rb2d.px": -2351.208,
+    "rb2d.py": 11046.6162,
+    "genes.tag": "loop",
+    "_file": "bibite_432.bb8"
+  },
+  {
+    "rb2d.px": 10000.28,
+    "rb2d.py": 9794.87,
+    "genes.tag": "loop",
+    "_file": "bibite_130.bb8"
+  },
+  {
+    "rb2d.px": -3938.08887,
+    "rb2d.py": 9115.056,
+    "genes.tag": "loop",
+    "_file": "bibite_318.bb8"
+  },
+  {
+    "rb2d.px": -5597.957,
+    "rb2d.py": -13215.0762,
+    "genes.tag": "loop",
+    "_file": "bibite_657.bb8"
+  },
+  {
+    "rb2d.px": -7074.534,
+    "rb2d.py": 12365.1758,
+    "genes.tag": "loop",
+    "_file": "bibite_621.bb8"
+  },
+  {
+    "rb2d.px": 8591.407,
+    "rb2d.py": 978.69574,
+    "genes.tag": "plate",
+    "_file": "bibite_272.bb8"
+  },
+  {
+    "rb2d.px": 10919.3594,
+    "rb2d.py": -1271.39063,
+    "genes.tag": "loop",
+    "_file": "bibite_314.bb8"
+  },
+  {
+    "rb2d.px": -8157.63965,
+    "rb2d.py": 8596.324,
+    "genes.tag": "creep",
+    "_file": "bibite_518.bb8"
+  },
+  {
+    "rb2d.px": -10536.3818,
+    "rb2d.py": -12107.4521,
+    "genes.tag": "loop",
+    "_file": "bibite_854.bb8"
+  },
+  {
+    "rb2d.px": -8499.889,
+    "rb2d.py": -10170.0752,
+    "genes.tag": "plate",
+    "_file": "bibite_526.bb8"
+  },
+  {
+    "rb2d.px": 13420.2422,
+    "rb2d.py": -3524.14185,
+    "genes.tag": "loop",
+    "_file": "bibite_301.bb8"
+  },
+  {
+    "rb2d.px": 8493.568,
+    "rb2d.py": -1193.56543,
+    "genes.tag": "loop",
+    "_file": "bibite_816.bb8"
+  },
+  {
+    "rb2d.px": 11630.1748,
+    "rb2d.py": 1873.206,
+    "genes.tag": "plate",
+    "_file": "bibite_99.bb8"
+  },
+  {
+    "rb2d.px": 5432.221,
+    "rb2d.py": -12857.2852,
+    "genes.tag": "loop",
+    "_file": "bibite_551.bb8"
+  },
+  {
+    "rb2d.px": -191.255661,
+    "rb2d.py": 11802.9629,
+    "genes.tag": "loop",
+    "_file": "bibite_764.bb8"
+  },
+  {
+    "rb2d.px": 8757.226,
+    "rb2d.py": -324.73645,
+    "genes.tag": "plate",
+    "_file": "bibite_409.bb8"
+  },
+  {
+    "rb2d.px": -11176.08,
+    "rb2d.py": 7418.87158,
+    "genes.tag": "loop",
+    "_file": "bibite_157.bb8"
+  },
+  {
+    "rb2d.px": -13650.05,
+    "rb2d.py": -286.76767,
+    "genes.tag": "loop",
+    "_file": "bibite_35.bb8"
+  },
+  {
+    "rb2d.px": -3295.4563,
+    "rb2d.py": 10711.9844,
+    "genes.tag": "creep",
+    "_file": "bibite_316.bb8"
+  },
+  {
+    "rb2d.px": 4001.27539,
+    "rb2d.py": -13833.9932,
+    "genes.tag": "loop",
+    "_file": "bibite_102.bb8"
+  },
+  {
+    "rb2d.px": 11584.0693,
+    "rb2d.py": -6501.94238,
+    "genes.tag": "loop",
+    "_file": "bibite_37.bb8"
+  },
+  {
+    "rb2d.px": -3184.53174,
+    "rb2d.py": -8922.195,
+    "genes.tag": "plate",
+    "_file": "bibite_17.bb8"
+  },
+  {
+    "rb2d.px": -8564.588,
+    "rb2d.py": 9722.145,
+    "genes.tag": "creep",
+    "_file": "bibite_190.bb8"
+  },
+  {
+    "rb2d.px": 11239.3271,
+    "rb2d.py": 2821.2417,
+    "genes.tag": "plate",
+    "_file": "bibite_159.bb8"
+  },
+  {
+    "rb2d.px": -6891.1333,
+    "rb2d.py": 10779.8223,
+    "genes.tag": "loop",
+    "_file": "bibite_352.bb8"
+  },
+  {
+    "rb2d.px": 9118.438,
+    "rb2d.py": 10249.5215,
+    "genes.tag": "loop",
+    "_file": "bibite_169.bb8"
+  },
+  {
+    "rb2d.px": -4813.45752,
+    "rb2d.py": 9959.063,
+    "genes.tag": "eng",
+    "_file": "bibite_703.bb8"
+  },
+  {
+    "rb2d.px": 9387.266,
+    "rb2d.py": -9711.878,
+    "genes.tag": "loop",
+    "_file": "bibite_527.bb8"
+  },
+  {
+    "rb2d.px": -6346.87549,
+    "rb2d.py": 9620.873,
+    "genes.tag": "creep",
+    "_file": "bibite_298.bb8"
+  },
+  {
+    "rb2d.px": -12421.0039,
+    "rb2d.py": -7925.4834,
+    "genes.tag": "loop",
+    "_file": "bibite_128.bb8"
+  },
+  {
+    "rb2d.px": -10703.42,
+    "rb2d.py": -12909.9971,
+    "genes.tag": "loop",
+    "_file": "bibite_634.bb8"
+  },
+  {
+    "rb2d.px": -6761.019,
+    "rb2d.py": 10073.0,
+    "genes.tag": "loop",
+    "_file": "bibite_58.bb8"
+  },
+  {
+    "rb2d.px": -12216.4463,
+    "rb2d.py": -4596.843,
+    "genes.tag": "loop",
+    "_file": "bibite_836.bb8"
+  },
+  {
+    "rb2d.px": -7842.189,
+    "rb2d.py": 10459.2256,
+    "genes.tag": "loop",
+    "_file": "bibite_583.bb8"
+  },
+  {
+    "rb2d.px": 9664.104,
+    "rb2d.py": 8477.503,
+    "genes.tag": "loop",
+    "_file": "bibite_277.bb8"
+  },
+  {
+    "rb2d.px": -3877.581,
+    "rb2d.py": -10042.2959,
+    "genes.tag": "loop",
+    "_file": "bibite_326.bb8"
+  },
+  {
+    "rb2d.px": -7803.34668,
+    "rb2d.py": 9668.856,
+    "genes.tag": "loop",
+    "_file": "bibite_460.bb8"
+  },
+  {
+    "rb2d.px": -8150.40967,
+    "rb2d.py": 10772.2676,
+    "genes.tag": "creep",
+    "_file": "bibite_355.bb8"
+  },
+  {
+    "rb2d.px": 10434.2607,
+    "rb2d.py": -8491.456,
+    "genes.tag": "loop",
+    "_file": "bibite_795.bb8"
+  },
+  {
+    "rb2d.px": 5424.8584,
+    "rb2d.py": 11552.8447,
+    "genes.tag": "loop",
+    "_file": "bibite_440.bb8"
+  },
+  {
+    "rb2d.px": -13103.11,
+    "rb2d.py": -4794.59473,
+    "genes.tag": "loop",
+    "_file": "bibite_45.bb8"
+  },
+  {
+    "rb2d.px": -7543.35156,
+    "rb2d.py": -9022.153,
+    "genes.tag": "plate",
+    "_file": "bibite_26.bb8"
+  },
+  {
+    "rb2d.px": -6633.013,
+    "rb2d.py": 8598.939,
+    "genes.tag": "creep",
+    "_file": "bibite_290.bb8"
+  },
+  {
+    "rb2d.px": -3786.7522,
+    "rb2d.py": -12743.0537,
+    "genes.tag": "loop",
+    "_file": "bibite_626.bb8"
+  },
+  {
+    "rb2d.px": 10033.6875,
+    "rb2d.py": -2656.56787,
+    "genes.tag": "plate",
+    "_file": "bibite_625.bb8"
+  },
+  {
+    "rb2d.px": -4868.46729,
+    "rb2d.py": 7789.48145,
+    "genes.tag": "creep",
+    "_file": "bibite_630.bb8"
+  },
+  {
+    "rb2d.px": 11732.5459,
+    "rb2d.py": -23.0893726,
+    "genes.tag": "plate",
+    "_file": "bibite_402.bb8"
+  },
+  {
+    "rb2d.px": -4558.209,
+    "rb2d.py": 10453.3418,
+    "genes.tag": "loop",
+    "_file": "bibite_134.bb8"
+  },
+  {
+    "rb2d.px": -3647.23169,
+    "rb2d.py": 8547.713,
+    "genes.tag": "creep",
+    "_file": "bibite_291.bb8"
+  },
+  {
+    "rb2d.px": 7167.865,
+    "rb2d.py": -11435.6533,
+    "genes.tag": "loop",
+    "_file": "bibite_263.bb8"
+  },
+  {
+    "rb2d.px": 2582.61035,
+    "rb2d.py": 14895.1162,
+    "genes.tag": "loop",
+    "_file": "bibite_47.bb8"
+  },
+  {
+    "rb2d.px": 9329.709,
+    "rb2d.py": 8771.686,
+    "genes.tag": "loop",
+    "_file": "bibite_796.bb8"
+  },
+  {
+    "rb2d.px": -7678.155,
+    "rb2d.py": -11923.7217,
+    "genes.tag": "plate",
+    "_file": "bibite_44.bb8"
+  },
+  {
+    "rb2d.px": 129.582581,
+    "rb2d.py": -12984.3936,
+    "genes.tag": "loop",
+    "_file": "bibite_516.bb8"
+  },
+  {
+    "rb2d.px": -2234.666,
+    "rb2d.py": 12860.6152,
+    "genes.tag": "loop",
+    "_file": "bibite_84.bb8"
+  },
+  {
+    "rb2d.px": -8583.18,
+    "rb2d.py": 6387.74854,
+    "genes.tag": "loop",
+    "_file": "bibite_623.bb8"
+  },
+  {
+    "rb2d.px": -3259.3147,
+    "rb2d.py": -8476.964,
+    "genes.tag": "loop",
+    "_file": "bibite_809.bb8"
+  },
+  {
+    "rb2d.px": -3792.6333,
+    "rb2d.py": -9250.391,
+    "genes.tag": "loop",
+    "_file": "bibite_341.bb8"
+  },
+  {
+    "rb2d.px": -6077.6333,
+    "rb2d.py": -11526.542,
+    "genes.tag": "loop",
+    "_file": "bibite_248.bb8"
+  },
+  {
+    "rb2d.px": -7645.307,
+    "rb2d.py": -9740.61,
+    "genes.tag": "plate",
+    "_file": "bibite_560.bb8"
+  },
+  {
+    "rb2d.px": 2700.59033,
+    "rb2d.py": 14019.2637,
+    "genes.tag": "loop",
+    "_file": "bibite_154.bb8"
+  },
+  {
+    "rb2d.px": -12458.5264,
+    "rb2d.py": -1118.51025,
+    "genes.tag": "loop",
+    "_file": "bibite_442.bb8"
+  },
+  {
+    "rb2d.px": 675.9994,
+    "rb2d.py": 13271.4258,
+    "genes.tag": "loop",
+    "_file": "bibite_229.bb8"
+  },
+  {
+    "rb2d.px": -4151.344,
+    "rb2d.py": 12097.2334,
+    "genes.tag": "loop",
+    "_file": "bibite_793.bb8"
+  },
+  {
+    "rb2d.px": -10412.1914,
+    "rb2d.py": -12347.8662,
+    "genes.tag": "loop",
+    "_file": "bibite_779.bb8"
+  },
+  {
+    "rb2d.px": 12838.55,
+    "rb2d.py": -256.076935,
+    "genes.tag": "loop",
+    "_file": "bibite_445.bb8"
+  },
+  {
+    "rb2d.px": 12885.7207,
+    "rb2d.py": -2109.96948,
+    "genes.tag": "plate",
+    "_file": "bibite_851.bb8"
+  },
+  {
+    "rb2d.px": -4476.46045,
+    "rb2d.py": 13048.83,
+    "genes.tag": "loop",
+    "_file": "bibite_632.bb8"
+  },
+  {
+    "rb2d.px": 9230.384,
+    "rb2d.py": 8083.46826,
+    "genes.tag": "loop",
+    "_file": "bibite_64.bb8"
+  },
+  {
+    "rb2d.px": 9347.575,
+    "rb2d.py": 8178.26172,
+    "genes.tag": "loop",
+    "_file": "bibite_71.bb8"
+  },
+  {
+    "rb2d.px": -6179.80957,
+    "rb2d.py": -12767.9883,
+    "genes.tag": "loop",
+    "_file": "bibite_292.bb8"
+  },
+  {
+    "rb2d.px": -3525.69556,
+    "rb2d.py": -8828.599,
+    "genes.tag": "loop",
+    "_file": "bibite_592.bb8"
+  },
+  {
+    "rb2d.px": -10530.2275,
+    "rb2d.py": -12314.6133,
+    "genes.tag": "loop",
+    "_file": "bibite_896.bb8"
+  },
+  {
+    "rb2d.px": -12127.38,
+    "rb2d.py": 939.707031,
+    "genes.tag": "loop",
+    "_file": "bibite_177.bb8"
+  },
+  {
+    "rb2d.px": 6447.39844,
+    "rb2d.py": 12110.7656,
+    "genes.tag": "loop",
+    "_file": "bibite_496.bb8"
+  },
+  {
+    "rb2d.px": 13730.9854,
+    "rb2d.py": -331.342865,
+    "genes.tag": "plate",
+    "_file": "bibite_713.bb8"
+  },
+  {
+    "rb2d.px": 13727.2705,
+    "rb2d.py": 375.154419,
+    "genes.tag": "loop",
+    "_file": "bibite_578.bb8"
+  },
+  {
+    "rb2d.px": -4101.624,
+    "rb2d.py": 12864.4326,
+    "genes.tag": "loop",
+    "_file": "bibite_385.bb8"
+  },
+  {
+    "rb2d.px": -3082.00513,
+    "rb2d.py": -8668.937,
+    "genes.tag": "plate",
+    "_file": "bibite_837.bb8"
+  },
+  {
+    "rb2d.px": 8848.61,
+    "rb2d.py": 10525.8164,
+    "genes.tag": "loop",
+    "_file": "bibite_196.bb8"
+  },
+  {
+    "rb2d.px": -8290.298,
+    "rb2d.py": -11583.292,
+    "genes.tag": "plate",
+    "_file": "bibite_0.bb8"
+  },
+  {
+    "rb2d.px": -13438.2607,
+    "rb2d.py": 817.0022,
+    "genes.tag": "loop",
+    "_file": "bibite_552.bb8"
+  },
+  {
+    "rb2d.px": -3281.721,
+    "rb2d.py": 13344.6709,
+    "genes.tag": "loop",
+    "_file": "bibite_315.bb8"
+  },
+  {
+    "rb2d.px": -3609.15332,
+    "rb2d.py": 13312.3291,
+    "genes.tag": "loop",
+    "_file": "bibite_461.bb8"
+  },
+  {
+    "rb2d.px": -2905.78174,
+    "rb2d.py": 9248.754,
+    "genes.tag": "loop",
+    "_file": "bibite_115.bb8"
+  },
+  {
+    "rb2d.px": 10092.9951,
+    "rb2d.py": 1444.06775,
+    "genes.tag": "plate",
+    "_file": "bibite_433.bb8"
+  },
+  {
+    "rb2d.px": 13827.5547,
+    "rb2d.py": -534.5364,
+    "genes.tag": "plate",
+    "_file": "bibite_766.bb8"
+  },
+  {
+    "rb2d.px": 8799.64551,
+    "rb2d.py": -3336.89282,
+    "genes.tag": "loop",
+    "_file": "bibite_716.bb8"
+  },
+  {
+    "rb2d.px": 4859.81738,
+    "rb2d.py": 12140.5137,
+    "genes.tag": "loop",
+    "_file": "bibite_98.bb8"
+  },
+  {
+    "rb2d.px": -1743.25916,
+    "rb2d.py": 13689.9961,
+    "genes.tag": "loop",
+    "_file": "bibite_755.bb8"
+  },
+  {
+    "rb2d.px": -5803.91553,
+    "rb2d.py": 11297.8984,
+    "genes.tag": "loop",
+    "_file": "bibite_279.bb8"
+  },
+  {
+    "rb2d.px": 7900.946,
+    "rb2d.py": 10610.4766,
+    "genes.tag": "loop",
+    "_file": "bibite_833.bb8"
+  },
+  {
+    "rb2d.px": 9293.727,
+    "rb2d.py": -2007.52124,
+    "genes.tag": "plate",
+    "_file": "bibite_515.bb8"
+  },
+  {
+    "rb2d.px": 13378.47,
+    "rb2d.py": 1756.526,
+    "genes.tag": "plate",
+    "_file": "bibite_38.bb8"
+  },
+  {
+    "rb2d.px": -8274.78,
+    "rb2d.py": 8389.238,
+    "genes.tag": "creep",
+    "_file": "bibite_127.bb8"
+  },
+  {
+    "rb2d.px": -8294.313,
+    "rb2d.py": 9259.317,
+    "genes.tag": "loop",
+    "_file": "bibite_444.bb8"
+  },
+  {
+    "rb2d.px": 11475.5176,
+    "rb2d.py": -7514.458,
+    "genes.tag": "loop",
+    "_file": "bibite_412.bb8"
+  },
+  {
+    "rb2d.px": -1687.863,
+    "rb2d.py": 14429.82,
+    "genes.tag": "loop",
+    "_file": "bibite_42.bb8"
+  },
+  {
+    "rb2d.px": -12584.7021,
+    "rb2d.py": 692.338562,
+    "genes.tag": "loop",
+    "_file": "bibite_513.bb8"
+  },
+  {
+    "rb2d.px": 12929.04,
+    "rb2d.py": 1972.13123,
+    "genes.tag": "loop",
+    "_file": "bibite_667.bb8"
+  },
+  {
+    "rb2d.px": 12046.12,
+    "rb2d.py": 5615.34131,
+    "genes.tag": "loop",
+    "_file": "bibite_232.bb8"
+  },
+  {
+    "rb2d.px": 8641.586,
+    "rb2d.py": 1081.25427,
+    "genes.tag": "loop",
+    "_file": "bibite_617.bb8"
+  },
+  {
+    "rb2d.px": -13820.0459,
+    "rb2d.py": 894.162231,
+    "genes.tag": "loop",
+    "_file": "bibite_803.bb8"
+  },
+  {
+    "rb2d.px": -4482.19434,
+    "rb2d.py": 6872.78662,
+    "genes.tag": "eng",
+    "_file": "bibite_790.bb8"
+  },
+  {
+    "rb2d.px": 11652.252,
+    "rb2d.py": -5964.66943,
+    "genes.tag": "loop",
+    "_file": "bibite_607.bb8"
+  },
+  {
+    "rb2d.px": 13150.62,
+    "rb2d.py": -1203.427,
+    "genes.tag": "plate",
+    "_file": "bibite_719.bb8"
+  },
+  {
+    "rb2d.px": 11687.8115,
+    "rb2d.py": 2907.75415,
+    "genes.tag": "plate",
+    "_file": "bibite_33.bb8"
+  },
+  {
+    "rb2d.px": 11047.458,
+    "rb2d.py": 6900.783,
+    "genes.tag": "loop",
+    "_file": "bibite_760.bb8"
+  },
+  {
+    "rb2d.px": -8333.84,
+    "rb2d.py": 10850.707,
+    "genes.tag": "loop",
+    "_file": "bibite_608.bb8"
+  },
+  {
+    "rb2d.px": 10458.0225,
+    "rb2d.py": 8311.855,
+    "genes.tag": "loop",
+    "_file": "bibite_593.bb8"
+  },
+  {
+    "rb2d.px": 8640.877,
+    "rb2d.py": -1423.79456,
+    "genes.tag": "plate",
+    "_file": "bibite_62.bb8"
+  },
+  {
+    "rb2d.px": 6084.82275,
+    "rb2d.py": 11449.1621,
+    "genes.tag": "loop",
+    "_file": "bibite_183.bb8"
+  },
+  {
+    "rb2d.px": -4401.911,
+    "rb2d.py": 7195.8916,
+    "genes.tag": "loop",
+    "_file": "bibite_714.bb8"
+  },
+  {
+    "rb2d.px": 10193.9551,
+    "rb2d.py": -671.617065,
+    "genes.tag": "loop",
+    "_file": "bibite_495.bb8"
+  },
+  {
+    "rb2d.px": 13404.1133,
+    "rb2d.py": -2947.12842,
+    "genes.tag": "plate",
+    "_file": "bibite_572.bb8"
+  },
+  {
+    "rb2d.px": 8637.109,
+    "rb2d.py": 1111.60986,
+    "genes.tag": "plate",
+    "_file": "bibite_794.bb8"
+  },
+  {
+    "rb2d.px": -3078.97119,
+    "rb2d.py": -11936.0264,
+    "genes.tag": "loop",
+    "_file": "bibite_319.bb8"
+  },
+  {
+    "rb2d.px": -5111.00732,
+    "rb2d.py": -10984.7246,
+    "genes.tag": "loop",
+    "_file": "bibite_710.bb8"
+  },
+  {
+    "rb2d.px": -10497.2666,
+    "rb2d.py": -12294.6641,
+    "genes.tag": "loop",
+    "_file": "bibite_337.bb8"
+  },
+  {
+    "rb2d.px": 8942.985,
+    "rb2d.py": -106.921295,
+    "genes.tag": "loop",
+    "_file": "bibite_466.bb8"
+  },
+  {
+    "rb2d.px": 9494.275,
+    "rb2d.py": -2319.311,
+    "genes.tag": "plate",
+    "_file": "bibite_88.bb8"
+  },
+  {
+    "rb2d.px": -6716.9834,
+    "rb2d.py": 7364.284,
+    "genes.tag": "creep",
+    "_file": "bibite_383.bb8"
+  },
+  {
+    "rb2d.px": -6993.29053,
+    "rb2d.py": 6679.69043,
+    "genes.tag": "loop",
+    "_file": "bibite_48.bb8"
+  },
+  {
+    "rb2d.px": -5838.51,
+    "rb2d.py": -11673.1973,
+    "genes.tag": "loop",
+    "_file": "bibite_586.bb8"
+  },
+  {
+    "rb2d.px": -3179.24878,
+    "rb2d.py": 8040.938,
+    "genes.tag": "loop",
+    "_file": "bibite_643.bb8"
+  },
+  {
+    "rb2d.px": -2646.8147,
+    "rb2d.py": -9796.876,
+    "genes.tag": "plate",
+    "_file": "bibite_15.bb8"
+  },
+  {
+    "rb2d.px": -2093.9873,
+    "rb2d.py": 12994.623,
+    "genes.tag": "loop",
+    "_file": "bibite_404.bb8"
+  },
+  {
+    "rb2d.px": 12961.3281,
+    "rb2d.py": 1827.2334,
+    "genes.tag": "loop",
+    "_file": "bibite_820.bb8"
+  },
+  {
+    "rb2d.px": -8661.747,
+    "rb2d.py": 6116.742,
+    "genes.tag": "loop",
+    "_file": "bibite_451.bb8"
+  },
+  {
+    "rb2d.px": -11354.498,
+    "rb2d.py": -6999.06738,
+    "genes.tag": "loop",
+    "_file": "bibite_488.bb8"
+  },
+  {
+    "rb2d.px": -7914.3877,
+    "rb2d.py": 8386.062,
+    "genes.tag": "creep",
+    "_file": "bibite_847.bb8"
+  },
+  {
+    "rb2d.px": -3915.72168,
+    "rb2d.py": 9246.008,
+    "genes.tag": "loop",
+    "_file": "bibite_426.bb8"
+  },
+  {
+    "rb2d.px": -8339.282,
+    "rb2d.py": 8825.997,
+    "genes.tag": "loop",
+    "_file": "bibite_489.bb8"
+  },
+  {
+    "rb2d.px": -9858.266,
+    "rb2d.py": -8613.944,
+    "genes.tag": "loop",
+    "_file": "bibite_749.bb8"
+  },
+  {
+    "rb2d.px": -7969.53564,
+    "rb2d.py": 9925.746,
+    "genes.tag": "loop",
+    "_file": "bibite_783.bb8"
+  },
+  {
+    "rb2d.px": 133.257187,
+    "rb2d.py": 12056.8633,
+    "genes.tag": "loop",
+    "_file": "bibite_54.bb8"
+  },
+  {
+    "rb2d.px": -4056.12866,
+    "rb2d.py": 12315.0391,
+    "genes.tag": "creep",
+    "_file": "bibite_205.bb8"
+  },
+  {
+    "rb2d.px": 10592.5771,
+    "rb2d.py": -1122.1554,
+    "genes.tag": "loop",
+    "_file": "bibite_839.bb8"
+  },
+  {
+    "rb2d.px": 2568.20972,
+    "rb2d.py": -13367.5039,
+    "genes.tag": "loop",
+    "_file": "bibite_215.bb8"
+  },
+  {
+    "rb2d.px": -3310.008,
+    "rb2d.py": 8342.614,
+    "genes.tag": "creep",
+    "_file": "bibite_265.bb8"
+  },
+  {
+    "rb2d.px": -8192.339,
+    "rb2d.py": 9448.221,
+    "genes.tag": "loop",
+    "_file": "bibite_619.bb8"
+  },
+  {
+    "rb2d.px": 7962.98975,
+    "rb2d.py": 1214.07227,
+    "genes.tag": "loop",
+    "_file": "bibite_711.bb8"
+  },
+  {
+    "rb2d.px": -10503.38,
+    "rb2d.py": -12295.5713,
+    "genes.tag": "loop",
+    "_file": "bibite_419.bb8"
+  },
+  {
+    "rb2d.px": -10001.2041,
+    "rb2d.py": 8381.694,
+    "genes.tag": "loop",
+    "_file": "bibite_121.bb8"
+  },
+  {
+    "rb2d.px": 13759.9531,
+    "rb2d.py": -1123.53479,
+    "genes.tag": "loop",
+    "_file": "bibite_422.bb8"
+  },
+  {
+    "rb2d.px": -7234.788,
+    "rb2d.py": 9529.813,
+    "genes.tag": "loop",
+    "_file": "bibite_477.bb8"
+  },
+  {
+    "rb2d.px": -4795.42773,
+    "rb2d.py": -12350.333,
+    "genes.tag": "loop",
+    "_file": "bibite_887.bb8"
+  },
+  {
+    "rb2d.px": -10518.0039,
+    "rb2d.py": -12343.3789,
+    "genes.tag": "loop",
+    "_file": "bibite_857.bb8"
+  },
+  {
+    "rb2d.px": -7578.893,
+    "rb2d.py": -10078.8271,
+    "genes.tag": "bait",
+    "_file": "bibite_354.bb8"
+  },
+  {
+    "rb2d.px": -11007.5938,
+    "rb2d.py": -12641.3066,
+    "genes.tag": "loop",
+    "_file": "bibite_642.bb8"
+  },
+  {
+    "rb2d.px": 1363.92639,
+    "rb2d.py": 12914.793,
+    "genes.tag": "loop",
+    "_file": "bibite_707.bb8"
+  },
+  {
+    "rb2d.px": -6811.92041,
+    "rb2d.py": 8877.514,
+    "genes.tag": "eng",
+    "_file": "bibite_463.bb8"
+  },
+  {
+    "rb2d.px": -5551.51,
+    "rb2d.py": -8439.144,
+    "genes.tag": "plate",
+    "_file": "bibite_5.bb8"
+  },
+  {
+    "rb2d.px": -7744.98145,
+    "rb2d.py": 11526.3369,
+    "genes.tag": "loop",
+    "_file": "bibite_247.bb8"
+  },
+  {
+    "rb2d.px": -4392.54639,
+    "rb2d.py": 11021.0684,
+    "genes.tag": "creep",
+    "_file": "bibite_170.bb8"
+  },
+  {
+    "rb2d.px": 10287.4189,
+    "rb2d.py": -8081.83154,
+    "genes.tag": "loop",
+    "_file": "bibite_559.bb8"
+  },
+  {
+    "rb2d.px": 12665.2344,
+    "rb2d.py": 2561.615,
+    "genes.tag": "plate",
+    "_file": "bibite_23.bb8"
+  },
+  {
+    "rb2d.px": 14113.9219,
+    "rb2d.py": -357.383728,
+    "genes.tag": "plate",
+    "_file": "bibite_87.bb8"
+  },
+  {
+    "rb2d.px": -7328.21436,
+    "rb2d.py": 13476.5361,
+    "genes.tag": "loop",
+    "_file": "bibite_123.bb8"
+  }
+]
