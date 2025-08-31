@@ -4,6 +4,47 @@
 
 ## Tool Inventory
 
+### Unified Analysis Tool
+
+#### `bibites.py` - Zero Path Exposure Ecosystem Analysis ⭐ 
+**THE unified command** that orchestrates all data access + analysis with transparent JIT extraction and caching. Users never see paths, autosave filenames, or internal structure.
+
+```bash
+# Quick ecosystem overview
+python -m src.tools.bibites --latest --population --metadata
+
+# Species evolution tracking
+python -m src.tools.bibites --last 2 --compare --by-species
+
+# Detailed spatial analysis with export
+python -m src.tools.bibites --latest --species --spatial --output analysis.json
+
+# Field extraction across population
+python -m src.tools.bibites --latest --fields genes.genes.ColorR,neural.NeuronCount --batch
+
+# Compare specific species by sim ID
+python -m src.tools.bibites --latest --compare-species 479 603
+```
+
+**DESIGN PHILOSOPHY:**
+- **Data Access Layer:** Hardcoded paths, automatic cache management
+- **Analysis Layer:** All extract_*.py functionality in unified interface  
+- **Zero Path Exposure:** User specifies WHAT data (--latest, --last N) not WHERE
+- **Transparent Operation:** Automatic extraction, caching, and path resolution
+
+**Replaces manual workflow:**
+```bash
+# OLD: Manual 3-step process
+extract_save --latest
+extract_data --population-summary data/autosave_20250831204442/bibites/
+extract_metadata ~/.local/share/Steam/.../autosave_20250831204442.zip
+
+# NEW: Single unified command
+bibites --latest --population --metadata
+```
+
+### Individual Specialized Tools
+
 ### Data Extraction Tools
 
 #### `extract_save.py` - Path-Agnostic Autosave Processing  
@@ -89,7 +130,22 @@ python -m src.tools.validate_format --batch --detailed data/ecosystem/bibites/
 
 ## Usage Examples
 
-### Complete Ecosystem Analysis Workflow
+### Complete Ecosystem Analysis with Unified Tool ⭐
+```bash
+# Single command ecosystem analysis (replaces 3-4 separate commands)
+python -m src.tools.bibites --latest --population --species --metadata --spatial --output analysis.json
+
+# Evolution tracking across cycles
+python -m src.tools.bibites --last 3 --compare 
+
+# Species-level speciation analysis
+python -m src.tools.bibites --latest --species --by-species --spatial
+
+# Targeted field analysis
+python -m src.tools.bibites --latest --fields genes.genes.AverageMutationNumber,clock.age --batch --format csv
+```
+
+### Legacy Individual Tool Workflow
 ```bash
 # 1. Extract latest autosave (no paths needed)
 python -m src.tools.extract_save --latest
