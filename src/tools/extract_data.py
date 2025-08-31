@@ -106,8 +106,8 @@ def extract_data(input_path: Optional[Path], cycle_b_path: Optional[Path], field
             flag_name = "--population-summary" if population_summary else "--species-summary"
             console.print(f"[red]Error: input_path required for {flag_name}[/red]")
             return
-        # Use quick mode for population-summary, species mode for by-species
-        quick_mode = population_summary and not by_species
+        # Use quick mode for population-summary (both with and without by-species)
+        quick_mode = population_summary
         generate_species_summary(Path(input_path), output, quick_mode=quick_mode, use_species_id=by_species)
         return
     

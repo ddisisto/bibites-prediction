@@ -86,23 +86,83 @@ def generate_quick_population_summary(bb8_files: List[Path], output: Optional[Pa
     """Generate a quick population count table using genes.tag or species ID for species identification."""
     
     if use_species_id:
-        console.print(f"[blue]Counting {len(bb8_files)} organisms by species ID...[/blue]")
+        console.print(f"[blue]Analyzing {len(bb8_files)} organisms by species within hereditary tags...[/blue]")
+        
+        # Collect both tag and species ID for breakdown analysis
+        tag_species_breakdown = defaultdict(lambda: defaultdict(int))
+        errors = 0
+        
+        for file_path in track(bb8_files, description="Analyzing species breakdown"):
+            try:
+                data = load_bb8_file(file_path)
+                extracted = extract_multiple_fields(data, ['genes.tag', 'genes.speciesID'])
+                
+                tag = extracted.get('genes.tag', 'Unknown')
+                species_id = extracted.get('genes.speciesID', 'Unknown')
+                
+                tag_species_breakdown[tag][species_id] += 1
+                
+            except BB8ParseError:
+                errors += 1
+        
+        # Display breakdown table
+        console.print("\n[bold]Population Summary (By Species)[/bold]")
+        table = Table()
+        table.add_column("Tag", style="cyan") 
+        table.add_column("Count", style="green")
+        table.add_column("Percentage", style="yellow")
+        table.add_column("Species Breakdown", style="white", max_width=60)
+        
+        total_organisms = sum(sum(species_counts.values()) for species_counts in tag_species_breakdown.values())
+        
+        for tag in sorted(tag_species_breakdown.keys()):
+            species_counts = tag_species_breakdown[tag]
+            tag_total = sum(species_counts.values())
+            tag_percentage = (tag_total / total_organisms) * 100 if total_organisms > 0 else 0
+            
+            # Create species breakdown string
+            breakdown_parts = []
+            for species_id, count in sorted(species_counts.items(), key=lambda x: x[1], reverse=True):
+                species_pct = (count / tag_total) * 100 if tag_total > 0 else 0
+                breakdown_parts.append(f"species_{species_id}: {count} ({species_pct:.1f}%)")
+            
+            breakdown_str = ", ".join(breakdown_parts)
+            
+            table.add_row(
+                str(tag),
+                str(tag_total),
+                f"{tag_percentage:.1f}%",
+                breakdown_str
+            )
+        
+        console.print(table)
+        console.print(f"\n[bold]Total:[/bold] {total_organisms} organisms")
+        
+        if errors > 0:
+            console.print(f"[red]Errors: {errors} files failed to load[/red]")
+        
+        # Save output if requested
+        if output:
+            summary_data = {
+                'total_organisms': total_organisms,
+                'tag_species_breakdown': {tag: dict(species_counts) for tag, species_counts in tag_species_breakdown.items()},
+                'errors': errors
+            }
+            with open(output, 'wb') as f:
+                import orjson
+                f.write(orjson.dumps(summary_data, option=orjson.OPT_INDENT_2))
+            console.print(f"\n[green]Summary saved to {output}[/green]")
+        
     else:
         console.print(f"[blue]Counting {len(bb8_files)} organisms by species tag...[/blue]")
-    
-    species_counter = Counter()
-    errors = 0
-    
-    for file_path in track(bb8_files, description="Counting species"):
-        try:
-            data = load_bb8_file(file_path)
-            
-            if use_species_id:
-                # Use species ID for counting
-                extracted = extract_multiple_fields(data, ['genes.speciesID'])
-                species_id = extracted.get('genes.speciesID', 'Unknown')
-                species_counter[species_id] += 1
-            else:
+        
+        species_counter = Counter()
+        errors = 0
+        
+        for file_path in track(bb8_files, description="Counting species"):
+            try:
+                data = load_bb8_file(file_path)
+                
                 # Try genes.tag first (preferred for quick identification)
                 tag_extracted = extract_multiple_fields(data, ['genes.tag'])
                 species_tag = tag_extracted.get('genes.tag')
@@ -114,47 +174,44 @@ def generate_quick_population_summary(bb8_files: List[Path], output: Optional[Pa
                     extracted = extract_multiple_fields(data, ['genes.speciesID'])
                     species_id = extracted.get('genes.speciesID', 'Unknown')
                     species_counter[species_id] += 1
-                
-        except BB8ParseError:
-            errors += 1
-    
-    # Display quick table
-    console.print("\n[bold]Population Summary[/bold]")
-    table = Table()
-    if use_species_id:
-        table.add_column("Species ID", style="cyan")
-    else:
+                    
+            except BB8ParseError:
+                errors += 1
+        
+        # Display quick table
+        console.print("\n[bold]Population Summary[/bold]")
+        table = Table()
         table.add_column("Species Tag", style="cyan")
-    table.add_column("Count", style="green")
-    table.add_column("Percentage", style="yellow")
-    
-    total_organisms = sum(species_counter.values())
-    
-    for species_tag, count in sorted(species_counter.items(), key=lambda x: x[1], reverse=True):
-        percentage = (count / total_organisms) * 100 if total_organisms > 0 else 0
-        table.add_row(
-            str(species_tag),
-            str(count), 
-            f"{percentage:.1f}%"
-        )
-    
-    console.print(table)
-    console.print(f"\n[bold]Total:[/bold] {total_organisms} organisms")
-    
-    if errors > 0:
-        console.print(f"[red]Errors: {errors} files failed to load[/red]")
-    
-    # Save output if requested
-    if output:
-        summary_data = {
-            'total_organisms': total_organisms,
-            'species_counts': dict(species_counter),
-            'errors': errors
-        }
-        with open(output, 'wb') as f:
-            import orjson
-            f.write(orjson.dumps(summary_data, option=orjson.OPT_INDENT_2))
-        console.print(f"\n[green]Summary saved to {output}[/green]")
+        table.add_column("Count", style="green")
+        table.add_column("Percentage", style="yellow")
+        
+        total_organisms = sum(species_counter.values())
+        
+        for species_tag, count in sorted(species_counter.items(), key=lambda x: x[1], reverse=True):
+            percentage = (count / total_organisms) * 100 if total_organisms > 0 else 0
+            table.add_row(
+                str(species_tag),
+                str(count), 
+                f"{percentage:.1f}%"
+            )
+        
+        console.print(table)
+        console.print(f"\n[bold]Total:[/bold] {total_organisms} organisms")
+        
+        if errors > 0:
+            console.print(f"[red]Errors: {errors} files failed to load[/red]")
+        
+        # Save output if requested
+        if output:
+            summary_data = {
+                'total_organisms': total_organisms,
+                'species_counts': dict(species_counter),
+                'errors': errors
+            }
+            with open(output, 'wb') as f:
+                import orjson
+                f.write(orjson.dumps(summary_data, option=orjson.OPT_INDENT_2))
+            console.print(f"\n[green]Summary saved to {output}[/green]")
 
 
 def generate_species_summary(input_path: Path, output: Optional[Path], quick_mode: bool = False, use_species_id: bool = False):
