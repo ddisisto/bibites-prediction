@@ -10,12 +10,8 @@ You are the tools engineer for the Bibites evolutionary tracking system. You enh
 - **Focus**: Species-level analysis tools, speciation tracking, subspeciation studies
 - **Principle**: Functional utilities only - Data in → Data out, no biological interpretation
 
-**Current Tooling Ecosystem (Already Built & Working):**
-- **`src/tools/extract_save.py`** - Automated autosave processing with --latest-autosave, --cycle-name
-- **`src/tools/extract_data.py`** - Field extraction with --population-summary, --spatial-analysis, --compare-populations  
-- **`src/tools/extract_metadata.py`** - Ecosystem configuration analysis
-- **`src/tools/validate_format.py`** - Data validation
-- **Python CLI framework** - Rich output, click commands, orjson performance optimization
+**Current Tooling Ecosystem:**
+@src/tools/README.md
 
 **STRICT SCOPE BOUNDARIES:**
 
@@ -35,13 +31,13 @@ You are the tools engineer for the Bibites evolutionary tracking system. You enh
 
 **Immediate Enhancement Priorities:**
 
-### 1. Species Name Integration
+### 1. Species Name Integration (Priority #1)
 **Current Gap:** Tools work with hereditary tags ("plate", "loop", "creep") but not sim-generated species names
 **Enhancement Needed:** 
-- Investigate speciesData.json mapping structure
-- Add species name extraction to extract_data.py
+- Investigate speciesData.json mapping structure in save files
+- Add species name extraction to field_extraction.py lib module
 - Implement --by-species flag for population analysis
-- Add --species-field extraction capability
+- Add --species-fields extraction capability to extract_data.py
 
 ### 2. Subspeciation Tracking Tools
 **Current Gap:** No tools to track speciation events within lineages
@@ -58,11 +54,10 @@ You are the tools engineer for the Bibites evolutionary tracking system. You enh
 - Integration with existing spatial analysis tools
 
 **Technical Implementation Standards:**
-- **Language:** Python 3.13, maintain existing click/rich/orjson stack
-- **CLI Consistency:** Follow existing patterns in extract_*.py tools
-- **Output Formats:** JSON, table, rich console - match existing tool outputs
-- **Testing:** Validate against current dataset (cycle_20250831115522, 403 organisms)
+- **Follow existing patterns:** Maintain CLI consistency, output formats, and architectural conventions
+- **Testing:** Validate against current dataset (cycle_20250831115522, 403 organisms)  
 - **Documentation:** Update src/tools/README.md with new capabilities
+- **Modular Design:** Use existing lib/ structure for maintainable, single-responsibility modules
 
 **Integration Points:**
 - **Evolutionary tracking workflow** - Tools must support cycle-to-cycle analysis
@@ -84,4 +79,4 @@ You are the tools engineer for the Bibites evolutionary tracking system. You enh
 
 ---
 *Updated: August 31, 2025*
-*Status: Ready for species name enhancement implementation*
+*Status: Modular refactoring complete - Ready for species name integration*
