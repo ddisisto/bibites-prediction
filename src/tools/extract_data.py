@@ -5,20 +5,25 @@ extract_data.py - Extract specific fields from BB8 organism files.
 Replaces manual jq commands with clean Python interface. Provides evolutionary tracking
 and population analysis features for ecosystem monitoring.
 
-Population tracking (uses genes.tag for quick species identification):
-  python -m src.tools.extract_data --population-summary data/cycle_dir/bibites/
-  python -m src.tools.extract_data --compare-populations data/cycle_A/bibites/ data/cycle_B/bibites/
+Integrated workflow with extract_save.py:
+  # Get latest autosave and analyze population
+  python -m src.tools.extract_save --latest
+  python -m src.tools.extract_data --population-summary data/autosave_20250831204442/bibites/
+
+  # Compare last two autosaves
+  python -m src.tools.extract_save --last 2
+  python -m src.tools.extract_data --compare-populations data/autosave_20250831204442/bibites/ data/autosave_20250831203342/bibites/
 
 Detailed analysis:
-  python -m src.tools.extract_data --species-summary data/cycle_20250829205409/bibites/
-  python -m src.tools.extract_data --compare-cycles data/cycle_A/bibites/ data/cycle_B/bibites/
+  python -m src.tools.extract_data --species-summary data/autosave_20250831204442/bibites/
+  python -m src.tools.extract_data --compare-cycles data/autosave_20250831204442/bibites/ data/autosave_20250831203342/bibites/
 
 Spatial ecosystem analysis:
-  python -m src.tools.extract_data --spatial-analysis data/cycle_20250830003320/bibites/
+  python -m src.tools.extract_data --spatial-analysis data/autosave_20250831204442/bibites/
 
 Field extraction:
-  python -m src.tools.extract_data --fields genes.genes.ColorR,genes.genes.ColorG data/bibites/bibite_18.bb8
-  python -m src.tools.extract_data --fields genes.genes.AverageMutationNumber --batch data/bibites/
+  python -m src.tools.extract_data --fields genes.genes.ColorR,genes.genes.ColorG data/autosave_20250831204442/bibites/bibite_18.bb8
+  python -m src.tools.extract_data --fields genes.genes.AverageMutationNumber --batch data/autosave_20250831204442/bibites/
 
 Features:
   - Quick population counts by species tag
@@ -75,29 +80,33 @@ def extract_data(input_path: Optional[Path], cycle_b_path: Optional[Path], field
     """Extract specific fields from BB8 organism files.
     
     Examples:
-        # Extract specific fields from single file
-        extract-data --fields genes.genes.ColorR,genes.genes.ColorG data/bibites/bibite_18.bb8
+        # Integrated workflow: Get latest data and analyze
+        extract-save --latest
+        extract-data --population-summary data/autosave_20250831204442/bibites/
         
         # Quick species distribution analysis
-        extract-data --species-summary data/cycle_20250829205409/bibites/
-        extract-data --population-summary data/cycle_20250829205409/bibites/
-        extract-data --population-summary --by-species data/cycle_20250829205409/bibites/
+        extract-data --species-summary data/autosave_20250831204442/bibites/
+        extract-data --population-summary data/autosave_20250831204442/bibites/
+        extract-data --population-summary --by-species data/autosave_20250831204442/bibites/
         
-        # Extract species ID mapping
-        extract-data --species-field data/cycle_20250829205409/bibites/
+        # Extract species ID mapping for sim-generated species names
+        extract-data --species-field data/autosave_20250831204442/bibites/
         
-        # Compare two evolutionary cycles
-        extract-data --compare-cycles data/cycle_A/bibites/ data/cycle_B/bibites/
-        extract-data --compare-populations data/cycle_A/bibites/ data/cycle_B/bibites/
+        # Compare two evolutionary cycles (use extract-save --last 2 first)
+        extract-data --compare-cycles data/autosave_20250831204442/bibites/ data/autosave_20250831203342/bibites/
+        extract-data --compare-populations data/autosave_20250831204442/bibites/ data/autosave_20250831203342/bibites/
         
-        # Compare specific species
-        extract-data --compare-species 479 603 data/cycle_20250829205409/bibites/
+        # Compare specific species by sim-generated ID
+        extract-data --compare-species 479 603 data/autosave_20250831204442/bibites/
         
         # Spatial ecosystem analysis across island zones
-        extract-data --spatial-analysis data/cycle_20250830003320/bibites/
+        extract-data --spatial-analysis data/autosave_20250831204442/bibites/
+        
+        # Extract specific fields from single file
+        extract-data --fields genes.genes.ColorR,genes.genes.ColorG data/autosave_20250831204442/bibites/bibite_18.bb8
         
         # Batch extract fields from all files in directory
-        extract-data --fields genes.genes.AverageMutationNumber --batch data/bibites/
+        extract-data --fields genes.genes.AverageMutationNumber --batch data/autosave_20250831204442/bibites/
     """
     
     # Handle different operation modes
