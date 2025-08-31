@@ -5,18 +5,19 @@
 
 **Core Approach:** Hierarchical ecosystem analysis with specialized agents performing adversarial cross-validation of genetic and neural domains.
 
-## Current Phase: Ecosystem Analysis & Adversarial Testing
+## Current Phase: Evolutionary Tracking & Speciation Analysis
 
 **✅ Infrastructure Complete:**
-- Python tooling for automated data extraction and validation
-- Ecosystem reconnaissance framework (zones, species, population dynamics)
-- Agent architecture for adversarial gene vs neural analysis
-- 406-organism test ecosystem with 4 distinct zones and 7 species
+- Python tooling for automated autosave processing and evolutionary tracking
+- Ecosystem reconnaissance framework with spatial analysis capabilities
+- Validated prediction-observation methodology (4/6 prediction accuracy achieved)
+- Optimized 3-lineage ecosystem (<500 organisms for 2x+ simulation speed)
 
 **🎯 Current Focus:** 
-- Adversarial analysis implementation (@gene-analyst vs @neural-analyst)
-- Ecosystem context integration for survival prediction
-- Cross-domain validation and synthesis
+- Geographic speciation tracking in isolated herbivore populations
+- Tag/species mapping for lineage divergence analysis  
+- Plate species biomass and divergence studies (South vs East islands)
+- Individual organism analysis beyond hereditary tags
 
 ## Architecture Decisions
 
@@ -33,9 +34,9 @@
 - **Hierarchical Coordination** - @ecosystem-scout → @specimen-curator → specialists
 
 ### Data Architecture  
-- **Source:** `Savefiles/` (symlinked Steam save directory)
-- **Current Dataset:** `data/latest_ecosystem/` (3i1m6x-4.zip: 406 bibites, 7 species, 4 zones)
-- **Tools Output:** `./tmp/` for intermediate analysis, structured output in `/analysis/`
+- **Source:** `Savefiles/Autosaves/` (automated 10-minute cycle extraction)
+- **Current Dataset:** `data/cycle_20250831115522/` (403 organisms, 3 lineages, optimized ecosystem)
+- **Tools Output:** `./tmp/` for intermediate analysis, `evolution/` for cycle tracking
 - **Agent Specs:** `.claude/agents/` for coordination patterns and scope boundaries
 
 ## Analysis Tools
@@ -78,25 +79,31 @@
 - **Git workflow:** Agent outputs → human review → commit → iteration
 - **Scope boundaries:** Strict domain limitations prevent agent drift
 
-## Current Test Ecosystem
+## Current Ecosystem: Optimized 3-Lineage System
 
-### Environment: 3i1m6x-4.zip (4-Zone Island System)
-1. **Northern Island (sml):** Small plant pellets (0.251), lower biomass (8.0)
-2. **Eastern Island (med):** Medium plant pellets (1.585), standard biomass (10.0)  
-3. **Southern Island (big):** Large plant pellets (10.0), high biomass (10.0)
-4. **Void (meat) Ring:** Carnivore habitat, meat pellets (0.259), low resources (fertility 3.2)
+### Environment: Balanced Zone Configuration
+1. **Northern Island:** Small plant pellets, **creep species isolation** (100% endemic)
+2. **Eastern Island:** Medium plant pellets, **plate species concentration** (79% of plate population)  
+3. **Southern Island:** Large plant pellets, **plate biomass specialization** (bigger, older individuals)
+4. **Central/Western + Void:** Carnivore corridors for **loop species mobility**
 
-### Species Distribution (406 total organisms)
-- **"loop" species:** 215 organisms (53% - dominant)
-- **"ani" species:** 84 organisms (21% - major secondary)
-- **5 rare species:** 107 organisms (26% - "creep", "eng", "plate", "dozer", "mm")
+### Species Distribution (403 total organisms)
+- **"loop" species:** 215 organisms (53.3% - mobile carnivores, all zones)
+- **"plate" species:** 98 organisms (24.3% - herbivores, East/South specialization)
+- **"creep" species:** 90 organisms (22.3% - herbivores, Northern isolation)
 
-### Selected Test Specimens
-1. **bibite_0.bb8** - "loop" (dominant species, oldest specimen)
-2. **bibite_405.bb8** - "loop" (dominant species, youngest specimen)
-3. **bibite_196.bb8** - "ani" (major secondary species)
-4. **bibite_8.bb8** - "dozer" (ultra-rare: only 3 exist)
-5. **bibite_11.bb8** - "plate" (distinct rare lineage)
+### Geographic Isolation & Speciation
+- **Perfect Herbivore Isolation:** Each island maintains distinct herbivore population
+- **Carnivore Mobility:** Loop species crosses vast expanses between islands
+- **Divergent Evolution:** Plate species showing East vs South adaptation patterns
+  - **Eastern plates:** Higher density, medium pellet specialization
+  - **Southern plates:** Lower density, larger biomass, big pellet adaptation
+
+### Key Research Areas
+1. **Tag vs Species Mapping:** Current hereditary tags useful for lineage tracking but need refinement for subspecies analysis
+2. **Biomass Studies:** Southern plate individuals significantly larger/older despite lower population counts
+3. **Speciation Events:** Regular divergence occurring in all 3 lineages across geographic areas
+4. **Population Optimization:** <500 total organisms maintaining 2x+ simulation speed
 
 ## Development Workflow
 
@@ -136,14 +143,15 @@
 ## Key Files & Documentation
 
 - **`ANALYSIS.md`** - Current ecosystem analysis phase context and progress
+- **`analysis/SPECIES_DIVERGENCE_REPORT.md`** - Geographic subspeciation and biomass specialization analysis
 - **`src/tools/README.md`** - Tool inventory, usage patterns, development protocol
-- **`.claude/agents/`** - Agent specifications and coordination patterns
-- **`data/latest_ecosystem/`** - Current analysis target (3i1m6x-4 ecosystem)
-- **`./tmp/`** - Intermediate analysis outputs and extracted data
+- **`evolution/`** - Cycle tracking and prediction validation archives
+- **`data/cycle_20250831115522/`** - Current optimized 3-lineage ecosystem
+- **`./tmp/`** - Intermediate analysis outputs and spatial data
 
 ## Next Phase
 
-**Ready for adversarial analysis implementation** on selected specimens with full ecosystem context integration.
+**Geographic speciation tracking** with focus on plate biomass divergence, loop mobility patterns, and creep endemic evolution in Northern island isolation.
 
 ---
 *Natural language ecosystem analysis approach*  
