@@ -30,10 +30,12 @@ import click
 from pathlib import Path
 from typing import Optional, List, Tuple, Dict, Any
 from rich.console import Console
+from rich.table import Table
 
 # Import data access layer from extract_save.py
 from .extract_save import (
     find_latest_autosave, find_last_n_autosaves, find_autosave_by_name,
+    find_save_by_name, list_all_saves, get_save_info,
     get_output_directory, is_directory_cached, extract_save_files,
     SaveExtractionError
 )
@@ -61,12 +63,12 @@ def resolve_data_paths(latest: bool, last: Optional[int], name: Optional[str],
                       overwrite: bool = False) -> List[Path]:
     """
     Resolve user data selection to extracted data paths.
-    Transparently handles extraction and caching.
+    Transparently handles extraction and caching for both autosaves and manual saves.
     
     Args:
         latest: Get latest autosave
         last: Get last N autosaves  
-        name: Get autosave by name pattern
+        name: Get save by name pattern (searches both autosaves and manual saves)
         overwrite: Force re-extraction even if cached
         
     Returns:
@@ -75,15 +77,15 @@ def resolve_data_paths(latest: bool, last: Optional[int], name: Optional[str],
     Raises:
         BibitesToolError: If data access fails
     """
-    # Validate exactly one data selection option
+    # Validate exactly one data selection option (this function should only be called when one is selected)
     options_count = sum([latest, last is not None, name is not None])
     if options_count == 0:
-        raise BibitesToolError("Must specify exactly one data selection: --latest, --last N, or --name PATTERN")
+        raise BibitesToolError("Internal error: resolve_data_paths called with no data selection")
     elif options_count > 1:
         raise BibitesToolError("Cannot combine --latest, --last, and --name options")
     
     try:
-        # Determine which autosave files to process
+        # Determine which save files to process
         if latest:
             zip_files = [find_latest_autosave()]
         elif last is not None:
@@ -92,7 +94,8 @@ def resolve_data_paths(latest: bool, last: Optional[int], name: Optional[str],
             zip_files = find_last_n_autosaves(last)
             console.print(f"[blue]Found last {len(zip_files)} autosaves[/blue]")
         elif name is not None:
-            zip_files = [find_autosave_by_name(name)]
+            # Use enhanced find_save_by_name that searches both autosaves and manual saves
+            zip_files = [find_save_by_name(name)]
         
     except SaveExtractionError as e:
         raise BibitesToolError(f"Data access failed: {e}")
@@ -103,7 +106,7 @@ def resolve_data_paths(latest: bool, last: Optional[int], name: Optional[str],
     
     for zip_file in zip_files:
         try:
-            # Get output directory for this autosave
+            # Get output directory for this save (works for both autosaves and manual saves)
             output_dir = get_output_directory(zip_file)
             output_paths.append(output_dir)
             
@@ -126,6 +129,61 @@ def resolve_data_paths(latest: bool, last: Optional[int], name: Optional[str],
         console.print("[green]Data extraction complete[/green]")
     
     return output_paths
+
+def display_save_listing() -> None:
+    """Display a formatted listing of all available saves with metadata."""
+    try:
+        saves = list_all_saves()
+        
+        if not saves:
+            console.print("[yellow]No save files found[/yellow]")
+            return
+        
+        console.print(f"[bold]Available Save Files ({len(saves)} total)[/bold]\n")
+        
+        # Create table
+        table = Table(show_header=True, header_style="bold cyan")
+        table.add_column("Name", style="white", width=35)
+        table.add_column("Type", justify="center", width=8)
+        table.add_column("Size (MB)", justify="right", width=10)
+        table.add_column("Modified", width=16)
+        table.add_column("Organisms", justify="right", width=10)
+        table.add_column("Status", justify="center", width=8)
+        
+        for save in saves:
+            # Format type display
+            save_type = "Auto" if save['type'] == 'autosave' else "Manual"
+            
+            # Format modified time
+            modified_str = save['modified'].strftime("%m/%d %H:%M")
+            
+            # Format organism count
+            organisms_str = str(save['organisms']) if save['organisms'] is not None else "—"
+            
+            # Format status
+            status = "Cached" if save['cached'] else "New"
+            status_style = "cyan" if save['cached'] else "green"
+            
+            # Truncate long names
+            display_name = save['name']
+            if len(display_name) > 33:
+                display_name = display_name[:30] + "..."
+            
+            table.add_row(
+                display_name,
+                save_type,
+                str(save['size_mb']),
+                modified_str,
+                organisms_str,
+                f"[{status_style}]{status}[/{status_style}]"
+            )
+        
+        console.print(table)
+        console.print(f"\n[dim]Use --name PATTERN to select a save for analysis[/dim]")
+        console.print(f"[dim]Use --latest to select the newest autosave[/dim]")
+        
+    except SaveExtractionError as e:
+        console.print(f"[red]Error listing saves: {e}[/red]")
 
 def run_population_analysis(data_paths: List[Path], output: Optional[Path], 
                            by_species: bool, quick_mode: bool = True) -> None:
@@ -260,13 +318,15 @@ def run_species_comparison(data_paths: List[Path], species_a: int, species_b: in
     compare_specific_species(bibites_dir, species_a, species_b, output)
 
 @click.command()
-# Data Selection Options (exactly one required)
+# Data Selection Options
 @click.option('--latest', is_flag=True,
               help='Use the latest autosave')
 @click.option('--last', type=int, metavar='N',
               help='Use the last N autosaves')
 @click.option('--name', type=str, metavar='PATTERN',
-              help='Use autosave by name or partial name match')
+              help='Use save by name or partial name match (searches both autosaves and manual saves)')
+@click.option('--list', '-l', is_flag=True,
+              help='List all available saves with metadata (default if no other options)')
 
 # Analysis Options (choose one or more)
 @click.option('--population-summary', '--population', is_flag=True,
@@ -302,7 +362,7 @@ def run_species_comparison(data_paths: List[Path], species_a: int, species_b: in
 @click.option('--overwrite', is_flag=True,
               help='Force re-extraction even if data is cached')
 
-def bibites(latest: bool, last: Optional[int], name: Optional[str],
+def bibites(latest: bool, last: Optional[int], name: Optional[str], list: bool,
            population_summary: bool, species_summary: bool, spatial_analysis: bool,
            compare_populations: bool, metadata: bool,
            by_species: bool, species_field: bool, compare_species: Optional[Tuple[int, int]],
@@ -311,12 +371,13 @@ def bibites(latest: bool, last: Optional[int], name: Optional[str],
     """Unified Bibites ecosystem analysis tool with zero path exposure.
     
     A single command for all data access and analysis operations. Automatically handles
-    autosave discovery, extraction, caching, and analysis with no path management required.
+    save discovery (autosaves and manual saves), extraction, caching, and analysis.
     
-    DATA SELECTION (exactly one required):
+    DATA SELECTION:
         --latest                Use latest autosave
         --last N                Use last N autosaves 
-        --name PATTERN          Use autosave matching name pattern
+        --name PATTERN          Use save matching pattern (autosaves and manual saves)
+        --list                  List available saves (default if no options given)
     
     ANALYSIS OPTIONS (choose one or more):
         --population            Quick species population counts
@@ -340,8 +401,15 @@ def bibites(latest: bool, last: Optional[int], name: Optional[str],
         --overwrite               Force re-extraction
     
     EXAMPLES:
+        # List all available saves (default behavior)
+        bibites
+        bibites --list
+        
         # Quick ecosystem overview
         bibites --latest --population --metadata
+        
+        # Work with manual saves
+        bibites --name "pred train br" --population --metadata
         
         # Species evolution tracking  
         bibites --last 2 --compare --by-species
@@ -357,6 +425,13 @@ def bibites(latest: bool, last: Optional[int], name: Optional[str],
     """
     
     try:
+        # Check if user wants listing (explicit --list or no data selection options)
+        data_selection_count = sum([latest, last is not None, name is not None])
+        
+        if list or data_selection_count == 0:
+            display_save_listing()
+            return
+        
         # Resolve data paths transparently
         console.print("[blue]Resolving data access...[/blue]")
         data_paths = resolve_data_paths(latest, last, name, overwrite)

@@ -33,6 +33,7 @@ console = Console()
 
 # Hardcoded paths
 AUTOSAVES_PATH = Path("/home/daniel/.local/share/Steam/steamapps/compatdata/2736860/pfx/drive_c/users/steamuser/AppData/LocalLow/The Bibites/The Bibites/Savefiles/Autosaves/")
+SAVEFILES_PATH = Path("/home/daniel/.local/share/Steam/steamapps/compatdata/2736860/pfx/drive_c/users/steamuser/AppData/LocalLow/The Bibites/The Bibites/Savefiles/")
 DATA_OUTPUT_PATH = Path("data")
 
 class SaveExtractionError(Exception):
@@ -99,6 +100,116 @@ def get_all_autosaves() -> List[Path]:
     autosave_files.sort(key=lambda x: x.name)
     return autosave_files
 
+def get_all_manual_saves() -> List[Path]:
+    """
+    Get all manual save files from the hardcoded savefiles directory.
+    
+    Returns:
+        List of manual save file paths, sorted by modification time (newest first)
+        
+    Raises:
+        SaveExtractionError: If savefiles directory not found
+    """
+    if not SAVEFILES_PATH.exists():
+        raise SaveExtractionError(f"Savefiles directory not found: {SAVEFILES_PATH}")
+    
+    # Find all zip files in root savefiles directory (excluding Autosaves subdirectory)
+    manual_saves = []
+    for zip_file in SAVEFILES_PATH.glob('*.zip'):
+        # Skip if it's in a subdirectory (like Autosaves/)
+        if zip_file.parent == SAVEFILES_PATH:
+            manual_saves.append(zip_file)
+    
+    # Sort by modification time (newest first)
+    manual_saves.sort(key=lambda x: x.stat().st_mtime, reverse=True)
+    return manual_saves
+
+def get_all_saves() -> Dict[str, List[Path]]:
+    """
+    Get all save files (both autosaves and manual saves).
+    
+    Returns:
+        Dictionary with 'autosaves' and 'manual' keys containing respective file lists
+        
+    Raises:
+        SaveExtractionError: If directories not found
+    """
+    try:
+        autosaves = get_all_autosaves()
+    except SaveExtractionError:
+        autosaves = []
+    
+    try:
+        manual_saves = get_all_manual_saves()
+    except SaveExtractionError:
+        manual_saves = []
+    
+    return {'autosaves': autosaves, 'manual': manual_saves}
+
+def get_save_info(save_path: Path) -> Dict[str, Any]:
+    """
+    Get metadata information for a save file.
+    
+    Args:
+        save_path: Path to the save file
+        
+    Returns:
+        Dictionary with save metadata
+    """
+    stat = save_path.stat()
+    
+    # Check if already extracted
+    output_dir = get_output_directory(save_path)
+    is_cached = is_directory_cached(output_dir)
+    
+    # Count organisms if cached
+    organism_count = None
+    if is_cached:
+        try:
+            bibites_dir = output_dir / 'bibites'
+            if bibites_dir.exists():
+                organism_count = len(list(bibites_dir.glob('*.bb8')))
+        except:
+            pass
+    
+    # Determine save type
+    save_type = 'autosave' if save_path.parent.name == 'Autosaves' else 'manual'
+    
+    return {
+        'name': save_path.name,
+        'stem': save_path.stem,
+        'path': save_path,
+        'size': stat.st_size,
+        'size_mb': round(stat.st_size / (1024 * 1024), 1),
+        'modified': datetime.fromtimestamp(stat.st_mtime),
+        'type': save_type,
+        'cached': is_cached,
+        'organisms': organism_count
+    }
+
+def list_all_saves() -> List[Dict[str, Any]]:
+    """
+    List all available saves with metadata, sorted by modification time.
+    
+    Returns:
+        List of save info dictionaries
+    """
+    all_saves = get_all_saves()
+    save_info_list = []
+    
+    # Process autosaves
+    for save in all_saves['autosaves']:
+        save_info_list.append(get_save_info(save))
+    
+    # Process manual saves
+    for save in all_saves['manual']:
+        save_info_list.append(get_save_info(save))
+    
+    # Sort by modification time (newest first)
+    save_info_list.sort(key=lambda x: x['modified'], reverse=True)
+    
+    return save_info_list
+
 def find_latest_autosave() -> Path:
     """Find the most recent autosave file."""
     autosaves = get_all_autosaves()
@@ -132,12 +243,19 @@ def find_autosave_by_name(name_pattern: str) -> Path:
     # Normalize the pattern (remove .zip if present)
     clean_pattern = name_pattern.replace('.zip', '').lower()
     
-    # Find matches
-    matches = []
+    # Find matches - prioritize exact matches, then substring matches
+    exact_matches = []
+    substring_matches = []
+    
     for autosave in autosaves:
         autosave_name = autosave.stem.lower()  # Remove .zip extension
-        if clean_pattern in autosave_name or autosave_name == clean_pattern:
-            matches.append(autosave)
+        if autosave_name == clean_pattern:
+            exact_matches.append(autosave)
+        elif clean_pattern in autosave_name:
+            substring_matches.append(autosave)
+    
+    # Use exact matches if found, otherwise substring matches
+    matches = exact_matches if exact_matches else substring_matches
     
     if not matches:
         raise SaveExtractionError(f"No autosave found matching '{name_pattern}'")
@@ -149,17 +267,91 @@ def find_autosave_by_name(name_pattern: str) -> Path:
     console.print(f"[blue]Found autosave: {found.name}[/blue]")
     return found
 
-def get_output_directory(zip_path: Path) -> Path:
+def find_manual_save_by_name(name_pattern: str) -> Path:
     """
-    Get the output directory for an autosave file in the hardcoded data/ directory.
+    Find manual save by name or partial name match.
     
     Args:
-        zip_path: Path to the autosave zip file
+        name_pattern: Full or partial manual save name (with or without .zip extension)
         
     Returns:
-        Path to the output directory (data/autosave_timestamp/)
+        Path to matching manual save file
+        
+    Raises:
+        SaveExtractionError: If no match found or multiple matches
     """
-    # Use filename stem directly for 1:1 correspondence (e.g., autosave_20250829205409.zip -> data/autosave_20250829205409/)
+    manual_saves = get_all_manual_saves()
+    
+    # Normalize the pattern (remove .zip if present)
+    clean_pattern = name_pattern.replace('.zip', '').lower()
+    
+    # Find matches - prioritize exact matches, then substring matches
+    exact_matches = []
+    substring_matches = []
+    
+    for save in manual_saves:
+        save_name = save.stem.lower()  # Remove .zip extension
+        if save_name == clean_pattern:
+            exact_matches.append(save)
+        elif clean_pattern in save_name:
+            substring_matches.append(save)
+    
+    # Use exact matches if found, otherwise substring matches
+    matches = exact_matches if exact_matches else substring_matches
+    
+    if not matches:
+        raise SaveExtractionError(f"No manual save found matching '{name_pattern}'")
+    elif len(matches) > 1:
+        match_names = [m.name for m in matches]
+        raise SaveExtractionError(f"Multiple manual saves match '{name_pattern}': {match_names}")
+    
+    found = matches[0]
+    console.print(f"[blue]Found manual save: {found.name}[/blue]")
+    return found
+
+def find_save_by_name(name_pattern: str) -> Path:
+    """
+    Find save by name or partial name match, searching both autosaves and manual saves.
+    
+    Args:
+        name_pattern: Full or partial save name (with or without .zip extension)
+        
+    Returns:
+        Path to matching save file
+        
+    Raises:
+        SaveExtractionError: If no match found or multiple matches
+    """
+    # Try autosaves first
+    try:
+        return find_autosave_by_name(name_pattern)
+    except SaveExtractionError:
+        pass
+    
+    # Then try manual saves
+    try:
+        return find_manual_save_by_name(name_pattern)
+    except SaveExtractionError:
+        pass
+    
+    # If neither found, provide comprehensive error
+    all_saves = get_all_saves()
+    total_saves = len(all_saves['autosaves']) + len(all_saves['manual'])
+    raise SaveExtractionError(f"No save found matching '{name_pattern}' in {total_saves} available saves")
+
+def get_output_directory(zip_path: Path) -> Path:
+    """
+    Get the output directory for a save file in the hardcoded data/ directory.
+    
+    Args:
+        zip_path: Path to the save zip file (autosave or manual)
+        
+    Returns:
+        Path to the output directory (data/filename_stem/)
+    """
+    # Use filename stem directly for 1:1 correspondence
+    # Autosaves: autosave_20250829205409.zip -> data/autosave_20250829205409/
+    # Manual saves: pred train br.zip -> data/pred train br/
     filename = zip_path.stem
     return DATA_OUTPUT_PATH / filename
 

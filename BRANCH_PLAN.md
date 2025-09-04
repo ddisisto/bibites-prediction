@@ -13,6 +13,11 @@
 
 ### Phase 1: Research & Foundation (Current Session)
 - [x] Branch creation and planning documentation
+- [x] **PRIORITY: Enhanced unified bibites.py for manual saves and listing**
+  - [x] Manual save discovery and access (now works with "pred train br.zip")
+  - [x] Default save listing behavior (equivalent to `ls -lt`)
+  - [x] Enhanced --name PATTERN matching for both autosaves and manual saves
+  - [x] Rich metadata display with organism counts and cache status
 - [ ] Research save file write/modification requirements
 - [ ] Analyze .bb8 file structure for template extraction
 - [ ] Design bibite ID management for injection conflicts
@@ -32,44 +37,58 @@
 
 ## Command Interface Design
 
-### Template Extraction
+### Current Working Interface (Enhanced)
+```bash
+# List all saves (now default behavior)
+bibites                              # Shows 118 saves with metadata
+
+# Manual save access (now working)  
+bibites --name "pred train br" --population --metadata
+bibites --name "validation-1" --species --spatial
+
+# Traditional autosave access (unchanged)
+bibites --latest --population
+bibites --last 2 --compare
+```
+
+### Template Extraction (Future)
 ```bash
 # Extract predators by criteria
-bibites --extract-templates --from "pred train br.zip" \
+bibites --extract-templates --from "pred train br" \
         --filter "tag:loop,age:>100,fitness:top10%" \
         --output templates/evolved_predators/
 
 # Extract entire lineage
-bibites --extract-templates --from "source.zip" \
+bibites --extract-templates --from "source" \
         --filter "lineage:loop" \
         --output templates/loop_lineage/
 ```
 
-### Template Injection  
+### Template Injection (Future)  
 ```bash
 # Inject with automatic positioning
-bibites --inject-templates --into "target.zip" \
+bibites --inject-templates --into "pred train br - pre-herbivore staging" \
         --templates templates/evolved_predators/ \
         --spawn-zone "central" \
-        --output "staged.zip"
+        --output "pred train br - staged"
 
 # Advanced injection with ID remapping
-bibites --inject-templates --into "target.zip" \
+bibites --inject-templates --into "target" \
         --templates templates/ \
         --remap-ids \
         --spawn-strategy "distributed" \
         --preserve-ecosystem-balance \
-        --output "enhanced.zip"
+        --output "enhanced"
 ```
 
-### Combined Operations
+### Combined Operations (Future)
 ```bash
-# One-step cross-pollination
+# One-step cross-pollination  
 bibites --cross-pollinate \
-        --source "pred train br.zip" \
-        --target "pred train br - pre-herbivore staging.zip" \
+        --source "pred train br" \
+        --target "pred train br - pre-herbivore staging" \
         --filter "tag:loop,fitness:top20%" \
-        --output "pred train br - staged.zip"
+        --output "pred train br - staged"
 ```
 
 ## Agent Delegation Strategy
