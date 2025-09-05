@@ -72,3 +72,35 @@ predators + unprotected berbivores both undergoing rapid speciation / presumably
 ### Changes
 various tweaks to resources. meat decay faster again, preds running wild
 bigger more fertile AntiPred zone, less fertile killzone
+
+
+# Purpose Note
+multiple things are going on here -
+1. Push all non-protected, reproductive lines to avoid red pheromone
+    - ideally being blind to color of what is emitting it
+    - protected species uses red pheromone strongly to signal danger
+    - towers back it up with insta-death selection for invaders
+2. Prevent all non-protected lines from outputting red pheromone
+    - expect that copy-cat will be a good strategy, so need to identify if this occurs and plan reset
+
+## Resets
+*minor version bump -> 3.X*
+will be used to re-create sim withou Bibites, gradually re-populate with engineered population, derived from previous version. Each species is introduced in turn, we confirm it can successfully inhabit the new world and maintain stable population size.
+
+1. Protected species with color change (+ respective tower settings), to prevent reliance on BibiteColor vision (must use red pheromone signal)
+2. Non-protected predator samples get minor brain surgery to prevent red pheromone output
+3. (stretch) - reduce weights for predator color vision entirely (blue/green pheromone preferred for kin identification)
+4. Prey species generation re-added, supplemental meat pellet generation if needed
+5. Adjust meat decay, prey pop, etc to achieve stable predators in outer reach
+4. Non-protected herbivore re-introduced. Color randomised perhaps?
+
+## Alternate Path
+just another thought here - what if instead we add a *2nd* protectorate, with different genetic color selection, same red pheromone bias?
+
+# Decision - Multiple Protectorate Zones
+each populated with red-pheromone emitting bibites of a specific genetic color, for selection by towers.
+
+# 3.3.2
+Multiple Protectorate Zones - IMPLEMENTED, appears stable
+Added some more meat production zones also, carnivore safe harbor, where they can hopefully learn better kin identification
+CHANGED: color settings for background (solid black now) + Zones (neutral grey/brown), with zone intensity showing biomass potential

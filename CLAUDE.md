@@ -9,15 +9,17 @@
 
 **✅ Infrastructure Complete:**
 - Python tooling for automated autosave processing and evolutionary tracking
-- Ecosystem reconnaissance framework with spatial analysis capabilities
-- Validated prediction-observation methodology (4/6 prediction accuracy achieved)
-- Optimized 3-lineage ecosystem (<500 organisms for 2x+ simulation speed)
+- Ecosystem reconnaissance framework with spatial analysis capabilities (concentric zones)
+- Cross-pollination and bulk retag functionality for controlled experiments
+- Fixed spatial analysis for accurate zone classification and organism distribution
+- Optimized population management (~40-50 organisms per species for efficient simulation)
 
 **🎯 Current Focus:** 
-- Geographic speciation tracking in isolated herbivore populations
-- Tag/species mapping for lineage divergence analysis  
-- Plate species biomass and divergence studies (South vs East islands)
-- Individual organism analysis beyond hereditary tags
+- Multiple protectorate zone ecosystem analysis (pred exp 3.3.2)
+- Concentric zone evolutionary pressure studies
+- Bulk taxonomy standardization and prey differentiation
+- Carnivore kin identification in safe harbor zones
+- Red pheromone behavioral evolution tracking
 
 ## Architecture Decisions
 
@@ -35,8 +37,9 @@
 
 ### Data Architecture  
 - **Source:** `Savefiles/Autosaves/` (automated 10-minute cycle extraction)
-- **Current Dataset:** `data/cycle_20250831115522/` (403 organisms, 3 lineages, optimized ecosystem)
+- **Current Dataset:** `pred exp 3.3.2` (Multiple protectorate zones, population-optimized ecosystem)
 - **Tools Output:** `./tmp/` for intermediate analysis, `evolution/` for cycle tracking
+- **RW Functionality:** Cross-pollination and bulk retag for controlled evolutionary experiments
 - **Agent Specs:** `.claude/agents/` for coordination patterns and scope boundaries
 
 ## Analysis Tools
@@ -56,6 +59,7 @@ python -m src.tools.bibites --help
 - **Analysis operations:** `bibites --population`, `bibites --spatial`, `bibites --metadata`
 - **Field extraction:** `bibites --fields FIELD_LIST --batch`
 - **Cross-pollination:** `bibites --inject-fittest --source X --target Y`
+- **Bulk retag:** `bibites --retag --find-tag OLD --replace-tag NEW --apply`
 - **File access:** Use Read, Glob, Grep tools from Claude Code environment
 
 **Complete Tool Reference:** @src/tools/README.md
@@ -98,31 +102,34 @@ python -m src.tools.bibites --help
 - **Git workflow:** Agent outputs → human review → commit → iteration
 - **Scope boundaries:** Strict domain limitations prevent agent drift
 
-## Current Ecosystem: Optimized 3-Lineage System
+## Current Ecosystem: Multiple Protectorate Concentric Zones (3.3.2)
 
-### Environment: Balanced Zone Configuration
-1. **Northern Island:** Small plant pellets, **creep species isolation** (100% endemic)
-2. **Eastern Island:** Medium plant pellets, **plate species concentration** (79% of plate population)  
-3. **Southern Island:** Large plant pellets, **plate biomass specialization** (bigger, older individuals)
-4. **Central/Western + Void:** Carnivore corridors for **loop species mobility**
+### Environment: Concentric Zone Configuration  
+1. **AntiPred Zone (0-24%):** Central sanctuary with red-pheromone emitters + color selection towers
+2. **KillingField (24-30%):** Dangerous transition zone with selective pressure
+3. **FootHills (46-57%):** Mid-range habitat with moderate resource density  
+4. **MidPlateau (57-80%):** Secondary population hub with balanced resources
+5. **OuterReach (80-100%):** Outer zone with carnivore safe harbors + meat production
 
-### Species Distribution (403 total organisms)
-- **"loop" species:** 215 organisms (53.3% - mobile carnivores, all zones)
-- **"plate" species:** 98 organisms (24.3% - herbivores, East/South specialization)
-- **"creep" species:** 90 organisms (22.3% - herbivores, Northern isolation)
+### Current Species & Population Optimization
+- **Population Target:** ~40-50 individuals per species for efficient 2x+ simulation speed
+- **Multiple Protectorates:** Each zone supports red-pheromone emitting species with genetic color selection
+- **Carnivore Safe Harbors:** Meat production zones for predator kin identification learning
+- **Stable Implementation:** Multiple protectorate system confirmed stable and functional
 
-### Geographic Isolation & Speciation
-- **Perfect Herbivore Isolation:** Each island maintains distinct herbivore population
-- **Carnivore Mobility:** Loop species crosses vast expanses between islands
-- **Divergent Evolution:** Plate species showing East vs South adaptation patterns
-  - **Eastern plates:** Higher density, medium pellet specialization
-  - **Southern plates:** Lower density, larger biomass, big pellet adaptation
+### Evolutionary Drivers & Selective Pressures
+- **Red Pheromone Communication:** Danger signaling between protected and non-protected species
+- **Color Selection Towers:** Genetic color-based selection across different zones
+- **Spatial Segregation:** Clear zone preferences preventing unwanted species mixing
+- **Kin Identification Learning:** Carnivore safe harbors enable behavioral improvement
+- **Population Balance:** Optimized organism counts maintain ecosystem stability
 
 ### Key Research Areas
-1. **Tag vs Species Mapping:** Current hereditary tags useful for lineage tracking but need refinement for subspecies analysis
-2. **Biomass Studies:** Southern plate individuals significantly larger/older despite lower population counts
-3. **Speciation Events:** Regular divergence occurring in all 3 lineages across geographic areas
-4. **Population Optimization:** <500 total organisms maintaining 2x+ simulation speed
+1. **Multiple Protectorate Analysis:** How different zones drive unique evolutionary pressures
+2. **Red Pheromone Evolution:** Behavioral adaptation to danger signal communication
+3. **Kin Identification:** Carnivore learning effectiveness in safe harbor zones
+4. **Population Optimization:** Maintaining species diversity within simulation efficiency constraints
+5. **Taxonomy Standardization:** Bulk retag functionality for clearer ecological function naming
 
 ## Development Workflow
 

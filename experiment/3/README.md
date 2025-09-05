@@ -1,8 +1,8 @@
 # Experiment 3: Concentric Zone Evolution Analysis
 
-**Current Save**: `autosave_20250905225443` (246 organisms)  
+**Current Save**: `pred exp 3.3.2` (Multiple Protectorate Zones)  
 **Status**: Active hourly autosave tracking  
-**Design**: Concentric selective pressure ecosystem with AntiPred sanctuary
+**Design**: Concentric ecosystem with **multiple protectorate zones** and carnivore safe harbors
 
 ## Current Evolutionary State
 
@@ -48,10 +48,11 @@
 - **Selective pressure gradients**: Different zones driving different adaptations
 
 ### 🔬 **Evolutionary Drivers**:
-- **Color selection**: Magenta-only in center, green-preferred in outer zones
+- **Multiple protectorate zones**: Each with red-pheromone emitting species + genetic color selection
+- **Color selection towers**: Magenta-only in center, green-preferred in outer zones
+- **Carnivore safe harbors**: Meat production zones for predator kin identification learning
 - **Resource gradients**: Different pellet sizes across zones (0.12-2.0)
-- **Predation pressure**: Varying safety levels across concentric rings
-- **Population density**: Competition intensity varies by zone
+- **Population optimization**: ~40-50 individuals per species for efficient simulation
 
 ## Research Questions & Observations
 
@@ -79,10 +80,11 @@
 
 ### Predicted Evolution Directions:
 
-- **Continued L1 l1 expansion** until resource/space limits hit
-- **Greencreep specialization** in middle zones (MidPlateau/OuterReach)
-- **Magentadeath optimization** within sanctuary constraints
-- **Potential new species emergence** from isolation pressures
+- **Enhanced kin identification** in carnivore safe harbor zones
+- **Multiple protectorate specialization** with different genetic color selections
+- **Red pheromone behavioral evolution** for danger signal communication
+- **Population stability** at optimized ~40-50 individuals per species
+- **Potential new species emergence** from multi-zone isolation pressures
 
 ## Methodology Notes
 
