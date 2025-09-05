@@ -21,7 +21,7 @@ from ..extract_save import (
     find_latest_autosave, find_last_n_autosaves, find_autosave_by_name,
     find_save_by_name, list_all_saves, get_save_info,
     get_output_directory, is_directory_cached, extract_save_files,
-    SaveExtractionError, SAVEFILES_PATH, get_all_autosaves
+    SaveExtractionError, SAVEFILES_PATH, get_all_autosaves, get_all_saves
 )
 
 console = Console()
@@ -160,6 +160,7 @@ def get_zip_file_from_data_path(data_path: Path) -> Optional[Path]:
     """
     Find the original zip file from an extracted data path.
     This is used for metadata analysis that needs the source zip.
+    Searches both autosaves and manual saves.
     
     Args:
         data_path: Path to extracted data directory
@@ -170,16 +171,24 @@ def get_zip_file_from_data_path(data_path: Path) -> Optional[Path]:
     Raises:
         BibitesDataError: If zip file cannot be located
     """
-    # data_path should be like data/autosave_20250831115522/
-    autosave_name = data_path.name
+    # data_path should be like data/autosave_20250831115522/ or data/pred exp 3.3.2/
+    dataset_name = data_path.name
     
     try:
-        all_saves = get_all_autosaves()
-        for save in all_saves:
-            if save.stem == autosave_name:
+        # Search both autosaves and manual saves
+        all_saves = get_all_saves()
+        
+        # Check autosaves first
+        for save in all_saves['autosaves']:
+            if save.stem == dataset_name:
                 return save
         
-        raise BibitesDataError(f"Could not find source zip for dataset: {autosave_name}")
+        # Check manual saves
+        for save in all_saves['manual']:
+            if save.stem == dataset_name:
+                return save
+        
+        raise BibitesDataError(f"Could not find source zip for dataset: {dataset_name}")
         
     except SaveExtractionError as e:
         raise BibitesDataError(f"Failed to locate source zip: {e}")

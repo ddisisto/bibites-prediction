@@ -107,48 +107,65 @@ def parse_zone_configuration(input_path: Path) -> List[Dict[str, Any]]:
 
 
 def classify_zone_concentric(x: float, y: float, zones: List[Dict[str, Any]], world_radius: float) -> str:
-    """Classify coordinates into concentric zones based on radial distance from center."""
+    """Classify coordinates into zones, handling both positioned circular zones and concentric rings."""
     if not zones:
         return "Unknown"
     
-    # Calculate distance from center in relative coordinates (0-1)
-    distance = calculate_distance_from_center(x, y)
-    relative_distance = distance / world_radius
+    # Convert absolute coordinates to relative (0-1 range)
+    rel_x = x / world_radius
+    rel_y = y / world_radius
     
-    # Process zones and handle the complex ring system
-    valid_zones = []
+    # First, check positioned circular zones (highest priority)
+    positioned_zones = []
+    concentric_zones = []
     
     for zone in zones:
         radius = zone.get('radius', 0)
         inside_radius = zone.get('insideRadius', 0)
         name = zone.get('name', 'Unknown')
         distribution = zone.get('distribution', '')
+        pos_x = zone.get('posX', 0)
+        pos_y = zone.get('posY', 0)
         
         # All radii are relative in this ecosystem
         if not zone.get('radiusIsRelative', True):
             radius /= world_radius
             inside_radius /= world_radius
+            pos_x /= world_radius  
+            pos_y /= world_radius
         
         # WORKAROUND: Fix corrupted AntiPred distribution from metadata parsing bug
         if name == 'AntiPred' and distribution == 'Flat':
             distribution = 'CentricGradual'  # Silent fix for metadata parsing corruption
         
-        # Determine zone boundaries based on distribution type
-        if distribution == 'CentricGradual':
-            # AntiPred: center circle (no insideRadius calculation needed)
-            valid_zones.append({
+        # Handle positioned circular zones (Flat distribution with non-zero position)
+        if distribution == 'Flat' and (pos_x != 0 or pos_y != 0):
+            # Calculate distance from zone center 
+            zone_distance = math.sqrt((rel_x - pos_x) ** 2 + (rel_y - pos_y) ** 2)
+            
+            if zone_distance <= radius:
+                positioned_zones.append({
+                    'name': name,
+                    'distance_from_center': zone_distance,
+                    'priority': 0  # Highest priority for positioned zones
+                })
+        
+        # Handle concentric zones (centered at origin)
+        elif distribution == 'CentricGradual' and pos_x == 0 and pos_y == 0:
+            # Center circle (no insideRadius calculation needed)
+            concentric_zones.append({
                 'name': name,
                 'min_distance': 0,
                 'max_distance': radius,
                 'priority': 1  # High priority for center
             })
-        elif distribution in ['Ring', 'FlatRing']:
+        elif distribution in ['Ring', 'FlatRing'] and pos_x == 0 and pos_y == 0:
             # Calculate actual inside radius: insideRadius is relative to radius
             actual_inside_radius = inside_radius * radius
             
             if actual_inside_radius < radius:
                 # Valid rings like MidPlateau and OuterReach
-                valid_zones.append({
+                concentric_zones.append({
                     'name': name,
                     'min_distance': actual_inside_radius,
                     'max_distance': radius,
@@ -159,32 +176,45 @@ def classify_zone_concentric(x: float, y: float, zones: List[Dict[str, Any]], wo
                 # These might represent special spawn zones or deprecated configs
                 pass
     
-    # Sort by priority, then by specificity (smaller zones first)
-    valid_zones.sort(key=lambda z: (z['priority'], z['max_distance'] - z['min_distance']))
+    # Return positioned zone match if found (highest priority)
+    if positioned_zones:
+        # If multiple positioned zones contain the point, return the closest one
+        closest_positioned = min(positioned_zones, key=lambda z: z['distance_from_center'])
+        return closest_positioned['name']
     
+    # Fall back to concentric zone classification
+    if concentric_zones:
+        # Calculate distance from center for concentric zones
+        distance = calculate_distance_from_center(x, y)
+        relative_distance = distance / world_radius
+        
+        # Sort by priority, then by specificity (smaller zones first)
+        concentric_zones.sort(key=lambda z: (z['priority'], z['max_distance'] - z['min_distance']))
+        
+        # Find the best matching concentric zone
+        for zone in concentric_zones:
+            if zone['min_distance'] <= relative_distance <= zone['max_distance']:
+                return zone['name']
+        
+        # If no exact match, find the closest concentric zone
+        closest_zone = None
+        min_distance_diff = float('inf')
+        
+        for zone in concentric_zones:
+            if relative_distance < zone['min_distance']:
+                distance_diff = zone['min_distance'] - relative_distance
+            elif relative_distance > zone['max_distance']:
+                distance_diff = relative_distance - zone['max_distance']
+            else:
+                continue  # Should have been caught above
+                
+            if distance_diff < min_distance_diff:
+                min_distance_diff = distance_diff
+                closest_zone = zone['name']
+        
+        return closest_zone or "Beyond"
     
-    # Find the best matching zone
-    for zone in valid_zones:
-        if zone['min_distance'] <= relative_distance <= zone['max_distance']:
-            return zone['name']
-    
-    # If no exact match, find the closest zone
-    closest_zone = None
-    min_distance_diff = float('inf')
-    
-    for zone in valid_zones:
-        if relative_distance < zone['min_distance']:
-            distance_diff = zone['min_distance'] - relative_distance
-        elif relative_distance > zone['max_distance']:
-            distance_diff = relative_distance - zone['max_distance']
-        else:
-            continue  # Should have been caught above
-            
-        if distance_diff < min_distance_diff:
-            min_distance_diff = distance_diff
-            closest_zone = zone['name']
-    
-    return closest_zone or "Beyond"
+    return "Unknown"
 
 
 def generate_spatial_analysis(input_path: Path, output: Optional[Path]):
