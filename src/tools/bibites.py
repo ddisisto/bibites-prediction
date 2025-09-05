@@ -38,7 +38,7 @@ from .lib.bibites_analysis import (
     run_metadata_analysis, run_field_extraction, run_species_field_extraction,
     run_species_comparison, BibitesAnalysisError
 )
-from .lib.bibites_crosspolinate import run_inject_fittest, BibitesCrossPollinateError
+from .lib.bibites_crosspolinate import run_inject_fittest, run_retag_bulk, BibitesCrossPollinateError
 
 # Import core parsing for error handling
 from ..core.parser import BB8ParseError
@@ -99,6 +99,18 @@ class BibitesToolError(Exception):
 @click.option('--count', type=int, default=3,
               help='Number of fittest bibites to inject (default: 3)')
 
+# Bulk Tag Modification Options
+@click.option('--retag', is_flag=True,
+              help='Bulk tag modification mode')
+@click.option('--find-tag', type=str,
+              help='Tag pattern to find (exact match)')
+@click.option('--replace-tag', type=str,
+              help='Replacement tag text')
+@click.option('--dry-run', is_flag=True, default=True,
+              help='Preview changes without saving (default: true)')
+@click.option('--apply', is_flag=True,
+              help='Apply changes and create new save file')
+
 # Output Options
 @click.option('--output', '-o', type=click.Path(path_type=Path), 
               help='Output file (JSON format) or custom save name for cross-pollination')
@@ -113,6 +125,8 @@ def bibites(latest: bool, last: Optional[int], name: Optional[str], list: bool,
            by_species: bool, species_field: bool, compare_species: Optional[Tuple[int, int]],
            fields: Optional[str], batch: bool,
            inject_fittest: bool, source: Optional[str], target: Optional[str], count: int,
+           retag: bool, find_tag: Optional[str], replace_tag: Optional[str], 
+           dry_run: bool, apply: bool,
            output: Optional[Path], format: str, overwrite: bool):
     """Unified Bibites ecosystem analysis tool with zero path exposure.
     
@@ -147,6 +161,13 @@ def bibites(latest: bool, last: Optional[int], name: Optional[str], list: bool,
         --target SAVE_NAME      Target save name pattern  
         --count N               Number of fittest bibites to inject (default: 3)
     
+    BULK TAG MODIFICATION:
+        --retag                 Bulk tag modification mode
+        --find-tag TAG          Tag pattern to find (exact match)
+        --replace-tag TAG       Replacement tag text
+        --dry-run               Preview changes without saving (default: true)
+        --apply                 Apply changes and create new save file
+    
     OUTPUT OPTIONS:
         --format [table|json|csv]  Output format
         --output FILE/NAME        Save JSON results to file or custom save name
@@ -178,6 +199,10 @@ def bibites(latest: bool, last: Optional[int], name: Optional[str], list: bool,
         # Cross-pollination examples
         bibites --inject-fittest --source "pred train br" --target "pred train br - pre-herbivore staging"
         bibites --inject-fittest --source "pred train br" --target "pred train br - pre-herbivore staging" --count 5 --output "pred train br - staged"
+        
+        # Bulk tag modification examples
+        bibites --retag --name "pred exp 3" --find-tag "L1 l1" --replace-tag "Pred.Evolved"
+        bibites --retag --name "pred exp 3" --find-tag "Greencreep" --replace-tag "Herb.Green" --apply
     """
     
     try:
@@ -198,6 +223,28 @@ def bibites(latest: bool, last: Optional[int], name: Optional[str], list: bool,
             output_name = str(output.stem) if output else None
             
             run_inject_fittest(source, target, count, output_name)
+            return
+        
+        # Handle retag mode
+        if retag:
+            if not name:
+                console.print("[red]Error: --retag requires --name option to specify source save[/red]")
+                raise click.Abort()
+            
+            if not find_tag or not replace_tag:
+                console.print("[red]Error: --retag requires --find-tag and --replace-tag options[/red]")
+                raise click.Abort()
+            
+            console.print(f"[bold cyan]Bulk Tag Modification Mode[/bold cyan]")
+            console.print(f"[blue]Modifying tags in '{name}': '{find_tag}' → '{replace_tag}'[/blue]\n")
+            
+            # Convert output Path to string if provided
+            output_name = str(output.stem) if output else None
+            
+            # Apply mode overrides dry-run default
+            actual_dry_run = dry_run and not apply
+            
+            run_retag_bulk(name, find_tag, replace_tag, output_name, actual_dry_run)
             return
         
         # Check if user wants listing (explicit --list or no data selection options)

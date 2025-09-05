@@ -230,3 +230,134 @@ def run_inject_fittest(source_name: str, target_name: str, count: int,
         
     except (SaveExtractionError, BibitesDataError, IOError, json.JSONDecodeError) as e:
         raise BibitesCrossPollinateError(f"Cross-pollination failed: {e}")
+
+def run_retag_bulk(source_name: str, find_tag: str, replace_tag: str, 
+                   output_name: Optional[str], dry_run: bool = True) -> None:
+    """Bulk tag modification for ecosystem taxonomy standardization.
+    
+    Args:
+        source_name: Name pattern for source save
+        find_tag: Tag pattern to find (exact match)
+        replace_tag: Replacement tag text
+        output_name: Optional custom output name (without .zip extension)
+        dry_run: Preview changes without saving (default: True)
+        
+    Raises:
+        BibitesCrossPollinateError: If tag modification fails
+    """
+    try:
+        # Find source save
+        source_zip = find_save_by_name(source_name)
+        
+        console.print(f"[blue]Source: {source_zip.name}[/blue]")
+        console.print(f"[blue]Find: '{find_tag}' → Replace: '{replace_tag}'[/blue]")
+        if dry_run:
+            console.print(f"[yellow]DRY-RUN MODE: Preview only, no changes will be saved[/yellow]")
+        
+        # Extract source data if needed
+        source_dir = get_output_directory(source_zip)
+        
+        # Ensure data is extracted
+        if not is_directory_cached(source_dir):
+            console.print(f"[green]Extracting source: {source_zip.name}[/green]")
+            extract_save_files(source_zip, source_dir)
+        
+        # Load bibites from source
+        source_bibites = load_bibites_from_directory(source_dir / 'bibites')
+        
+        console.print(f"[cyan]Found {len(source_bibites)} bibites in source[/cyan]")
+        
+        # Find and count matching organisms
+        matching_organisms = []
+        for i, bibite in enumerate(source_bibites):
+            current_tag = bibite.get('genes', {}).get('tag', '')
+            if current_tag == find_tag:
+                matching_organisms.append((i, bibite))
+        
+        if not matching_organisms:
+            console.print(f"[red]No organisms found with tag '{find_tag}'[/red]")
+            console.print("[blue]Available tags in this save:[/blue]")
+            tags = {}
+            for bibite in source_bibites:
+                tag = bibite.get('genes', {}).get('tag', '<empty>')
+                tags[tag] = tags.get(tag, 0) + 1
+            
+            for tag, count in sorted(tags.items(), key=lambda x: x[1], reverse=True):
+                console.print(f"  '{tag}': {count} organisms")
+            return
+        
+        console.print(f"[green]Found {len(matching_organisms)} organisms with tag '{find_tag}'[/green]")
+        
+        # Show preview table
+        console.print("\n[bold cyan]Change Preview:[/bold cyan]")
+        console.print(f"{'Index':<8} {'Current Tag':<20} {'New Tag':<20}")
+        console.print("-" * 50)
+        for i, bibite in matching_organisms[:10]:  # Show first 10 matches
+            current_tag = bibite.get('genes', {}).get('tag', '<empty>')
+            console.print(f"{i:<8} {current_tag:<20} {replace_tag:<20}")
+        
+        if len(matching_organisms) > 10:
+            console.print(f"... and {len(matching_organisms) - 10} more organisms")
+        
+        if dry_run:
+            console.print(f"\n[yellow]Dry-run complete. Use --apply to make actual changes.[/yellow]")
+            console.print(f"[cyan]Would modify {len(matching_organisms)} organisms[/cyan]")
+            return
+        
+        # Apply changes to bibites
+        changes = 0
+        for i, bibite in matching_organisms:
+            bibite['genes']['tag'] = replace_tag
+            changes += 1
+        
+        console.print(f"[green]Applied changes to {changes} organisms[/green]")
+        
+        # Create temporary directory for modified save
+        temp_dir = Path('./tmp') / f"retag_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+        temp_dir.mkdir(parents=True, exist_ok=True)
+        
+        temp_bibites_dir = temp_dir / 'bibites'
+        temp_eggs_dir = temp_dir / 'eggs'
+        temp_images_dir = temp_dir / 'images'
+        
+        temp_bibites_dir.mkdir(exist_ok=True)
+        temp_eggs_dir.mkdir(exist_ok=True)
+        temp_images_dir.mkdir(exist_ok=True)
+        
+        # Copy eggs and images from source
+        if (source_dir / 'eggs').exists():
+            shutil.copytree(source_dir / 'eggs', temp_eggs_dir, dirs_exist_ok=True)
+        if (source_dir / 'images').exists():
+            shutil.copytree(source_dir / 'images', temp_images_dir, dirs_exist_ok=True)
+        
+        # Write modified bibites
+        for i, bibite in enumerate(source_bibites):
+            output_file = temp_bibites_dir / f"bibite_{i}.bb8"
+            with open(output_file, 'w', encoding='utf-8') as f:
+                json.dump(bibite, f, separators=(',', ':'))
+        
+        # Generate output filename
+        if output_name:
+            output_filename = f"{output_name}.zip"
+        else:
+            clean_old_tag = find_tag.replace(' ', '_').replace('.', '_')
+            clean_new_tag = replace_tag.replace(' ', '_').replace('.', '_')
+            timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+            output_filename = f"retag_{timestamp}_{clean_old_tag}_to_{clean_new_tag}.zip"
+        
+        # Create output path in Savefiles directory
+        output_path = SAVEFILES_PATH / output_filename
+        
+        # Create the new save zip file
+        create_save_zip(output_path, temp_bibites_dir, temp_eggs_dir, temp_images_dir)
+        
+        # Clean up temp directory
+        shutil.rmtree(temp_dir)
+        
+        console.print(f"[bold green]Tag modification complete![/bold green]")
+        console.print(f"[green]Output: {output_path}[/green]")
+        console.print(f"[cyan]Modified {changes} organisms: '{find_tag}' → '{replace_tag}'[/cyan]")
+        console.print(f"[cyan]Total organisms: {len(source_bibites)}[/cyan]")
+        
+    except (SaveExtractionError, BibitesDataError, IOError, json.JSONDecodeError) as e:
+        raise BibitesCrossPollinateError(f"Tag modification failed: {e}")
