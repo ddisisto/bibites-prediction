@@ -41,21 +41,40 @@
 
 ## Analysis Tools
 
-**See: [src/tools/README.md](src/tools/README.md) for complete tool inventory and usage patterns.**
+### Unified Interface
+**Primary tool:** `python -m src.tools.bibites` - Zero path exposure, transparent cache validation
 
-### Core Tools
-- **`extract_save.py`** - Automated autosave processing with --latest-autosave, --cycle-name
-- **`extract_data.py`** - **Modular field extraction** with population analysis, spatial analysis, evolutionary tracking
-- **`extract_metadata.py`** - Ecosystem zone configuration and settings analysis  
-- **`validate_format.py`** - Data quality validation and format compliance
+**MANDATORY: Always check help first**
+```bash
+python -m src.tools.bibites --help
+```
+
+**Tool Usage Patterns for Agents:**
+- **ALWAYS run `--help` first** - Never assume command structure
+- **NEVER use Bash commands like `find`, `grep`, `cat`** - Use project tools instead
+- **Data selection:** `bibites --latest`, `bibites --name PATTERN`, `bibites --list` 
+- **Analysis operations:** `bibites --population`, `bibites --spatial`, `bibites --metadata`
+- **Field extraction:** `bibites --fields FIELD_LIST --batch`
+- **Cross-pollination:** `bibites --inject-fittest --source X --target Y`
+- **File access:** Use Read, Glob, Grep tools from Claude Code environment
+
+**Complete Tool Reference:** @src/tools/README.md
 
 ### Tool Development Protocol
-**Never edit tools directly.** Always delegate to agents:
+**Never edit tools directly.** Always delegate to @tools-engineer:
 
-1. **Request Enhancement:** Specify exact requirements and test cases to @tools-engineer
-2. **Agent Implementation:** @tools-engineer creates/modifies tools within strict functional scope
-3. **Review & Test:** Validate agent output against real ecosystem data
-4. **Git Integration:** Commit working tools with appropriate documentation
+1. **Specify Requirements:** Exact test cases, expected behavior, compatibility needs
+2. **Proper Tool Usage:** Agent must use project's unified interface, not external commands
+3. **Agent Implementation:** @tools-engineer creates/modifies within strict functional scope  
+4. **Validation & Test:** Test agent output against real ecosystem data
+5. **Documentation:** Update tool docs and this CLAUDE.md with new capabilities
+
+### Tool Issue Protocol
+**STOP immediately if tools don't work as expected:**
+- Document the specific failure or unexpected behavior
+- Discuss resolution options before continuing
+- Never work around broken tools - fix them properly
+- This prevents compounding issues and maintains system reliability
 
 ## Agent Ecosystem
 

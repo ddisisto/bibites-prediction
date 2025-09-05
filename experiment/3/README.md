@@ -42,3 +42,9 @@ Some lessons / considerations -
 
 3.2.2.3
 added further eye-color selector (slow, permissive) to nudge magentadeath eyes towards warmer tones (currently green, same as creep eyes)
+
+3.2.3
+Greencreep established and original Creep (magenta) line has gone extinct.
+Removing OuterReach color selector towers, allow pred/prey outside of AntiPred zone to drift again
+(prediction: prey color will follow predator lead)
+~40 - 50 individuals of each line remain - good pop size for efficient sim progression and moderate diversity
