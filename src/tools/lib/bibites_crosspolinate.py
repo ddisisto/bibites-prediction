@@ -73,40 +73,61 @@ def randomize_bibite_positions(bibites: List[Dict[str, Any]], bounds: Tuple[floa
             new_y = random.uniform(min_y, max_y)
             bibite['transform']['position'] = [new_x, new_y]
 
-def create_save_zip(output_path: Path, bibites_dir: Path, eggs_dir: Path, images_dir: Path) -> None:
-    """Create a new save zip file from extracted directories.
+def create_save_zip(output_path: Path, bibites_dir: Path, eggs_dir: Path, images_dir: Path, source_dir: Path) -> None:
+    """Create a new save zip file from extracted directories including metadata files.
     
     Args:
         output_path: Path for the new .zip file
         bibites_dir: Directory containing bibite .bb8 files
         eggs_dir: Directory containing egg .bb8 files
         images_dir: Directory containing image files
+        source_dir: Source directory containing metadata files
         
     Raises:
         BibitesCrossPollinateError: If save creation fails
     """
     try:
         with zipfile.ZipFile(output_path, 'w', zipfile.ZIP_DEFLATED) as zf:
+            # Add critical metadata files from source directory
+            metadata_files = [
+                'settings.bb8settings', 'speciesData.json', 'scene.bb8scene',
+                'pellets.bb8scene', 'pheromones.bb8scene', 'data.bin', 'img.png'
+            ]
+            
+            metadata_count = 0
+            for metadata_file in metadata_files:
+                source_file = source_dir / metadata_file
+                if source_file.exists():
+                    zf.write(source_file, metadata_file)
+                    metadata_count += 1
+            
             # Add bibites
+            bibite_count = 0
             if bibites_dir.exists():
                 for bb8_file in bibites_dir.glob('*.bb8'):
                     arcname = f"bibites/{bb8_file.name}"
                     zf.write(bb8_file, arcname)
+                    bibite_count += 1
             
             # Add eggs
+            egg_count = 0
             if eggs_dir.exists():
                 for bb8_file in eggs_dir.glob('*.bb8'):
                     arcname = f"eggs/{bb8_file.name}"
                     zf.write(bb8_file, arcname)
+                    egg_count += 1
             
             # Add images
+            image_count = 0
             if images_dir.exists():
                 for img_file in images_dir.iterdir():
                     if img_file.is_file():
                         arcname = f"images/{img_file.name}"
                         zf.write(img_file, arcname)
+                        image_count += 1
         
         console.print(f"[green]Successfully created save file: {output_path}[/green]")
+        console.print(f"[cyan]Included: {metadata_count} metadata files, {bibite_count} bibites, {egg_count} eggs, {image_count} images[/cyan]")
         
     except Exception as e:
         raise BibitesCrossPollinateError(f"Failed to create save zip file: {e}")
@@ -218,7 +239,7 @@ def run_inject_fittest(source_name: str, target_name: str, count: int,
         output_path = SAVEFILES_PATH / output_filename
         
         # Create the new save zip file
-        create_save_zip(output_path, temp_bibites_dir, temp_eggs_dir, temp_images_dir)
+        create_save_zip(output_path, temp_bibites_dir, temp_eggs_dir, temp_images_dir, target_dir)
         
         # Clean up temp directory
         shutil.rmtree(temp_dir)
@@ -349,7 +370,7 @@ def run_retag_bulk(source_name: str, find_tag: str, replace_tag: str,
         output_path = SAVEFILES_PATH / output_filename
         
         # Create the new save zip file
-        create_save_zip(output_path, temp_bibites_dir, temp_eggs_dir, temp_images_dir)
+        create_save_zip(output_path, temp_bibites_dir, temp_eggs_dir, temp_images_dir, source_dir)
         
         # Clean up temp directory
         shutil.rmtree(temp_dir)

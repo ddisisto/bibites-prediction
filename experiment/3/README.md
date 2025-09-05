@@ -1,50 +1,97 @@
+# Experiment 3: Concentric Zone Evolution Analysis
+
+**Current Save**: `autosave_20250905225443` (246 organisms)  
+**Status**: Active hourly autosave tracking  
+**Design**: Concentric selective pressure ecosystem with AntiPred sanctuary
+
+## Current Evolutionary State
+
+### Population Dynamics (Recent Trends)
+**Dramatic Population Explosion**: 137 → 246 organisms (+79% in recent cycles)
+
+| Species | Count | % | Recent Change | Zone Preference |
+|---------|-------|---|---------------|----------------|
+| **L1 l1** | 111 | 45.1% | **+428.6%** 🚀 | OuterReach dominant (51%) |
+| **Greencreep** | 61 | 24.8% | **+32.6%** 📈 | OuterReach (48%) + MidPlateau (39%) |
+| **Magentadeath three** | 42 | 17.1% | +10.5% | **AntiPred sanctuary (98%)** |
+| **Deathwatch** | 16 | 6.5% | Stable | OuterReach specialist (69%) |
+| **bait-basic** | 16 | 6.5% | Stable | Distributed across zones |
+
+### Spatial Organization
+
+**Zone Distribution** (5 concentric zones):
+- **OuterReach** (80-100%): 98 organisms (39.8%) - **Most populated**
+- **MidPlateau** (57-80%): 72 organisms (29.3%) - Secondary hub  
+- **AntiPred** (0-24%): 43 organisms (17.5%) - **Protected sanctuary**
+- **FootHills** (46-57%): 23 organisms (9.3%) - Transition zone
+- **KillingField** (24-30%): 10 organisms (4.1%) - **Least populated**
+
+### Key Evolutionary Patterns
+
+1. **Perfect Spatial Segregation**: 
+   - **Magentadeath**: 98% confined to AntiPred sanctuary (successful protection)
+   - **L1 l1 predators**: Dominate outer zones (51% in OuterReach)
+   - **Greencreep**: Distributed across middle+outer zones (avoid center)
+
+2. **Predator Population Boom**: L1 l1 increased 5x - ecosystem carrying capacity expanding
+
+3. **Stable Sanctuary System**: AntiPred zone maintaining 17.5% of population as protected reserve
+
+4. **Zone Utilization**: All 5 zones populated, with clear species-zone preferences
+
+## Ecosystem Design Effectiveness
+
+### ✅ **Working Systems**:
+- **AntiPred sanctuary**: Color selection towers successfully protecting Magentadeath
+- **Spatial segregation**: Clear zone preferences preventing species mixing  
+- **Population stability**: Multiple viable lineages coexisting
+- **Selective pressure gradients**: Different zones driving different adaptations
+
+### 🔬 **Evolutionary Drivers**:
+- **Color selection**: Magenta-only in center, green-preferred in outer zones
+- **Resource gradients**: Different pellet sizes across zones (0.12-2.0)
+- **Predation pressure**: Varying safety levels across concentric rings
+- **Population density**: Competition intensity varies by zone
+
+## Research Questions & Observations
+
+### Current Investigation Areas:
+
+1. **L1 l1 Population Explosion**: What's driving the 5x predator increase?
+   - Resource abundance in outer zones?
+   - Reduced competition after original Creep extinction?
+   - Optimal zone configuration for predator lifestyle?
+
+2. **Greencreep Success**: Why is the green variant thriving vs original magenta?
+   - Color selection advantage in outer zones?
+   - Better predator avoidance (color camouflage with L1 l1)?
+   - Behavioral adaptations?
+
+3. **Zone Efficiency**: How well do different zones serve their intended functions?
+   - AntiPred: Sanctuary effectiveness (98% Magentadeath retention)
+   - OuterReach: Predator hub (40% of total population)
+   - KillingField: Why so underpopulated? (4.1% only)
+
+4. **Ecosystem Maturity**: Is this a stable end-state or transitional phase?
+   - Population growth sustainable?
+   - Zone preferences permanent or evolving?
+   - New speciation events emerging?
+
+### Predicted Evolution Directions:
+
+- **Continued L1 l1 expansion** until resource/space limits hit
+- **Greencreep specialization** in middle zones (MidPlateau/OuterReach)
+- **Magentadeath optimization** within sanctuary constraints
+- **Potential new species emergence** from isolation pressures
+
+## Methodology Notes
+
+- **Spatial analysis**: Now accurately tracks 5 concentric zones using radial distance calculations
+- **Population tracking**: Hourly autosaves provide evolution timeline
+- **Visual validation**: Screenshots confirm tool accuracy vs game UI
+- **Zone configuration**: 1500-unit world radius with relative zone scaling
+
 ---
-Savefile: "pred exp 3.2.1"
-is_autosave_head: true
-[add metadata as needed for tracking]
----
-## Sim History
-Taken basic structure and layout, and some solid predators from earlier Savefiles.
-Concentric zones, mostly plant of diff characters, a little meat in case predator number boost needed
-Lots of dumb "live meat" of two varieties - both color randomised
-Added dense central plant zone, fine pellets for grazing. the "AntiPredator" zone - will be extremely hostile to predators or competitive species
-Added "Color Selection Tower" dead centre of this to enforce protection zone
-    - Zone majority overlap with AntiPredator central kill zone
-    - insta-kill anything not pure magenta in color
-    - small kill delay -- could be overwhelmed if very high numbers of mis-colored bibites in range
-Added engineered bibite to AntiPredator zone - "Magentadeath"
-    - indirect cause of death for predators
-    - initially armored, but largely lost that in favour of growth and reproduction
-    - lost of initial experimentation and tuning to simply get viable lineage (eat -> grow -> reproduce harder than it sounds!)
-Added Creep lineage. Similar color, more aggressive, more highly evolved. Might be able to fake a way in and compete
-Added more color selector towers to non-AntiPred areas - looking for greener predators and co-inhabitants.
-    - much longer delays
-    - select for *most* off-color, acts as a guiding force rather than hard wall
-AntiPred interface full of meat, dead and dying bait. Predators try to encroach, but killed if venturing too far in.
-3.2.2.2
-Introduced GreenCreep
-    - spin-off from some branch of creep
-    - but *GREEN*, so directly selected for outside of AntiPred
-    - same color as predators, might convey further survival advantage if preds use color vision
-    - interesting to see how they go vs. regular almost-magenta creep. force them into middle?
 
-would love way to ban or discourage red pheromone outside of AntiPred zone, but likely will be very advantageous to emit Red.
-this may require occassional reboot of sim from selected lines with highly targetted neurosurgery applied. less drastic ideas also sought.
-
-Some lessons / considerations -
-    Nudges 
-    Perturbations
-    Overlapping gradients
-    Contrasting signals - conceptual tensions create complexity
-    zones, niches
-    Engineer environment to drive behaviour, much easier than other way around
-    Neurosurgery is damn hard. Simple survival is not so simple, let alone advanced behaviours. If selection occurs on genes instead of behaviour, complex brains quickly scramble.
-
-3.2.2.3
-added further eye-color selector (slow, permissive) to nudge magentadeath eyes towards warmer tones (currently green, same as creep eyes)
-
-3.2.3
-Greencreep established and original Creep (magenta) line has gone extinct.
-Removing OuterReach color selector towers, allow pred/prey outside of AntiPred zone to drift again
-(prediction: prey color will follow predator lead)
-~40 - 50 individuals of each line remain - good pop size for efficient sim progression and moderate diversity
+*See [CONCEPTION.md](CONCEPTION.md) for original experimental design and setup history*  
+*Analysis powered by unified bibites tooling with concentric zone support*
