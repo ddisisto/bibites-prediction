@@ -1,0 +1,13 @@
+{
+  "total_organisms": 237,
+  "species_counts": {
+    "Herb.Prot.Cyan": 19,
+    "Greencreep": 98,
+    "Pred": 57,
+    "Herb.Prot.Yellow": 15,
+    "Prey.Deathwatch": 10,
+    "Prey.Basic": 19,
+    "Herb.Prot.Magenta": 19
+  },
+  "errors": 0
+}

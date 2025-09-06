@@ -1,0 +1,284 @@
+{
+  "total_organisms": 243,
+  "zone_totals": {
+    "OuterReach": 115,
+    "MagentaProtectorate": 6,
+    "MidPlateau": 91,
+    "CyanProtectorate": 20,
+    "YellowProtectorate": 11
+  },
+  "zone_species_breakdown": {
+    "OuterReach": {
+      "Greencreep": 62,
+      "Pred": 33,
+      "Prey.Basic": 13,
+      "Prey.Deathwatch": 7
+    },
+    "MagentaProtectorate": {
+      "Herb.Prot.Magenta": 6
+    },
+    "MidPlateau": {
+      "Greencreep": 33,
+      "Pred": 48,
+      "Prey.Basic": 5,
+      "Prey.Deathwatch": 3,
+      "Herb.Prot.Magenta": 1,
+      "Herb.Prot.Cyan": 1
+    },
+    "CyanProtectorate": {
+      "Herb.Prot.Cyan": 20
+    },
+    "YellowProtectorate": {
+      "Herb.Prot.Yellow": 10,
+      "Herb.Prot.Cyan": 1
+    }
+  },
+  "species_zone_preferences": {
+    "Greencreep": {
+      "OuterReach": 62,
+      "MidPlateau": 33
+    },
+    "Herb.Prot.Magenta": {
+      "MagentaProtectorate": 6,
+      "MidPlateau": 1
+    },
+    "Herb.Prot.Cyan": {
+      "CyanProtectorate": 20,
+      "YellowProtectorate": 1,
+      "MidPlateau": 1
+    },
+    "Pred": {
+      "MidPlateau": 48,
+      "OuterReach": 33
+    },
+    "Prey.Basic": {
+      "MidPlateau": 5,
+      "OuterReach": 13
+    },
+    "Herb.Prot.Yellow": {
+      "YellowProtectorate": 10
+    },
+    "Prey.Deathwatch": {
+      "OuterReach": 7,
+      "MidPlateau": 3
+    }
+  },
+  "coordinate_ranges_by_zone": {
+    "OuterReach": {
+      "x_range": [
+        -1625.21875,
+        2038.02161
+      ],
+      "y_range": [
+        -2618.49927,
+        2224.695
+      ],
+      "center": [
+        294.22127452173913,
+        158.89327791565216
+      ],
+      "organism_count": 115
+    },
+    "MagentaProtectorate": {
+      "x_range": [
+        -612.8198,
+        -161.557587
+      ],
+      "y_range": [
+        332.936859,
+        578.9783
+      ],
+      "center": [
+        -356.5837105,
+        422.55200633333334
+      ],
+      "organism_count": 6
+    },
+    "MidPlateau": {
+      "x_range": [
+        -1182.12854,
+        1164.99109
+      ],
+      "y_range": [
+        -1179.41565,
+        1162.10022
+      ],
+      "center": [
+        109.03724849120879,
+        195.4654054967033
+      ],
+      "organism_count": 91
+    },
+    "CyanProtectorate": {
+      "x_range": [
+        105.222473,
+        632.008667
+      ],
+      "y_range": [
+        -642.6787,
+        -98.2164154
+      ],
+      "center": [
+        359.5332638,
+        -298.23804217
+      ],
+      "organism_count": 20
+    },
+    "YellowProtectorate": {
+      "x_range": [
+        -482.644745,
+        -41.9370041
+      ],
+      "y_range": [
+        -445.764832,
+        -124.471107
+      ],
+      "center": [
+        -258.68569064545454,
+        -281.9031893636364
+      ],
+      "organism_count": 11
+    }
+  },
+  "radial_analysis": {
+    "overall_range": [
+      210.59278262477383,
+      3110.486767989386
+    ],
+    "mean_distance": 1083.4340674418795,
+    "zone_distance_ranges": {
+      "OuterReach": {
+        "min_distance": 1207.9718901562592,
+        "max_distance": 2360.357168701051,
+        "mean_distance": 1508.524992373877
+      },
+      "MagentaProtectorate": {
+        "min_distance": 372.4860705622103,
+        "max_distance": 813.248579497376,
+        "mean_distance": 564.4663432888215
+      },
+      "MidPlateau": {
+        "min_distance": 908.1895571572379,
+        "max_distance": 908.1895571572379,
+        "mean_distance": 908.1895571572379
+      },
+      "CyanProtectorate": {
+        "min_distance": 226.28402850536915,
+        "max_distance": 852.479721508336,
+        "mean_distance": 482.45772466966713
+      },
+      "YellowProtectorate": {
+        "min_distance": 382.92432233942543,
+        "max_distance": 382.92432233942543,
+        "mean_distance": 382.92432233942543
+      }
+    }
+  },
+  "zone_configuration": [
+    {
+      "name": "MidPlateau",
+      "id": 0,
+      "material": "Plant",
+      "distribution": "FlatRing",
+      "fertility": 7.298445,
+      "biomassDensity": 6.71009159,
+      "pelletSize": 1.0,
+      "movement": "None",
+      "speed": 0.0,
+      "posX": 0.0,
+      "posY": 0.0,
+      "radiusIsRelative": true,
+      "radius": 0.8033503,
+      "insideRadius": 0.784971952,
+      "_source_path": "zones[0]",
+      "_source_file": "settings.bb8settings"
+    },
+    {
+      "name": "OuterReach",
+      "id": 1,
+      "material": "Plant",
+      "distribution": "Ring",
+      "fertility": 8.0,
+      "biomassDensity": 5.0,
+      "pelletSize": 2.0,
+      "movement": "None",
+      "speed": 1.0,
+      "posX": 0.0,
+      "posY": 0.0,
+      "radiusIsRelative": true,
+      "radius": 1.0,
+      "insideRadius": 0.8,
+      "_source_path": "zones[1]",
+      "_source_file": "settings.bb8settings"
+    },
+    {
+      "name": "MagentaProtectorate",
+      "id": 2,
+      "material": "Plant",
+      "distribution": "Flat",
+      "fertility": 30.0,
+      "biomassDensity": 20.0,
+      "pelletSize": 0.16,
+      "movement": "None",
+      "speed": 1.0,
+      "posX": -0.2518716,
+      "posY": 0.2518716,
+      "radiusIsRelative": true,
+      "radius": 0.2264148,
+      "_source_path": "zones[2]",
+      "_source_file": "settings.bb8settings"
+    },
+    {
+      "name": "KillingField",
+      "id": 3,
+      "material": "Plant",
+      "distribution": "Flat",
+      "fertility": 0.02348252,
+      "biomassDensity": 0.007874129,
+      "pelletSize": 2.56,
+      "movement": "None",
+      "speed": 1.0,
+      "posX": 0.0,
+      "posY": 0.0,
+      "radiusIsRelative": true,
+      "radius": 0.5709872,
+      "_source_path": "zones[3]",
+      "_source_file": "settings.bb8settings"
+    },
+    {
+      "name": "CyanProtectorate",
+      "id": 4,
+      "material": "Plant",
+      "distribution": "Flat",
+      "fertility": 30.0,
+      "biomassDensity": 20.0,
+      "pelletSize": 0.24,
+      "movement": "None",
+      "speed": 1.0,
+      "posX": 0.2518716,
+      "posY": -0.2518716,
+      "radiusIsRelative": true,
+      "radius": 0.2264148,
+      "_source_path": "zones[4]",
+      "_source_file": "settings.bb8settings"
+    },
+    {
+      "name": "YellowProtectorate",
+      "id": 6,
+      "material": "Plant",
+      "distribution": "Flat",
+      "fertility": 30.0,
+      "biomassDensity": 20.0,
+      "pelletSize": 0.20482181,
+      "movement": "None",
+      "speed": 1.0,
+      "posX": -0.251871616,
+      "posY": -0.252044767,
+      "radiusIsRelative": true,
+      "radius": 0.2264148,
+      "_source_path": "zones[6]",
+      "_source_file": "settings.bb8settings"
+    }
+  ],
+  "errors": 0
+}

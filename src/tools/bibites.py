@@ -35,8 +35,9 @@ from rich.console import Console
 from .lib.bibites_data import resolve_data_paths, display_save_listing, BibitesDataError
 from .lib.bibites_analysis import (
     run_population_analysis, run_spatial_analysis, run_comparison_analysis,
-    run_metadata_analysis, run_field_extraction, run_species_field_extraction,
-    run_species_comparison, BibitesAnalysisError
+    run_combat_analysis, run_metadata_analysis, run_field_extraction, 
+    run_species_field_extraction, run_species_comparison, run_behavioral_analysis,
+    BibitesAnalysisError
 )
 from .lib.bibites_crosspolinate import run_inject_fittest, run_retag_bulk, BibitesCrossPollinateError
 
@@ -72,8 +73,16 @@ class BibitesToolError(Exception):
               help='Generate spatial distribution analysis across zones')
 @click.option('--compare-populations', '--compare', is_flag=True,
               help='Compare populations between cycles (requires --last 2)')
+@click.option('--combat', is_flag=True,
+              help='Analyze combat effectiveness with size-relative metrics')
 @click.option('--metadata', '--config', is_flag=True,
               help='Extract ecosystem metadata and zone configuration')
+@click.option('--behavior', is_flag=True,
+              help='Analyze behavioral patterns including pheromone emissions and neural complexity')
+@click.option('--pheromone-focus', type=click.Choice(['red', 'green', 'blue']), default='red',
+              help='Focus pheromone analysis on specific color (default: red)')
+@click.option('--neural-complexity', is_flag=True,
+              help='Focus behavioral analysis on neural complexity metrics only')
 
 # Species Analysis Options
 @click.option('--by-species', is_flag=True,
@@ -82,6 +91,10 @@ class BibitesToolError(Exception):
               help='Extract species ID field for species name mapping')
 @click.option('--compare-species', nargs=2, type=int, metavar='SPECIES_A SPECIES_B',
               help='Compare two specific species by their sim-generated species ID')
+
+# Combat Analysis Options
+@click.option('--lineage', type=str, metavar='LINEAGE',
+              help='Filter combat analysis to specific lineage (e.g., Pred, Pred.lessgreen, Greencreep)')
 
 # Field Extraction Options
 @click.option('--fields', '-f', 
@@ -121,8 +134,10 @@ class BibitesToolError(Exception):
 
 def bibites(latest: bool, last: Optional[int], name: Optional[str], list: bool,
            population_summary: bool, species_summary: bool, spatial_analysis: bool,
-           compare_populations: bool, metadata: bool,
+           compare_populations: bool, combat: bool, metadata: bool, 
+           behavior: bool, pheromone_focus: str, neural_complexity: bool,
            by_species: bool, species_field: bool, compare_species: Optional[Tuple[int, int]],
+           lineage: Optional[str],
            fields: Optional[str], batch: bool,
            inject_fittest: bool, source: Optional[str], target: Optional[str], count: int,
            retag: bool, find_tag: Optional[str], replace_tag: Optional[str], 
@@ -144,12 +159,21 @@ def bibites(latest: bool, last: Optional[int], name: Optional[str], list: bool,
         --species               Detailed species statistics 
         --spatial               Spatial distribution analysis
         --compare               Compare populations between cycles
+        --combat                Analyze combat effectiveness with size-relative metrics
         --metadata              Extract ecosystem configuration
+        --behavior              Analyze behavioral patterns (pheromone emissions, neural complexity)
         
     SPECIES ANALYSIS:
         --by-species            Use sim-generated species IDs instead of tags
         --species-field         Extract species ID mapping
         --compare-species A B   Compare specific species by ID
+        
+    COMBAT ANALYSIS:
+        --lineage LINEAGE       Filter combat analysis to specific lineage (Pred, Pred.lessgreen, etc.)
+        
+    BEHAVIORAL ANALYSIS:
+        --pheromone-focus COLOR Focus pheromone analysis on specific color (red, green, blue)
+        --neural-complexity     Focus behavioral analysis on neural complexity metrics only
         
     FIELD EXTRACTION:
         --fields FIELD_LIST     Extract specific organism fields
@@ -195,6 +219,10 @@ def bibites(latest: bool, last: Optional[int], name: Optional[str], list: bool,
         
         # Compare specific species by sim ID
         bibites --latest --compare-species 479 603
+        
+        # Combat effectiveness analysis
+        bibites --latest --combat --output combat_results.json
+        bibites --latest --combat --lineage Pred.lessgreen
         
         # Cross-pollination examples
         bibites --inject-fittest --source "pred train br" --target "pred train br - pre-herbivore staging"
@@ -261,8 +289,8 @@ def bibites(latest: bool, last: Optional[int], name: Optional[str], list: bool,
         # Track which analyses were requested
         analysis_count = sum([
             population_summary, species_summary, spatial_analysis, 
-            compare_populations, metadata, species_field,
-            compare_species is not None, fields is not None
+            compare_populations, combat, metadata, behavior,
+            species_field, compare_species is not None, fields is not None
         ])
         
         if analysis_count == 0:
@@ -295,9 +323,27 @@ def bibites(latest: bool, last: Optional[int], name: Optional[str], list: bool,
             run_comparison_analysis(data_paths, output)
             console.print()
         
+        if combat:
+            console.print("[bold cyan]Combat Effectiveness Analysis[/bold cyan]")
+            if lineage:
+                console.print(f"[blue]Filtering for lineage: {lineage}[/blue]")
+            run_combat_analysis(data_paths, lineage, size_relative=True, output=output)
+            console.print()
+        
         if metadata:
             console.print("[bold cyan]Ecosystem Metadata Analysis[/bold cyan]")
             run_metadata_analysis(data_paths, output.parent if output else None)
+            console.print()
+        
+        if behavior:
+            console.print("[bold cyan]Behavioral Analysis[/bold cyan]")
+            if neural_complexity and pheromone_focus != 'red':
+                console.print("[blue]Focus: Neural complexity only[/blue]")
+            elif neural_complexity:
+                console.print("[blue]Focus: Neural complexity[/blue]") 
+            else:
+                console.print(f"[blue]Focus: {pheromone_focus.capitalize()} pheromone patterns + neural complexity[/blue]")
+            run_behavioral_analysis(data_paths, pheromone_focus, neural_complexity, by_species, output)
             console.print()
         
         if species_field:

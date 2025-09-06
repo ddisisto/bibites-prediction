@@ -1,0 +1,2034 @@
+[
+  {
+    "genes.speciesID": 2810,
+    "genes.tag": "Herb.Prot.Yellow",
+    "genes.gen": 4,
+    "genes.genes.PheroSense": 111.082756,
+    "genes.genes.ViewRadius": 77.06519,
+    "_file": "bibite_18.bb8"
+  },
+  {
+    "genes.speciesID": 2779,
+    "genes.tag": "Herb.Prot.Cyan",
+    "genes.gen": 8,
+    "genes.genes.PheroSense": 136.351044,
+    "genes.genes.ViewRadius": 64.41289,
+    "_file": "bibite_27.bb8"
+  },
+  {
+    "genes.speciesID": 2810,
+    "genes.tag": "Herb.Prot.Yellow",
+    "genes.gen": 5,
+    "genes.genes.PheroSense": 129.769135,
+    "genes.genes.ViewRadius": 77.06519,
+    "_file": "bibite_146.bb8"
+  },
+  {
+    "genes.speciesID": 2872,
+    "genes.tag": "Pred",
+    "genes.gen": 54,
+    "genes.genes.PheroSense": 121.090973,
+    "genes.genes.ViewRadius": 131.193481,
+    "_file": "bibite_216.bb8"
+  },
+  {
+    "genes.speciesID": 2878,
+    "genes.tag": "Greencreep",
+    "genes.gen": 117,
+    "genes.genes.PheroSense": 111.842926,
+    "genes.genes.ViewRadius": 100.095406,
+    "_file": "bibite_103.bb8"
+  },
+  {
+    "genes.speciesID": 2783,
+    "genes.tag": "Herb.Prot.Magenta",
+    "genes.gen": 43,
+    "genes.genes.PheroSense": 117.7837,
+    "genes.genes.ViewRadius": 69.4132843,
+    "_file": "bibite_1.bb8"
+  },
+  {
+    "genes.speciesID": 2572,
+    "genes.tag": "Prey.Deathwatch",
+    "genes.gen": 0,
+    "genes.genes.PheroSense": 500.0,
+    "genes.genes.ViewRadius": 200.0,
+    "_file": "bibite_203.bb8"
+  },
+  {
+    "genes.speciesID": 2810,
+    "genes.tag": "Herb.Prot.Yellow",
+    "genes.gen": 5,
+    "genes.genes.PheroSense": 117.898163,
+    "genes.genes.ViewRadius": 77.06519,
+    "_file": "bibite_189.bb8"
+  },
+  {
+    "genes.speciesID": 2783,
+    "genes.tag": "Herb.Prot.Magenta",
+    "genes.gen": 45,
+    "genes.genes.PheroSense": 117.7837,
+    "genes.genes.ViewRadius": 69.4132843,
+    "_file": "bibite_66.bb8"
+  },
+  {
+    "genes.speciesID": 1956,
+    "genes.tag": "Prey.Basic",
+    "genes.gen": 0,
+    "genes.genes.PheroSense": 160.0,
+    "genes.genes.ViewRadius": 75.0,
+    "_file": "bibite_119.bb8"
+  },
+  {
+    "genes.speciesID": 2783,
+    "genes.tag": "Herb.Prot.Magenta",
+    "genes.gen": 44,
+    "genes.genes.PheroSense": 117.7837,
+    "genes.genes.ViewRadius": 69.4132843,
+    "_file": "bibite_97.bb8"
+  },
+  {
+    "genes.speciesID": 2779,
+    "genes.tag": "Herb.Prot.Cyan",
+    "genes.gen": 8,
+    "genes.genes.PheroSense": 146.295029,
+    "genes.genes.ViewRadius": 65.09234,
+    "_file": "bibite_176.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 115,
+    "genes.genes.PheroSense": 115.428238,
+    "genes.genes.ViewRadius": 156.384109,
+    "_file": "bibite_43.bb8"
+  },
+  {
+    "genes.speciesID": 2783,
+    "genes.tag": "Herb.Prot.Magenta",
+    "genes.gen": 44,
+    "genes.genes.PheroSense": 117.7837,
+    "genes.genes.ViewRadius": 65.07746,
+    "_file": "bibite_50.bb8"
+  },
+  {
+    "genes.speciesID": 2885,
+    "genes.tag": "Pred",
+    "genes.gen": 74,
+    "genes.genes.PheroSense": 125.220177,
+    "genes.genes.ViewRadius": 106.558418,
+    "_file": "bibite_160.bb8"
+  },
+  {
+    "genes.speciesID": 2810,
+    "genes.tag": "Herb.Prot.Yellow",
+    "genes.gen": 4,
+    "genes.genes.PheroSense": 129.769135,
+    "genes.genes.ViewRadius": 77.06519,
+    "_file": "bibite_11.bb8"
+  },
+  {
+    "genes.speciesID": 2872,
+    "genes.tag": "Pred",
+    "genes.gen": 55,
+    "genes.genes.PheroSense": 121.090973,
+    "genes.genes.ViewRadius": 119.459351,
+    "_file": "bibite_192.bb8"
+  },
+  {
+    "genes.speciesID": 2872,
+    "genes.tag": "Pred",
+    "genes.gen": 54,
+    "genes.genes.PheroSense": 121.090973,
+    "genes.genes.ViewRadius": 131.193481,
+    "_file": "bibite_193.bb8"
+  },
+  {
+    "genes.speciesID": 2783,
+    "genes.tag": "Herb.Prot.Magenta",
+    "genes.gen": 44,
+    "genes.genes.PheroSense": 121.000694,
+    "genes.genes.ViewRadius": 67.49097,
+    "_file": "bibite_245.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 115,
+    "genes.genes.PheroSense": 115.428238,
+    "genes.genes.ViewRadius": 171.106567,
+    "_file": "bibite_112.bb8"
+  },
+  {
+    "genes.speciesID": 2572,
+    "genes.tag": "Prey.Deathwatch",
+    "genes.gen": 0,
+    "genes.genes.PheroSense": 500.0,
+    "genes.genes.ViewRadius": 200.0,
+    "_file": "bibite_174.bb8"
+  },
+  {
+    "genes.speciesID": 2862,
+    "genes.tag": "Greencreep",
+    "genes.gen": 115,
+    "genes.genes.PheroSense": 121.955246,
+    "genes.genes.ViewRadius": 129.482483,
+    "_file": "bibite_251.bb8"
+  },
+  {
+    "genes.speciesID": 2885,
+    "genes.tag": "Pred",
+    "genes.gen": 74,
+    "genes.genes.PheroSense": 125.220177,
+    "genes.genes.ViewRadius": 112.012985,
+    "_file": "bibite_122.bb8"
+  },
+  {
+    "genes.speciesID": 2783,
+    "genes.tag": "Herb.Prot.Magenta",
+    "genes.gen": 44,
+    "genes.genes.PheroSense": 117.7837,
+    "genes.genes.ViewRadius": 69.4132843,
+    "_file": "bibite_209.bb8"
+  },
+  {
+    "genes.speciesID": 2872,
+    "genes.tag": "Pred",
+    "genes.gen": 53,
+    "genes.genes.PheroSense": 121.090973,
+    "genes.genes.ViewRadius": 131.193481,
+    "_file": "bibite_125.bb8"
+  },
+  {
+    "genes.speciesID": 2884,
+    "genes.tag": "Greencreep",
+    "genes.gen": 115,
+    "genes.genes.PheroSense": 103.641708,
+    "genes.genes.ViewRadius": 113.168663,
+    "_file": "bibite_85.bb8"
+  },
+  {
+    "genes.speciesID": 2572,
+    "genes.tag": "Prey.Deathwatch",
+    "genes.gen": 0,
+    "genes.genes.PheroSense": 500.0,
+    "genes.genes.ViewRadius": 200.0,
+    "_file": "bibite_106.bb8"
+  },
+  {
+    "genes.speciesID": 2872,
+    "genes.tag": "Pred",
+    "genes.gen": 55,
+    "genes.genes.PheroSense": 121.090973,
+    "genes.genes.ViewRadius": 131.193481,
+    "_file": "bibite_225.bb8"
+  },
+  {
+    "genes.speciesID": 1956,
+    "genes.tag": "Prey.Basic",
+    "genes.gen": 0,
+    "genes.genes.PheroSense": 160.0,
+    "genes.genes.ViewRadius": 75.0,
+    "_file": "bibite_201.bb8"
+  },
+  {
+    "genes.speciesID": 2810,
+    "genes.tag": "Herb.Prot.Yellow",
+    "genes.gen": 4,
+    "genes.genes.PheroSense": 137.364136,
+    "genes.genes.ViewRadius": 77.06519,
+    "_file": "bibite_7.bb8"
+  },
+  {
+    "genes.speciesID": 2779,
+    "genes.tag": "Herb.Prot.Cyan",
+    "genes.gen": 8,
+    "genes.genes.PheroSense": 136.351044,
+    "genes.genes.ViewRadius": 64.41289,
+    "_file": "bibite_139.bb8"
+  },
+  {
+    "genes.speciesID": 2862,
+    "genes.tag": "Greencreep",
+    "genes.gen": 115,
+    "genes.genes.PheroSense": 121.955246,
+    "genes.genes.ViewRadius": 129.482483,
+    "_file": "bibite_132.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 117,
+    "genes.genes.PheroSense": 115.428238,
+    "genes.genes.ViewRadius": 134.214264,
+    "_file": "bibite_214.bb8"
+  },
+  {
+    "genes.speciesID": 2867,
+    "genes.tag": "Pred",
+    "genes.gen": 52,
+    "genes.genes.PheroSense": 131.391449,
+    "genes.genes.ViewRadius": 144.037308,
+    "_file": "bibite_114.bb8"
+  },
+  {
+    "genes.speciesID": 2802,
+    "genes.tag": "Pred",
+    "genes.gen": 44,
+    "genes.genes.PheroSense": 131.391449,
+    "genes.genes.ViewRadius": 131.193481,
+    "_file": "bibite_76.bb8"
+  },
+  {
+    "genes.speciesID": 2783,
+    "genes.tag": "Herb.Prot.Magenta",
+    "genes.gen": 43,
+    "genes.genes.PheroSense": 117.7837,
+    "genes.genes.ViewRadius": 69.4132843,
+    "_file": "bibite_8.bb8"
+  },
+  {
+    "genes.speciesID": 2884,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 113.373314,
+    "genes.genes.ViewRadius": 118.665146,
+    "_file": "bibite_81.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 115.428238,
+    "genes.genes.ViewRadius": 156.384109,
+    "_file": "bibite_147.bb8"
+  },
+  {
+    "genes.speciesID": 2849,
+    "genes.tag": "Greencreep",
+    "genes.gen": 117,
+    "genes.genes.PheroSense": 143.1181,
+    "genes.genes.ViewRadius": 125.2236,
+    "_file": "bibite_213.bb8"
+  },
+  {
+    "genes.speciesID": 2849,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 131.218079,
+    "genes.genes.ViewRadius": 118.677467,
+    "_file": "bibite_191.bb8"
+  },
+  {
+    "genes.speciesID": 2890,
+    "genes.tag": "Pred",
+    "genes.gen": 73,
+    "genes.genes.PheroSense": 152.812836,
+    "genes.genes.ViewRadius": 110.56575,
+    "_file": "bibite_204.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 115,
+    "genes.genes.PheroSense": 115.428238,
+    "genes.genes.ViewRadius": 156.384109,
+    "_file": "bibite_57.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 117,
+    "genes.genes.PheroSense": 115.428238,
+    "genes.genes.ViewRadius": 134.214264,
+    "_file": "bibite_172.bb8"
+  },
+  {
+    "genes.speciesID": 2872,
+    "genes.tag": "Pred",
+    "genes.gen": 54,
+    "genes.genes.PheroSense": 121.090973,
+    "genes.genes.ViewRadius": 131.193481,
+    "_file": "bibite_166.bb8"
+  },
+  {
+    "genes.speciesID": 2783,
+    "genes.tag": "Herb.Prot.Magenta",
+    "genes.gen": 44,
+    "genes.genes.PheroSense": 117.7837,
+    "genes.genes.ViewRadius": 69.4132843,
+    "_file": "bibite_178.bb8"
+  },
+  {
+    "genes.speciesID": 2872,
+    "genes.tag": "Pred",
+    "genes.gen": 55,
+    "genes.genes.PheroSense": 121.090973,
+    "genes.genes.ViewRadius": 130.91156,
+    "_file": "bibite_155.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 128.000854,
+    "genes.genes.ViewRadius": 123.505615,
+    "_file": "bibite_145.bb8"
+  },
+  {
+    "genes.speciesID": 2779,
+    "genes.tag": "Herb.Prot.Cyan",
+    "genes.gen": 8,
+    "genes.genes.PheroSense": 146.295029,
+    "genes.genes.ViewRadius": 68.98464,
+    "_file": "bibite_107.bb8"
+  },
+  {
+    "genes.speciesID": 2872,
+    "genes.tag": "Pred",
+    "genes.gen": 53,
+    "genes.genes.PheroSense": 121.090973,
+    "genes.genes.ViewRadius": 131.193481,
+    "_file": "bibite_149.bb8"
+  },
+  {
+    "genes.speciesID": 2878,
+    "genes.tag": "Greencreep",
+    "genes.gen": 118,
+    "genes.genes.PheroSense": 128.82132,
+    "genes.genes.ViewRadius": 84.51893,
+    "_file": "bibite_104.bb8"
+  },
+  {
+    "genes.speciesID": 2872,
+    "genes.tag": "Pred",
+    "genes.gen": 57,
+    "genes.genes.PheroSense": 138.633774,
+    "genes.genes.ViewRadius": 131.193481,
+    "_file": "bibite_240.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 117,
+    "genes.genes.PheroSense": 128.000854,
+    "genes.genes.ViewRadius": 139.1498,
+    "_file": "bibite_234.bb8"
+  },
+  {
+    "genes.speciesID": 2783,
+    "genes.tag": "Herb.Prot.Magenta",
+    "genes.gen": 44,
+    "genes.genes.PheroSense": 117.7837,
+    "genes.genes.ViewRadius": 69.4132843,
+    "_file": "bibite_36.bb8"
+  },
+  {
+    "genes.speciesID": 2872,
+    "genes.tag": "Pred",
+    "genes.gen": 57,
+    "genes.genes.PheroSense": 138.633774,
+    "genes.genes.ViewRadius": 131.193481,
+    "_file": "bibite_184.bb8"
+  },
+  {
+    "genes.speciesID": 2872,
+    "genes.tag": "Pred",
+    "genes.gen": 54,
+    "genes.genes.PheroSense": 121.090973,
+    "genes.genes.ViewRadius": 130.91156,
+    "_file": "bibite_211.bb8"
+  },
+  {
+    "genes.speciesID": 2872,
+    "genes.tag": "Pred",
+    "genes.gen": 54,
+    "genes.genes.PheroSense": 121.090973,
+    "genes.genes.ViewRadius": 131.193481,
+    "_file": "bibite_195.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 104.390343,
+    "genes.genes.ViewRadius": 154.4031,
+    "_file": "bibite_233.bb8"
+  },
+  {
+    "genes.speciesID": 2810,
+    "genes.tag": "Herb.Prot.Yellow",
+    "genes.gen": 5,
+    "genes.genes.PheroSense": 122.265533,
+    "genes.genes.ViewRadius": 77.06519,
+    "_file": "bibite_92.bb8"
+  },
+  {
+    "genes.speciesID": 2872,
+    "genes.tag": "Pred",
+    "genes.gen": 57,
+    "genes.genes.PheroSense": 138.633774,
+    "genes.genes.ViewRadius": 131.193481,
+    "_file": "bibite_241.bb8"
+  },
+  {
+    "genes.speciesID": 2872,
+    "genes.tag": "Pred",
+    "genes.gen": 54,
+    "genes.genes.PheroSense": 121.090973,
+    "genes.genes.ViewRadius": 131.193481,
+    "_file": "bibite_182.bb8"
+  },
+  {
+    "genes.speciesID": 2572,
+    "genes.tag": "Prey.Deathwatch",
+    "genes.gen": 0,
+    "genes.genes.PheroSense": 500.0,
+    "genes.genes.ViewRadius": 200.0,
+    "_file": "bibite_237.bb8"
+  },
+  {
+    "genes.speciesID": 2849,
+    "genes.tag": "Greencreep",
+    "genes.gen": 115,
+    "genes.genes.PheroSense": 131.218079,
+    "genes.genes.ViewRadius": 118.677467,
+    "_file": "bibite_56.bb8"
+  },
+  {
+    "genes.speciesID": 2884,
+    "genes.tag": "Greencreep",
+    "genes.gen": 115,
+    "genes.genes.PheroSense": 102.618782,
+    "genes.genes.ViewRadius": 118.665146,
+    "_file": "bibite_108.bb8"
+  },
+  {
+    "genes.speciesID": 2783,
+    "genes.tag": "Herb.Prot.Magenta",
+    "genes.gen": 44,
+    "genes.genes.PheroSense": 117.7837,
+    "genes.genes.ViewRadius": 69.4132843,
+    "_file": "bibite_39.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 115,
+    "genes.genes.PheroSense": 104.390343,
+    "genes.genes.ViewRadius": 131.4948,
+    "_file": "bibite_34.bb8"
+  },
+  {
+    "genes.speciesID": 2783,
+    "genes.tag": "Herb.Prot.Magenta",
+    "genes.gen": 43,
+    "genes.genes.PheroSense": 117.7837,
+    "genes.genes.ViewRadius": 65.07746,
+    "_file": "bibite_12.bb8"
+  },
+  {
+    "genes.speciesID": 2849,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 143.1181,
+    "genes.genes.ViewRadius": 109.470406,
+    "_file": "bibite_126.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 128.000854,
+    "genes.genes.ViewRadius": 133.740982,
+    "_file": "bibite_73.bb8"
+  },
+  {
+    "genes.speciesID": 2849,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 143.1181,
+    "genes.genes.ViewRadius": 109.569115,
+    "_file": "bibite_109.bb8"
+  },
+  {
+    "genes.speciesID": 2783,
+    "genes.tag": "Herb.Prot.Magenta",
+    "genes.gen": 44,
+    "genes.genes.PheroSense": 117.7837,
+    "genes.genes.ViewRadius": 69.4132843,
+    "_file": "bibite_16.bb8"
+  },
+  {
+    "genes.speciesID": 2810,
+    "genes.tag": "Herb.Prot.Yellow",
+    "genes.gen": 5,
+    "genes.genes.PheroSense": 137.364136,
+    "genes.genes.ViewRadius": 77.06519,
+    "_file": "bibite_179.bb8"
+  },
+  {
+    "genes.speciesID": 2872,
+    "genes.tag": "Pred",
+    "genes.gen": 53,
+    "genes.genes.PheroSense": 121.090973,
+    "genes.genes.ViewRadius": 131.193481,
+    "_file": "bibite_101.bb8"
+  },
+  {
+    "genes.speciesID": 2849,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 131.218079,
+    "genes.genes.ViewRadius": 121.991852,
+    "_file": "bibite_194.bb8"
+  },
+  {
+    "genes.speciesID": 2872,
+    "genes.tag": "Pred",
+    "genes.gen": 55,
+    "genes.genes.PheroSense": 121.090973,
+    "genes.genes.ViewRadius": 131.193481,
+    "_file": "bibite_242.bb8"
+  },
+  {
+    "genes.speciesID": 2896,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 115.428238,
+    "genes.genes.ViewRadius": 156.384109,
+    "_file": "bibite_230.bb8"
+  },
+  {
+    "genes.speciesID": 2872,
+    "genes.tag": "Pred",
+    "genes.gen": 53,
+    "genes.genes.PheroSense": 121.090973,
+    "genes.genes.ViewRadius": 131.193481,
+    "_file": "bibite_110.bb8"
+  },
+  {
+    "genes.speciesID": 2884,
+    "genes.tag": "Greencreep",
+    "genes.gen": 115,
+    "genes.genes.PheroSense": 102.618782,
+    "genes.genes.ViewRadius": 108.38063,
+    "_file": "bibite_96.bb8"
+  },
+  {
+    "genes.speciesID": 2783,
+    "genes.tag": "Herb.Prot.Magenta",
+    "genes.gen": 44,
+    "genes.genes.PheroSense": 117.7837,
+    "genes.genes.ViewRadius": 69.4132843,
+    "_file": "bibite_13.bb8"
+  },
+  {
+    "genes.speciesID": 2810,
+    "genes.tag": "Herb.Prot.Yellow",
+    "genes.gen": 5,
+    "genes.genes.PheroSense": 129.769135,
+    "genes.genes.ViewRadius": 77.06519,
+    "_file": "bibite_95.bb8"
+  },
+  {
+    "genes.speciesID": 2862,
+    "genes.tag": "Greencreep",
+    "genes.gen": 114,
+    "genes.genes.PheroSense": 99.33102,
+    "genes.genes.ViewRadius": 129.482483,
+    "_file": "bibite_41.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 104.390343,
+    "genes.genes.ViewRadius": 137.369965,
+    "_file": "bibite_208.bb8"
+  },
+  {
+    "genes.speciesID": 2878,
+    "genes.tag": "Greencreep",
+    "genes.gen": 118,
+    "genes.genes.PheroSense": 128.82132,
+    "genes.genes.ViewRadius": 88.60345,
+    "_file": "bibite_150.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 128.000854,
+    "genes.genes.ViewRadius": 123.505615,
+    "_file": "bibite_111.bb8"
+  },
+  {
+    "genes.speciesID": 2810,
+    "genes.tag": "Herb.Prot.Yellow",
+    "genes.gen": 4,
+    "genes.genes.PheroSense": 137.364136,
+    "genes.genes.ViewRadius": 77.06519,
+    "_file": "bibite_24.bb8"
+  },
+  {
+    "genes.speciesID": 2783,
+    "genes.tag": "Herb.Prot.Magenta",
+    "genes.gen": 43,
+    "genes.genes.PheroSense": 111.962639,
+    "genes.genes.ViewRadius": 65.07746,
+    "_file": "bibite_25.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 117,
+    "genes.genes.PheroSense": 118.466492,
+    "genes.genes.ViewRadius": 131.4948,
+    "_file": "bibite_153.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 86.40741,
+    "genes.genes.ViewRadius": 156.384109,
+    "_file": "bibite_202.bb8"
+  },
+  {
+    "genes.speciesID": 1956,
+    "genes.tag": "Prey.Basic",
+    "genes.gen": 1,
+    "genes.genes.PheroSense": 160.0,
+    "genes.genes.ViewRadius": 75.0,
+    "_file": "bibite_171.bb8"
+  },
+  {
+    "genes.speciesID": 2872,
+    "genes.tag": "Pred",
+    "genes.gen": 57,
+    "genes.genes.PheroSense": 138.633774,
+    "genes.genes.ViewRadius": 131.193481,
+    "_file": "bibite_200.bb8"
+  },
+  {
+    "genes.speciesID": 2802,
+    "genes.tag": "Pred",
+    "genes.gen": 44,
+    "genes.genes.PheroSense": 131.391449,
+    "genes.genes.ViewRadius": 131.193481,
+    "_file": "bibite_219.bb8"
+  },
+  {
+    "genes.speciesID": 2783,
+    "genes.tag": "Herb.Prot.Magenta",
+    "genes.gen": 44,
+    "genes.genes.PheroSense": 86.1909256,
+    "genes.genes.ViewRadius": 65.07746,
+    "_file": "bibite_75.bb8"
+  },
+  {
+    "genes.speciesID": 2783,
+    "genes.tag": "Herb.Prot.Magenta",
+    "genes.gen": 45,
+    "genes.genes.PheroSense": 117.7837,
+    "genes.genes.ViewRadius": 69.4132843,
+    "_file": "bibite_80.bb8"
+  },
+  {
+    "genes.speciesID": 2885,
+    "genes.tag": "Pred",
+    "genes.gen": 74,
+    "genes.genes.PheroSense": 125.220177,
+    "genes.genes.ViewRadius": 100.84166,
+    "_file": "bibite_131.bb8"
+  },
+  {
+    "genes.speciesID": 2886,
+    "genes.tag": "Greencreep",
+    "genes.gen": 115,
+    "genes.genes.PheroSense": 99.33102,
+    "genes.genes.ViewRadius": 115.474319,
+    "_file": "bibite_168.bb8"
+  },
+  {
+    "genes.speciesID": 2884,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 102.618782,
+    "genes.genes.ViewRadius": 110.237495,
+    "_file": "bibite_90.bb8"
+  },
+  {
+    "genes.speciesID": 2872,
+    "genes.tag": "Pred",
+    "genes.gen": 54,
+    "genes.genes.PheroSense": 121.090973,
+    "genes.genes.ViewRadius": 130.91156,
+    "_file": "bibite_220.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 115,
+    "genes.genes.PheroSense": 115.428238,
+    "genes.genes.ViewRadius": 142.386017,
+    "_file": "bibite_67.bb8"
+  },
+  {
+    "genes.speciesID": 2872,
+    "genes.tag": "Pred",
+    "genes.gen": 54,
+    "genes.genes.PheroSense": 121.090973,
+    "genes.genes.ViewRadius": 130.91156,
+    "_file": "bibite_142.bb8"
+  },
+  {
+    "genes.speciesID": 2867,
+    "genes.tag": "Pred",
+    "genes.gen": 53,
+    "genes.genes.PheroSense": 131.391449,
+    "genes.genes.ViewRadius": 144.037308,
+    "_file": "bibite_224.bb8"
+  },
+  {
+    "genes.speciesID": 1956,
+    "genes.tag": "Prey.Basic",
+    "genes.gen": 0,
+    "genes.genes.PheroSense": 160.0,
+    "genes.genes.ViewRadius": 75.0,
+    "_file": "bibite_86.bb8"
+  },
+  {
+    "genes.speciesID": 1956,
+    "genes.tag": "Prey.Basic",
+    "genes.gen": 0,
+    "genes.genes.PheroSense": 160.0,
+    "genes.genes.ViewRadius": 75.0,
+    "_file": "bibite_236.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 128.000854,
+    "genes.genes.ViewRadius": 123.505615,
+    "_file": "bibite_221.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 115.428238,
+    "genes.genes.ViewRadius": 156.384109,
+    "_file": "bibite_158.bb8"
+  },
+  {
+    "genes.speciesID": 2872,
+    "genes.tag": "Pred",
+    "genes.gen": 56,
+    "genes.genes.PheroSense": 138.633774,
+    "genes.genes.ViewRadius": 131.193481,
+    "_file": "bibite_138.bb8"
+  },
+  {
+    "genes.speciesID": 2783,
+    "genes.tag": "Herb.Prot.Magenta",
+    "genes.gen": 45,
+    "genes.genes.PheroSense": 117.7837,
+    "genes.genes.ViewRadius": 69.4132843,
+    "_file": "bibite_117.bb8"
+  },
+  {
+    "genes.speciesID": 2779,
+    "genes.tag": "Herb.Prot.Cyan",
+    "genes.gen": 8,
+    "genes.genes.PheroSense": 136.351044,
+    "genes.genes.ViewRadius": 61.2868462,
+    "_file": "bibite_91.bb8"
+  },
+  {
+    "genes.speciesID": 2810,
+    "genes.tag": "Herb.Prot.Yellow",
+    "genes.gen": 4,
+    "genes.genes.PheroSense": 107.778152,
+    "genes.genes.ViewRadius": 77.06519,
+    "_file": "bibite_14.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 117,
+    "genes.genes.PheroSense": 120.21199,
+    "genes.genes.ViewRadius": 131.4948,
+    "_file": "bibite_63.bb8"
+  },
+  {
+    "genes.speciesID": 2896,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 136.488419,
+    "genes.genes.ViewRadius": 166.06488,
+    "_file": "bibite_161.bb8"
+  },
+  {
+    "genes.speciesID": 2783,
+    "genes.tag": "Herb.Prot.Magenta",
+    "genes.gen": 43,
+    "genes.genes.PheroSense": 117.7837,
+    "genes.genes.ViewRadius": 65.07746,
+    "_file": "bibite_9.bb8"
+  },
+  {
+    "genes.speciesID": 2783,
+    "genes.tag": "Herb.Prot.Magenta",
+    "genes.gen": 44,
+    "genes.genes.PheroSense": 117.7837,
+    "genes.genes.ViewRadius": 69.4132843,
+    "_file": "bibite_65.bb8"
+  },
+  {
+    "genes.speciesID": 1956,
+    "genes.tag": "Prey.Basic",
+    "genes.gen": 0,
+    "genes.genes.PheroSense": 160.0,
+    "genes.genes.ViewRadius": 75.0,
+    "_file": "bibite_46.bb8"
+  },
+  {
+    "genes.speciesID": 2849,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 143.1181,
+    "genes.genes.ViewRadius": 109.569115,
+    "_file": "bibite_94.bb8"
+  },
+  {
+    "genes.speciesID": 2872,
+    "genes.tag": "Pred",
+    "genes.gen": 56,
+    "genes.genes.PheroSense": 138.633774,
+    "genes.genes.ViewRadius": 131.193481,
+    "_file": "bibite_175.bb8"
+  },
+  {
+    "genes.speciesID": 2872,
+    "genes.tag": "Pred",
+    "genes.gen": 54,
+    "genes.genes.PheroSense": 121.090973,
+    "genes.genes.ViewRadius": 131.193481,
+    "_file": "bibite_113.bb8"
+  },
+  {
+    "genes.speciesID": 2779,
+    "genes.tag": "Herb.Prot.Cyan",
+    "genes.gen": 8,
+    "genes.genes.PheroSense": 136.351044,
+    "genes.genes.ViewRadius": 64.41289,
+    "_file": "bibite_72.bb8"
+  },
+  {
+    "genes.speciesID": 2849,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 143.1181,
+    "genes.genes.ViewRadius": 109.569115,
+    "_file": "bibite_116.bb8"
+  },
+  {
+    "genes.speciesID": 2878,
+    "genes.tag": "Greencreep",
+    "genes.gen": 117,
+    "genes.genes.PheroSense": 111.842926,
+    "genes.genes.ViewRadius": 100.095406,
+    "_file": "bibite_198.bb8"
+  },
+  {
+    "genes.speciesID": 2849,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 143.1181,
+    "genes.genes.ViewRadius": 118.606415,
+    "_file": "bibite_78.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 118,
+    "genes.genes.PheroSense": 119.63839,
+    "genes.genes.ViewRadius": 141.471588,
+    "_file": "bibite_227.bb8"
+  },
+  {
+    "genes.speciesID": 2572,
+    "genes.tag": "Prey.Deathwatch",
+    "genes.gen": 0,
+    "genes.genes.PheroSense": 500.0,
+    "genes.genes.ViewRadius": 200.0,
+    "_file": "bibite_162.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 104.390343,
+    "genes.genes.ViewRadius": 154.4031,
+    "_file": "bibite_185.bb8"
+  },
+  {
+    "genes.speciesID": 2779,
+    "genes.tag": "Herb.Prot.Cyan",
+    "genes.gen": 8,
+    "genes.genes.PheroSense": 136.351044,
+    "genes.genes.ViewRadius": 61.2868462,
+    "_file": "bibite_82.bb8"
+  },
+  {
+    "genes.speciesID": 2572,
+    "genes.tag": "Prey.Deathwatch",
+    "genes.gen": 0,
+    "genes.genes.PheroSense": 500.0,
+    "genes.genes.ViewRadius": 200.0,
+    "_file": "bibite_55.bb8"
+  },
+  {
+    "genes.speciesID": 2783,
+    "genes.tag": "Herb.Prot.Magenta",
+    "genes.gen": 44,
+    "genes.genes.PheroSense": 117.7837,
+    "genes.genes.ViewRadius": 65.07746,
+    "_file": "bibite_187.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 117,
+    "genes.genes.PheroSense": 115.428238,
+    "genes.genes.ViewRadius": 145.790817,
+    "_file": "bibite_238.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 117,
+    "genes.genes.PheroSense": 120.21199,
+    "genes.genes.ViewRadius": 120.619247,
+    "_file": "bibite_68.bb8"
+  },
+  {
+    "genes.speciesID": 2872,
+    "genes.tag": "Pred",
+    "genes.gen": 55,
+    "genes.genes.PheroSense": 121.090973,
+    "genes.genes.ViewRadius": 131.193481,
+    "_file": "bibite_207.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 115.428238,
+    "genes.genes.ViewRadius": 140.100311,
+    "_file": "bibite_181.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 117,
+    "genes.genes.PheroSense": 120.21199,
+    "genes.genes.ViewRadius": 131.4948,
+    "_file": "bibite_143.bb8"
+  },
+  {
+    "genes.speciesID": 1956,
+    "genes.tag": "Prey.Basic",
+    "genes.gen": 1,
+    "genes.genes.PheroSense": 160.0,
+    "genes.genes.ViewRadius": 75.0,
+    "_file": "bibite_133.bb8"
+  },
+  {
+    "genes.speciesID": 2783,
+    "genes.tag": "Herb.Prot.Magenta",
+    "genes.gen": 45,
+    "genes.genes.PheroSense": 117.7837,
+    "genes.genes.ViewRadius": 69.4132843,
+    "_file": "bibite_217.bb8"
+  },
+  {
+    "genes.speciesID": 2572,
+    "genes.tag": "Prey.Deathwatch",
+    "genes.gen": 0,
+    "genes.genes.PheroSense": 500.0,
+    "genes.genes.ViewRadius": 200.0,
+    "_file": "bibite_53.bb8"
+  },
+  {
+    "genes.speciesID": 2779,
+    "genes.tag": "Herb.Prot.Cyan",
+    "genes.gen": 8,
+    "genes.genes.PheroSense": 146.295029,
+    "genes.genes.ViewRadius": 60.223587,
+    "_file": "bibite_164.bb8"
+  },
+  {
+    "genes.speciesID": 2849,
+    "genes.tag": "Greencreep",
+    "genes.gen": 117,
+    "genes.genes.PheroSense": 143.1181,
+    "genes.genes.ViewRadius": 118.677467,
+    "_file": "bibite_253.bb8"
+  },
+  {
+    "genes.speciesID": 2783,
+    "genes.tag": "Herb.Prot.Magenta",
+    "genes.gen": 45,
+    "genes.genes.PheroSense": 117.7837,
+    "genes.genes.ViewRadius": 69.4132843,
+    "_file": "bibite_226.bb8"
+  },
+  {
+    "genes.speciesID": 2810,
+    "genes.tag": "Herb.Prot.Yellow",
+    "genes.gen": 4,
+    "genes.genes.PheroSense": 137.364136,
+    "genes.genes.ViewRadius": 77.06519,
+    "_file": "bibite_3.bb8"
+  },
+  {
+    "genes.speciesID": 2862,
+    "genes.tag": "Greencreep",
+    "genes.gen": 115,
+    "genes.genes.PheroSense": 121.955246,
+    "genes.genes.ViewRadius": 129.482483,
+    "_file": "bibite_120.bb8"
+  },
+  {
+    "genes.speciesID": 2849,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 116.433624,
+    "genes.genes.ViewRadius": 118.677467,
+    "_file": "bibite_212.bb8"
+  },
+  {
+    "genes.speciesID": 2849,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 156.698654,
+    "genes.genes.ViewRadius": 109.569115,
+    "_file": "bibite_135.bb8"
+  },
+  {
+    "genes.speciesID": 2802,
+    "genes.tag": "Pred",
+    "genes.gen": 45,
+    "genes.genes.PheroSense": 131.391449,
+    "genes.genes.ViewRadius": 131.193481,
+    "_file": "bibite_118.bb8"
+  },
+  {
+    "genes.speciesID": 2783,
+    "genes.tag": "Herb.Prot.Magenta",
+    "genes.gen": 44,
+    "genes.genes.PheroSense": 117.7837,
+    "genes.genes.ViewRadius": 69.4132843,
+    "_file": "bibite_22.bb8"
+  },
+  {
+    "genes.speciesID": 1956,
+    "genes.tag": "Prey.Basic",
+    "genes.gen": 1,
+    "genes.genes.PheroSense": 160.0,
+    "genes.genes.ViewRadius": 75.0,
+    "_file": "bibite_244.bb8"
+  },
+  {
+    "genes.speciesID": 2810,
+    "genes.tag": "Herb.Prot.Yellow",
+    "genes.gen": 5,
+    "genes.genes.PheroSense": 137.364136,
+    "genes.genes.ViewRadius": 77.06519,
+    "_file": "bibite_77.bb8"
+  },
+  {
+    "genes.speciesID": 2872,
+    "genes.tag": "Pred",
+    "genes.gen": 54,
+    "genes.genes.PheroSense": 121.090973,
+    "genes.genes.ViewRadius": 131.193481,
+    "_file": "bibite_148.bb8"
+  },
+  {
+    "genes.speciesID": 2885,
+    "genes.tag": "Pred",
+    "genes.gen": 73,
+    "genes.genes.PheroSense": 125.220177,
+    "genes.genes.ViewRadius": 100.84166,
+    "_file": "bibite_89.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 115,
+    "genes.genes.PheroSense": 104.390343,
+    "genes.genes.ViewRadius": 154.4031,
+    "_file": "bibite_49.bb8"
+  },
+  {
+    "genes.speciesID": 2810,
+    "genes.tag": "Herb.Prot.Yellow",
+    "genes.gen": 4,
+    "genes.genes.PheroSense": 137.364136,
+    "genes.genes.ViewRadius": 77.06519,
+    "_file": "bibite_19.bb8"
+  },
+  {
+    "genes.speciesID": 2810,
+    "genes.tag": "Herb.Prot.Yellow",
+    "genes.gen": 3,
+    "genes.genes.PheroSense": 137.364136,
+    "genes.genes.ViewRadius": 69.4132843,
+    "_file": "bibite_10.bb8"
+  },
+  {
+    "genes.speciesID": 1956,
+    "genes.tag": "Prey.Basic",
+    "genes.gen": 1,
+    "genes.genes.PheroSense": 160.0,
+    "genes.genes.ViewRadius": 75.0,
+    "_file": "bibite_180.bb8"
+  },
+  {
+    "genes.speciesID": 2779,
+    "genes.tag": "Herb.Prot.Cyan",
+    "genes.gen": 7,
+    "genes.genes.PheroSense": 146.295029,
+    "genes.genes.ViewRadius": 69.4132843,
+    "_file": "bibite_2.bb8"
+  },
+  {
+    "genes.speciesID": 2822,
+    "genes.tag": "Pred",
+    "genes.gen": 73,
+    "genes.genes.PheroSense": 125.220177,
+    "genes.genes.ViewRadius": 112.012985,
+    "_file": "bibite_83.bb8"
+  },
+  {
+    "genes.speciesID": 1956,
+    "genes.tag": "Prey.Basic",
+    "genes.gen": 0,
+    "genes.genes.PheroSense": 160.0,
+    "genes.genes.ViewRadius": 75.0,
+    "_file": "bibite_188.bb8"
+  },
+  {
+    "genes.speciesID": 2783,
+    "genes.tag": "Herb.Prot.Magenta",
+    "genes.gen": 43,
+    "genes.genes.PheroSense": 117.7837,
+    "genes.genes.ViewRadius": 57.8908844,
+    "_file": "bibite_141.bb8"
+  },
+  {
+    "genes.speciesID": 2822,
+    "genes.tag": "Pred",
+    "genes.gen": 72,
+    "genes.genes.PheroSense": 125.220177,
+    "genes.genes.ViewRadius": 112.012985,
+    "_file": "bibite_60.bb8"
+  },
+  {
+    "genes.speciesID": 1956,
+    "genes.tag": "Prey.Basic",
+    "genes.gen": 0,
+    "genes.genes.PheroSense": 160.0,
+    "genes.genes.ViewRadius": 75.0,
+    "_file": "bibite_152.bb8"
+  },
+  {
+    "genes.speciesID": 2872,
+    "genes.tag": "Pred",
+    "genes.gen": 57,
+    "genes.genes.PheroSense": 138.633774,
+    "genes.genes.ViewRadius": 153.288635,
+    "_file": "bibite_222.bb8"
+  },
+  {
+    "genes.speciesID": 2892,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 116.433624,
+    "genes.genes.ViewRadius": 112.642128,
+    "_file": "bibite_235.bb8"
+  },
+  {
+    "genes.speciesID": 2783,
+    "genes.tag": "Herb.Prot.Magenta",
+    "genes.gen": 43,
+    "genes.genes.PheroSense": 117.7837,
+    "genes.genes.ViewRadius": 62.05975,
+    "_file": "bibite_249.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 102.618782,
+    "genes.genes.ViewRadius": 129.482483,
+    "_file": "bibite_93.bb8"
+  },
+  {
+    "genes.speciesID": 2885,
+    "genes.tag": "Pred",
+    "genes.gen": 75,
+    "genes.genes.PheroSense": 125.220177,
+    "genes.genes.ViewRadius": 112.012985,
+    "_file": "bibite_243.bb8"
+  },
+  {
+    "genes.speciesID": 2884,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 102.618782,
+    "genes.genes.ViewRadius": 118.665146,
+    "_file": "bibite_199.bb8"
+  },
+  {
+    "genes.speciesID": 2849,
+    "genes.tag": "Greencreep",
+    "genes.gen": 114,
+    "genes.genes.PheroSense": 143.1181,
+    "genes.genes.ViewRadius": 118.677467,
+    "_file": "bibite_51.bb8"
+  },
+  {
+    "genes.speciesID": 2896,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 136.488419,
+    "genes.genes.ViewRadius": 156.384109,
+    "_file": "bibite_210.bb8"
+  },
+  {
+    "genes.speciesID": 2783,
+    "genes.tag": "Herb.Prot.Magenta",
+    "genes.gen": 45,
+    "genes.genes.PheroSense": 117.7837,
+    "genes.genes.ViewRadius": 64.7144241,
+    "_file": "bibite_136.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 113.476852,
+    "genes.genes.ViewRadius": 131.4948,
+    "_file": "bibite_140.bb8"
+  },
+  {
+    "genes.speciesID": 2849,
+    "genes.tag": "Greencreep",
+    "genes.gen": 115,
+    "genes.genes.PheroSense": 116.433624,
+    "genes.genes.ViewRadius": 118.677467,
+    "_file": "bibite_40.bb8"
+  },
+  {
+    "genes.speciesID": 1956,
+    "genes.tag": "Prey.Basic",
+    "genes.gen": 0,
+    "genes.genes.PheroSense": 160.0,
+    "genes.genes.ViewRadius": 75.0,
+    "_file": "bibite_228.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 102.618782,
+    "genes.genes.ViewRadius": 129.482483,
+    "_file": "bibite_100.bb8"
+  },
+  {
+    "genes.speciesID": 2810,
+    "genes.tag": "Herb.Prot.Yellow",
+    "genes.gen": 4,
+    "genes.genes.PheroSense": 137.364136,
+    "genes.genes.ViewRadius": 69.44955,
+    "_file": "bibite_32.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 115,
+    "genes.genes.PheroSense": 115.428238,
+    "genes.genes.ViewRadius": 156.384109,
+    "_file": "bibite_52.bb8"
+  },
+  {
+    "genes.speciesID": 2862,
+    "genes.tag": "Greencreep",
+    "genes.gen": 114,
+    "genes.genes.PheroSense": 121.955246,
+    "genes.genes.ViewRadius": 129.482483,
+    "_file": "bibite_31.bb8"
+  },
+  {
+    "genes.speciesID": 2862,
+    "genes.tag": "Greencreep",
+    "genes.gen": 115,
+    "genes.genes.PheroSense": 84.3591,
+    "genes.genes.ViewRadius": 129.482483,
+    "_file": "bibite_173.bb8"
+  },
+  {
+    "genes.speciesID": 2867,
+    "genes.tag": "Pred",
+    "genes.gen": 53,
+    "genes.genes.PheroSense": 117.371979,
+    "genes.genes.ViewRadius": 144.037308,
+    "_file": "bibite_252.bb8"
+  },
+  {
+    "genes.speciesID": 2783,
+    "genes.tag": "Herb.Prot.Magenta",
+    "genes.gen": 43,
+    "genes.genes.PheroSense": 117.7837,
+    "genes.genes.ViewRadius": 65.07746,
+    "_file": "bibite_21.bb8"
+  },
+  {
+    "genes.speciesID": 2783,
+    "genes.tag": "Herb.Prot.Magenta",
+    "genes.gen": 44,
+    "genes.genes.PheroSense": 117.7837,
+    "genes.genes.ViewRadius": 69.4132843,
+    "_file": "bibite_30.bb8"
+  },
+  {
+    "genes.speciesID": 2896,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 136.488419,
+    "genes.genes.ViewRadius": 156.384109,
+    "_file": "bibite_250.bb8"
+  },
+  {
+    "genes.speciesID": 2849,
+    "genes.tag": "Greencreep",
+    "genes.gen": 115,
+    "genes.genes.PheroSense": 131.218079,
+    "genes.genes.ViewRadius": 118.677467,
+    "_file": "bibite_69.bb8"
+  },
+  {
+    "genes.speciesID": 2810,
+    "genes.tag": "Herb.Prot.Yellow",
+    "genes.gen": 4,
+    "genes.genes.PheroSense": 137.364136,
+    "genes.genes.ViewRadius": 82.69628,
+    "_file": "bibite_6.bb8"
+  },
+  {
+    "genes.speciesID": 2896,
+    "genes.tag": "Greencreep",
+    "genes.gen": 115,
+    "genes.genes.PheroSense": 136.488419,
+    "genes.genes.ViewRadius": 156.384109,
+    "_file": "bibite_61.bb8"
+  },
+  {
+    "genes.speciesID": 1956,
+    "genes.tag": "Prey.Basic",
+    "genes.gen": 0,
+    "genes.genes.PheroSense": 160.0,
+    "genes.genes.ViewRadius": 75.0,
+    "_file": "bibite_105.bb8"
+  },
+  {
+    "genes.speciesID": 2862,
+    "genes.tag": "Greencreep",
+    "genes.gen": 115,
+    "genes.genes.PheroSense": 88.070694,
+    "genes.genes.ViewRadius": 129.482483,
+    "_file": "bibite_239.bb8"
+  },
+  {
+    "genes.speciesID": 1956,
+    "genes.tag": "Prey.Basic",
+    "genes.gen": 0,
+    "genes.genes.PheroSense": 160.0,
+    "genes.genes.ViewRadius": 75.0,
+    "_file": "bibite_246.bb8"
+  },
+  {
+    "genes.speciesID": 2783,
+    "genes.tag": "Herb.Prot.Magenta",
+    "genes.gen": 43,
+    "genes.genes.PheroSense": 117.7837,
+    "genes.genes.ViewRadius": 65.07746,
+    "_file": "bibite_29.bb8"
+  },
+  {
+    "genes.speciesID": 2849,
+    "genes.tag": "Greencreep",
+    "genes.gen": 115,
+    "genes.genes.PheroSense": 164.694641,
+    "genes.genes.ViewRadius": 97.6354446,
+    "_file": "bibite_129.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 115,
+    "genes.genes.PheroSense": 115.428238,
+    "genes.genes.ViewRadius": 155.71283,
+    "_file": "bibite_70.bb8"
+  },
+  {
+    "genes.speciesID": 2878,
+    "genes.tag": "Greencreep",
+    "genes.gen": 118,
+    "genes.genes.PheroSense": 128.82132,
+    "genes.genes.ViewRadius": 100.095406,
+    "_file": "bibite_167.bb8"
+  },
+  {
+    "genes.speciesID": 2783,
+    "genes.tag": "Herb.Prot.Magenta",
+    "genes.gen": 43,
+    "genes.genes.PheroSense": 117.7837,
+    "genes.genes.ViewRadius": 65.07746,
+    "_file": "bibite_4.bb8"
+  },
+  {
+    "genes.speciesID": 2810,
+    "genes.tag": "Herb.Prot.Yellow",
+    "genes.gen": 5,
+    "genes.genes.PheroSense": 129.769135,
+    "genes.genes.ViewRadius": 77.06519,
+    "_file": "bibite_79.bb8"
+  },
+  {
+    "genes.speciesID": 2872,
+    "genes.tag": "Pred",
+    "genes.gen": 55,
+    "genes.genes.PheroSense": 121.090973,
+    "genes.genes.ViewRadius": 130.91156,
+    "_file": "bibite_218.bb8"
+  },
+  {
+    "genes.speciesID": 2783,
+    "genes.tag": "Herb.Prot.Magenta",
+    "genes.gen": 44,
+    "genes.genes.PheroSense": 117.7837,
+    "genes.genes.ViewRadius": 69.4132843,
+    "_file": "bibite_20.bb8"
+  },
+  {
+    "genes.speciesID": 2862,
+    "genes.tag": "Greencreep",
+    "genes.gen": 115,
+    "genes.genes.PheroSense": 115.147873,
+    "genes.genes.ViewRadius": 129.482483,
+    "_file": "bibite_186.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 128.000854,
+    "genes.genes.ViewRadius": 123.505615,
+    "_file": "bibite_59.bb8"
+  },
+  {
+    "genes.speciesID": 2875,
+    "genes.tag": "Greencreep",
+    "genes.gen": 117,
+    "genes.genes.PheroSense": 127.291016,
+    "genes.genes.ViewRadius": 148.38446,
+    "_file": "bibite_28.bb8"
+  },
+  {
+    "genes.speciesID": 2878,
+    "genes.tag": "Greencreep",
+    "genes.gen": 117,
+    "genes.genes.PheroSense": 111.842926,
+    "genes.genes.ViewRadius": 100.095406,
+    "_file": "bibite_137.bb8"
+  },
+  {
+    "genes.speciesID": 2884,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 103.641708,
+    "genes.genes.ViewRadius": 113.168663,
+    "_file": "bibite_223.bb8"
+  },
+  {
+    "genes.speciesID": 2849,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 143.1181,
+    "genes.genes.ViewRadius": 109.569115,
+    "_file": "bibite_197.bb8"
+  },
+  {
+    "genes.speciesID": 2779,
+    "genes.tag": "Herb.Prot.Cyan",
+    "genes.gen": 8,
+    "genes.genes.PheroSense": 146.295029,
+    "genes.genes.ViewRadius": 69.4132843,
+    "_file": "bibite_74.bb8"
+  },
+  {
+    "genes.speciesID": 2884,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 102.618782,
+    "genes.genes.ViewRadius": 118.665146,
+    "_file": "bibite_156.bb8"
+  },
+  {
+    "genes.speciesID": 2867,
+    "genes.tag": "Pred",
+    "genes.gen": 52,
+    "genes.genes.PheroSense": 131.391449,
+    "genes.genes.ViewRadius": 144.037308,
+    "_file": "bibite_124.bb8"
+  },
+  {
+    "genes.speciesID": 2896,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 122.521858,
+    "genes.genes.ViewRadius": 156.384109,
+    "_file": "bibite_206.bb8"
+  },
+  {
+    "genes.speciesID": 2810,
+    "genes.tag": "Herb.Prot.Yellow",
+    "genes.gen": 5,
+    "genes.genes.PheroSense": 137.364136,
+    "genes.genes.ViewRadius": 82.69628,
+    "_file": "bibite_144.bb8"
+  },
+  {
+    "genes.speciesID": 2872,
+    "genes.tag": "Pred",
+    "genes.gen": 55,
+    "genes.genes.PheroSense": 121.090973,
+    "genes.genes.ViewRadius": 131.193481,
+    "_file": "bibite_231.bb8"
+  },
+  {
+    "genes.speciesID": 2872,
+    "genes.tag": "Pred",
+    "genes.gen": 56,
+    "genes.genes.PheroSense": 128.898529,
+    "genes.genes.ViewRadius": 131.193481,
+    "_file": "bibite_151.bb8"
+  },
+  {
+    "genes.speciesID": 2885,
+    "genes.tag": "Pred",
+    "genes.gen": 75,
+    "genes.genes.PheroSense": 125.220177,
+    "genes.genes.ViewRadius": 112.012985,
+    "_file": "bibite_163.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 104.390343,
+    "genes.genes.ViewRadius": 132.227,
+    "_file": "bibite_165.bb8"
+  },
+  {
+    "genes.speciesID": 2867,
+    "genes.tag": "Pred",
+    "genes.gen": 52,
+    "genes.genes.PheroSense": 117.371979,
+    "genes.genes.ViewRadius": 144.037308,
+    "_file": "bibite_130.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 128.000854,
+    "genes.genes.ViewRadius": 123.505615,
+    "_file": "bibite_99.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 118,
+    "genes.genes.PheroSense": 120.21199,
+    "genes.genes.ViewRadius": 131.4948,
+    "_file": "bibite_157.bb8"
+  },
+  {
+    "genes.speciesID": 2892,
+    "genes.tag": "Greencreep",
+    "genes.gen": 115,
+    "genes.genes.PheroSense": 116.433624,
+    "genes.genes.ViewRadius": 112.642128,
+    "_file": "bibite_35.bb8"
+  },
+  {
+    "genes.speciesID": 2783,
+    "genes.tag": "Herb.Prot.Magenta",
+    "genes.gen": 43,
+    "genes.genes.PheroSense": 117.7837,
+    "genes.genes.ViewRadius": 65.07746,
+    "_file": "bibite_102.bb8"
+  },
+  {
+    "genes.speciesID": 2810,
+    "genes.tag": "Herb.Prot.Yellow",
+    "genes.gen": 4,
+    "genes.genes.PheroSense": 122.616348,
+    "genes.genes.ViewRadius": 77.06519,
+    "_file": "bibite_37.bb8"
+  },
+  {
+    "genes.speciesID": 2779,
+    "genes.tag": "Herb.Prot.Cyan",
+    "genes.gen": 7,
+    "genes.genes.PheroSense": 146.295029,
+    "genes.genes.ViewRadius": 65.09234,
+    "_file": "bibite_17.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 104.390343,
+    "genes.genes.ViewRadius": 131.4948,
+    "_file": "bibite_190.bb8"
+  },
+  {
+    "genes.speciesID": 2885,
+    "genes.tag": "Pred",
+    "genes.gen": 74,
+    "genes.genes.PheroSense": 125.220177,
+    "genes.genes.ViewRadius": 100.84166,
+    "_file": "bibite_159.bb8"
+  },
+  {
+    "genes.speciesID": 2779,
+    "genes.tag": "Herb.Prot.Cyan",
+    "genes.gen": 8,
+    "genes.genes.PheroSense": 136.351044,
+    "genes.genes.ViewRadius": 64.41289,
+    "_file": "bibite_169.bb8"
+  },
+  {
+    "genes.speciesID": 2849,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 116.433624,
+    "genes.genes.ViewRadius": 118.677467,
+    "_file": "bibite_128.bb8"
+  },
+  {
+    "genes.speciesID": 2802,
+    "genes.tag": "Pred",
+    "genes.gen": 45,
+    "genes.genes.PheroSense": 131.391449,
+    "genes.genes.ViewRadius": 131.193481,
+    "_file": "bibite_58.bb8"
+  },
+  {
+    "genes.speciesID": 2779,
+    "genes.tag": "Herb.Prot.Cyan",
+    "genes.gen": 8,
+    "genes.genes.PheroSense": 123.764908,
+    "genes.genes.ViewRadius": 71.6644,
+    "_file": "bibite_45.bb8"
+  },
+  {
+    "genes.speciesID": 2802,
+    "genes.tag": "Pred",
+    "genes.gen": 43,
+    "genes.genes.PheroSense": 131.391449,
+    "genes.genes.ViewRadius": 131.193481,
+    "_file": "bibite_26.bb8"
+  },
+  {
+    "genes.speciesID": 1956,
+    "genes.tag": "Prey.Basic",
+    "genes.gen": 0,
+    "genes.genes.PheroSense": 160.0,
+    "genes.genes.ViewRadius": 75.0,
+    "_file": "bibite_134.bb8"
+  },
+  {
+    "genes.speciesID": 2783,
+    "genes.tag": "Herb.Prot.Magenta",
+    "genes.gen": 44,
+    "genes.genes.PheroSense": 117.7837,
+    "genes.genes.ViewRadius": 69.4132843,
+    "_file": "bibite_47.bb8"
+  },
+  {
+    "genes.speciesID": 2878,
+    "genes.tag": "Greencreep",
+    "genes.gen": 117,
+    "genes.genes.PheroSense": 128.82132,
+    "genes.genes.ViewRadius": 100.095406,
+    "_file": "bibite_44.bb8"
+  },
+  {
+    "genes.speciesID": 2849,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 143.1181,
+    "genes.genes.ViewRadius": 118.677467,
+    "_file": "bibite_84.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 104.390343,
+    "genes.genes.ViewRadius": 131.4948,
+    "_file": "bibite_248.bb8"
+  },
+  {
+    "genes.speciesID": 2572,
+    "genes.tag": "Prey.Deathwatch",
+    "genes.gen": 0,
+    "genes.genes.PheroSense": 500.0,
+    "genes.genes.ViewRadius": 200.0,
+    "_file": "bibite_154.bb8"
+  },
+  {
+    "genes.speciesID": 1956,
+    "genes.tag": "Prey.Basic",
+    "genes.gen": 0,
+    "genes.genes.PheroSense": 160.0,
+    "genes.genes.ViewRadius": 75.0,
+    "_file": "bibite_229.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 114,
+    "genes.genes.PheroSense": 115.428238,
+    "genes.genes.ViewRadius": 150.6278,
+    "_file": "bibite_64.bb8"
+  },
+  {
+    "genes.speciesID": 2884,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 78.25328,
+    "genes.genes.ViewRadius": 118.665146,
+    "_file": "bibite_71.bb8"
+  },
+  {
+    "genes.speciesID": 2872,
+    "genes.tag": "Pred",
+    "genes.gen": 55,
+    "genes.genes.PheroSense": 121.090973,
+    "genes.genes.ViewRadius": 130.91156,
+    "_file": "bibite_177.bb8"
+  },
+  {
+    "genes.speciesID": 2872,
+    "genes.tag": "Pred",
+    "genes.gen": 55,
+    "genes.genes.PheroSense": 121.090973,
+    "genes.genes.ViewRadius": 131.193481,
+    "_file": "bibite_196.bb8"
+  },
+  {
+    "genes.speciesID": 2783,
+    "genes.tag": "Herb.Prot.Magenta",
+    "genes.gen": 42,
+    "genes.genes.PheroSense": 117.7837,
+    "genes.genes.ViewRadius": 65.07746,
+    "_file": "bibite_0.bb8"
+  },
+  {
+    "genes.speciesID": 2872,
+    "genes.tag": "Pred",
+    "genes.gen": 53,
+    "genes.genes.PheroSense": 121.090973,
+    "genes.genes.ViewRadius": 131.193481,
+    "_file": "bibite_115.bb8"
+  },
+  {
+    "genes.speciesID": 2872,
+    "genes.tag": "Pred",
+    "genes.gen": 53,
+    "genes.genes.PheroSense": 121.090973,
+    "genes.genes.ViewRadius": 130.91156,
+    "_file": "bibite_98.bb8"
+  },
+  {
+    "genes.speciesID": 2810,
+    "genes.tag": "Herb.Prot.Yellow",
+    "genes.gen": 4,
+    "genes.genes.PheroSense": 137.364136,
+    "genes.genes.ViewRadius": 77.06519,
+    "_file": "bibite_38.bb8"
+  },
+  {
+    "genes.speciesID": 2572,
+    "genes.tag": "Prey.Deathwatch",
+    "genes.gen": 0,
+    "genes.genes.PheroSense": 500.0,
+    "genes.genes.ViewRadius": 200.0,
+    "_file": "bibite_127.bb8"
+  },
+  {
+    "genes.speciesID": 2783,
+    "genes.tag": "Herb.Prot.Magenta",
+    "genes.gen": 44,
+    "genes.genes.PheroSense": 117.7837,
+    "genes.genes.ViewRadius": 65.07746,
+    "_file": "bibite_42.bb8"
+  },
+  {
+    "genes.speciesID": 1956,
+    "genes.tag": "Prey.Basic",
+    "genes.gen": 0,
+    "genes.genes.PheroSense": 160.0,
+    "genes.genes.ViewRadius": 75.0,
+    "_file": "bibite_232.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 115,
+    "genes.genes.PheroSense": 128.000854,
+    "genes.genes.ViewRadius": 123.505615,
+    "_file": "bibite_33.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 115.428238,
+    "genes.genes.ViewRadius": 134.214264,
+    "_file": "bibite_62.bb8"
+  },
+  {
+    "genes.speciesID": 2783,
+    "genes.tag": "Herb.Prot.Magenta",
+    "genes.gen": 44,
+    "genes.genes.PheroSense": 117.7837,
+    "genes.genes.ViewRadius": 65.07746,
+    "_file": "bibite_183.bb8"
+  },
+  {
+    "genes.speciesID": 2892,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 116.433624,
+    "genes.genes.ViewRadius": 112.642128,
+    "_file": "bibite_88.bb8"
+  },
+  {
+    "genes.speciesID": 2836,
+    "genes.tag": "Greencreep",
+    "genes.gen": 116,
+    "genes.genes.PheroSense": 104.390343,
+    "genes.genes.ViewRadius": 131.4948,
+    "_file": "bibite_48.bb8"
+  },
+  {
+    "genes.speciesID": 2779,
+    "genes.tag": "Herb.Prot.Cyan",
+    "genes.gen": 7,
+    "genes.genes.PheroSense": 146.295029,
+    "genes.genes.ViewRadius": 69.4132843,
+    "_file": "bibite_15.bb8"
+  },
+  {
+    "genes.speciesID": 2783,
+    "genes.tag": "Herb.Prot.Magenta",
+    "genes.gen": 45,
+    "genes.genes.PheroSense": 117.7837,
+    "genes.genes.ViewRadius": 69.4132843,
+    "_file": "bibite_54.bb8"
+  },
+  {
+    "genes.speciesID": 2810,
+    "genes.tag": "Herb.Prot.Yellow",
+    "genes.gen": 5,
+    "genes.genes.PheroSense": 137.364136,
+    "genes.genes.ViewRadius": 82.69628,
+    "_file": "bibite_205.bb8"
+  },
+  {
+    "genes.speciesID": 2867,
+    "genes.tag": "Pred",
+    "genes.gen": 53,
+    "genes.genes.PheroSense": 131.391449,
+    "genes.genes.ViewRadius": 144.037308,
+    "_file": "bibite_215.bb8"
+  },
+  {
+    "genes.speciesID": 2872,
+    "genes.tag": "Pred",
+    "genes.gen": 54,
+    "genes.genes.PheroSense": 121.090973,
+    "genes.genes.ViewRadius": 131.193481,
+    "_file": "bibite_121.bb8"
+  },
+  {
+    "genes.speciesID": 2779,
+    "genes.tag": "Herb.Prot.Cyan",
+    "genes.gen": 7,
+    "genes.genes.PheroSense": 136.351044,
+    "genes.genes.ViewRadius": 64.41289,
+    "_file": "bibite_5.bb8"
+  },
+  {
+    "genes.speciesID": 2872,
+    "genes.tag": "Pred",
+    "genes.gen": 54,
+    "genes.genes.PheroSense": 121.090973,
+    "genes.genes.ViewRadius": 131.193481,
+    "_file": "bibite_247.bb8"
+  },
+  {
+    "genes.speciesID": 2572,
+    "genes.tag": "Prey.Deathwatch",
+    "genes.gen": 0,
+    "genes.genes.PheroSense": 500.0,
+    "genes.genes.ViewRadius": 200.0,
+    "_file": "bibite_170.bb8"
+  },
+  {
+    "genes.speciesID": 2810,
+    "genes.tag": "Herb.Prot.Yellow",
+    "genes.gen": 4,
+    "genes.genes.PheroSense": 137.364136,
+    "genes.genes.ViewRadius": 77.06519,
+    "_file": "bibite_23.bb8"
+  },
+  {
+    "genes.speciesID": 2849,
+    "genes.tag": "Greencreep",
+    "genes.gen": 115,
+    "genes.genes.PheroSense": 143.1181,
+    "genes.genes.ViewRadius": 118.677467,
+    "_file": "bibite_87.bb8"
+  },
+  {
+    "genes.speciesID": 2872,
+    "genes.tag": "Pred",
+    "genes.gen": 54,
+    "genes.genes.PheroSense": 121.090973,
+    "genes.genes.ViewRadius": 126.603714,
+    "_file": "bibite_123.bb8"
+  }
+]

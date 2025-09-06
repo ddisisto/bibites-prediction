@@ -1,0 +1,86 @@
+{
+  "total_organisms": 254,
+  "species_count": 7,
+  "species_distribution": {
+    "Herb.Prot.Yellow": {
+      "count": 22,
+      "percentage": 8.661417322834646,
+      "avg_energy": 0,
+      "avg_age": 0,
+      "dominant_color": [
+        1.0,
+        0.9978290254545454,
+        0.0
+      ]
+    },
+    "Herb.Prot.Cyan": {
+      "count": 15,
+      "percentage": 5.905511811023622,
+      "avg_energy": 0,
+      "avg_age": 0,
+      "dominant_color": [
+        0.00041103477933333334,
+        0.9759002866666667,
+        0.9925189533333333
+      ]
+    },
+    "Pred": {
+      "count": 57,
+      "percentage": 22.440944881889763,
+      "avg_energy": 0,
+      "avg_age": 0,
+      "dominant_color": [
+        0.22518613115789474,
+        0.976584123122807,
+        0.2255855642631579
+      ]
+    },
+    "Greencreep": {
+      "count": 96,
+      "percentage": 37.79527559055118,
+      "avg_energy": 0,
+      "avg_age": 0,
+      "dominant_color": [
+        0.04277088185708333,
+        0.9688980710520834,
+        0.09595738358333333
+      ]
+    },
+    "Herb.Prot.Magenta": {
+      "count": 37,
+      "percentage": 14.566929133858267,
+      "avg_energy": 0,
+      "avg_age": 0,
+      "dominant_color": [
+        0.8687068303513513,
+        0.0,
+        0.9950751558108109
+      ]
+    },
+    "Prey.Deathwatch": {
+      "count": 10,
+      "percentage": 3.937007874015748,
+      "avg_energy": 0,
+      "avg_age": 0,
+      "dominant_color": [
+        0.362471444514,
+        0.41249982666,
+        0.4131200767
+      ]
+    },
+    "Prey.Basic": {
+      "count": 17,
+      "percentage": 6.692913385826772,
+      "avg_energy": 0,
+      "avg_age": 0,
+      "dominant_color": [
+        0.5526360100294118,
+        0.36905173749529413,
+        0.4962139970588235
+      ]
+    }
+  },
+  "energy_stats": null,
+  "age_stats": null,
+  "errors": 0
+}

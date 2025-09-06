@@ -1,0 +1,73 @@
+{
+  "total_organisms": 225,
+  "zone_totals": {
+    "Unknown": 225
+  },
+  "zone_species_breakdown": {
+    "Unknown": {
+      "Herb.Prot.Yellow": 15,
+      "Prey.Basic": 17,
+      "Greencreep": 75,
+      "Prey.Deathwatch": 10,
+      "Herb.Prot.Magenta": 14,
+      "Herb.Prot.Cyan": 21,
+      "Pred": 73
+    }
+  },
+  "species_zone_preferences": {
+    "Herb.Prot.Yellow": {
+      "Unknown": 15
+    },
+    "Prey.Basic": {
+      "Unknown": 17
+    },
+    "Greencreep": {
+      "Unknown": 75
+    },
+    "Prey.Deathwatch": {
+      "Unknown": 10
+    },
+    "Herb.Prot.Magenta": {
+      "Unknown": 14
+    },
+    "Herb.Prot.Cyan": {
+      "Unknown": 21
+    },
+    "Pred": {
+      "Unknown": 73
+    }
+  },
+  "coordinate_ranges_by_zone": {
+    "Unknown": {
+      "x_range": [
+        -1602.137,
+        2087.48779
+      ],
+      "y_range": [
+        -3151.12524,
+        2577.97949
+      ],
+      "center": [
+        37.38745514506667,
+        187.97927590573332
+      ],
+      "organism_count": 225
+    }
+  },
+  "radial_analysis": {
+    "overall_range": [
+      155.0242110899892,
+      3183.160471203982
+    ],
+    "mean_distance": 1051.2708205870154,
+    "zone_distance_ranges": {
+      "Unknown": {
+        "min_distance": 355.4792416603567,
+        "max_distance": 2102.985857695167,
+        "mean_distance": 938.8855772459458
+      }
+    }
+  },
+  "zone_configuration": [],
+  "errors": 0
+}

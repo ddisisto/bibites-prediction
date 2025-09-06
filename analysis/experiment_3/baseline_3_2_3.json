@@ -1,0 +1,65 @@
+{
+  "total_organisms": 172,
+  "zone_totals": {
+    "Unknown": 172
+  },
+  "zone_species_breakdown": {
+    "Unknown": {
+      "Magentadeath three": 39,
+      "Greencreep": 59,
+      "L1 l1": 46,
+      "bait-meat": 12,
+      "bait-basic": 16
+    }
+  },
+  "species_zone_preferences": {
+    "Magentadeath three": {
+      "Unknown": 39
+    },
+    "Greencreep": {
+      "Unknown": 59
+    },
+    "L1 l1": {
+      "Unknown": 46
+    },
+    "bait-meat": {
+      "Unknown": 12
+    },
+    "bait-basic": {
+      "Unknown": 16
+    }
+  },
+  "coordinate_ranges_by_zone": {
+    "Unknown": {
+      "x_range": [
+        -2742.40649,
+        1504.26831
+      ],
+      "y_range": [
+        -2396.25171,
+        1558.02051
+      ],
+      "center": [
+        2.8985138395348824,
+        34.882184353023256
+      ],
+      "organism_count": 172
+    }
+  },
+  "radial_analysis": {
+    "overall_range": [
+      80.22635093689523,
+      2805.968717397783
+    ],
+    "mean_distance": 954.1542020189308,
+    "zone_distance_ranges": {
+      "Unknown": {
+        "min_distance": 499.5136206300155,
+        "max_distance": 2073.669671196692,
+        "mean_distance": 1128.0628397260875
+      }
+    }
+  },
+  "zone_configuration": [],
+  "errors": 0
+}
