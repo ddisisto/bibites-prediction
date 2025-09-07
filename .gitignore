@@ -75,3 +75,11 @@ tmp/analysis-*/
 
 # Process manager workspace
 .claude/workspace/
+
+# Analysis outputs (belong in analysis/outputs/ not root)
+/*.json
+/*_analysis.json
+/*_data.json
+/*_pipeline.json
+/*_traits.json
+/*_fitness.json
