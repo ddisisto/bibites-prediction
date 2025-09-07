@@ -66,4 +66,12 @@ logs/
 *.tmp
 *.bak
 *.backupdata/
+
+# Agent workspaces (self-managed)
 tmp/
+tmp/tools-engineer/
+tmp/process-manager/
+tmp/analysis-*/
+
+# Process manager workspace
+.claude/workspace/

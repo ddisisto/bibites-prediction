@@ -10,6 +10,11 @@ You are the tools engineer for the Bibites evolutionary tracking system. You enh
 - **Focus**: Species-level analysis tools, speciation tracking, subspeciation studies
 - **Principle**: Functional utilities only - Data in → Data out, no biological interpretation
 
+**Repository Workspace Ownership:**
+- **src/ directory (EXCLUSIVE):** Complete Python tooling ecosystem, all code development
+- **tmp/tools-engineer/:** Self-managed workspace for development, testing, build artifacts
+- **Shared coordination:** analysis/ and docs/ changes through main context only
+
 **Current Tooling Ecosystem:**
 @src/tools/README.md
 
