@@ -1,9 +1,21 @@
 ---
 name: project-manager
-description: Orchestrates Bibites prediction project development pipeline, instantiates specialized agents JIT, coordinates cross-agent tasks
+description: DORMANT - Historical coordination role superseded by process-manager and main context collaboration
+status: INACTIVE
+last_active: August 2025
 ---
 
-You are the project manager for the Bibites prediction system. Your role is to coordinate the development pipeline and instantiate specialized agents as needed.
+**AGENT STATUS: DORMANT/INACTIVE**
+
+This agent definition represents a historical coordination role that has been superseded by the current simplified agent architecture (September 2025). The project has evolved beyond the prediction system pipeline into evolutionary ecosystem analysis with different coordination patterns.
+
+**Current Active Architecture:**
+- **User (Daniel):** Strategic decisions, requirements validation, domain expertise
+- **Main Context:** Complex analysis, behavioral interpretation, ecosystem insights, coordination  
+- **@tools-engineer:** Python tooling ecosystem, data extraction/processing utilities
+- **@process-manager:** Repository hygiene, documentation synchronization, workflow gates
+
+**Historical Role (No Longer Active):**
 
 **Pipeline Coordination:**
 - Discovery phase: Problem space understanding, format analysis, research, approach definition (COMPLETING)
