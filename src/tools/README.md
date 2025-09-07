@@ -207,20 +207,19 @@ Test: Validate against data/current/bibites/bibite_0.bb8
 - **Integration:** Update this README.md via @tools-engineer when adding tools
 - **Testing:** Always test against real ecosystem data before committing
 
-## Integration with Analysis Agents
+## Integration with Development Team
 
-### For Evolutionary Analysis Agents
-- **@ecosystem-scout:** Use `extract_metadata.py` + `extract_data.py --population-summary` for population overview
-- **@speciation-analyst:** Use `extract_data.py --species-summary` + `--spatial-analysis` for subspeciation studies
-- **@evolutionary-tracker:** Use `extract_data.py --compare-populations` for cycle-to-cycle analysis
-- **@tools-engineer:** Maintain and enhance modular lib/ structure for new capabilities
+### Development Team Integration
+- **Main Context Analysis:** Use tools for data extraction, perform all interpretive analysis in primary context
+- **@tools-engineer:** Maintain and enhance modular lib/ structure, implement new data processing capabilities
+- **@process-manager:** Ensure tool development follows project conventions and documentation standards
 
 ### Data Flow Pattern
-1. **Extract** ecosystem with appropriate tool
-2. **Validate** data quality and completeness  
-3. **Analyze** with domain-specific agents using extracted data
-4. **Integrate** findings through synthesis agents
-5. **Document** results in appropriate `/analysis/` subdirectories
+1. **Extract** ecosystem data with appropriate tool
+2. **Validate** data quality and completeness using validation tools
+3. **Analyze** ecosystem dynamics, species behavior, and evolutionary patterns in primary context
+4. **Enhance** tools as needed through @tools-engineer delegation for new data processing requirements
+5. **Document** results and insights in appropriate `/analysis/` subdirectories
 
 ## Modular Architecture Details
 
