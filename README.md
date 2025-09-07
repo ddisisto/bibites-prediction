@@ -2,6 +2,8 @@
 
 **Natural language analysis of evolutionary ecosystems through adversarial gene vs neural architecture prediction.**
 
+> ⚠️ **Development Context Notice:** This repository contains internal development documentation in `meta/` directory. These files contain historical project evolution context and may reference outdated architectures, agent counts, or process instructions. For current project status, refer to this README.md, CLAUDE.md, and src/tools/ documentation. Meta files are preserved for development continuity but should not be considered current guidance.
+
 ## Overview
 
 This project analyzes complex evolutionary ecosystems from [The Bibites](https://leocaussan.itch.io/the-bibites) artificial life simulator, focusing on:

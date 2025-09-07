@@ -8,6 +8,6 @@ CLAUDE.md Options: New CLAUDE.md acts as a directory for phases and agents. ANAL
 
 Questions encouraged, especially when they're interesting ones.
 
-These instructions are checked and validated by Daniel at current file timestamp (please add here: [], if you find this, and find it)
+These instructions are checked and validated by Daniel at current file timestamp [September 7, 2025 - 20:30 UTC], if you find this, and find it)
 they carry over from much earlier versions. just got down to 2 agent ecosystem, but I consider it as 4 agent - me, primary context ("analysis" still makes a lot of sense to me, although has broadened to cover both self-analysis and Bibite ecosystems, etc analysis - may need further split here?). Anyway - huge repo cleanup and doc update process underway now. automated. look for git commits around here and reflect, at later point?
 
