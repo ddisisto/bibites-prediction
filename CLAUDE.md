@@ -80,27 +80,46 @@ python -m src.tools.bibites --help
 - Never work around broken tools - fix them properly
 - This prevents compounding issues and maintains system reliability
 
-## Agent Ecosystem
+## Development Team Architecture (September 2025)
 
-### Hierarchical Analysis Agents (5-6 total)
-- **@ecosystem-scout:** Population analysis, zone identification, specimen selection context
-- **@specimen-curator:** Strategic organism selection across ecological niches
-- **@gene-analyst:** Genetic domain specialist (WAG systems, mutation patterns, physical traits)
-- **@neural-analyst:** Neural domain specialist (circuit topology, synaptic patterns, behavior prediction)  
-- **@synthesis-judge:** Cross-domain validation, prediction accuracy assessment, integration
+### Active Development Team
+**Current 4-member ecosystem optimized for evolutionary tracking and analysis:**
 
-### Adversarial Framework
-**Gene ↔ Neural Blind Predictions:**
-- @gene-analyst predicts neural complexity from genetic parameters alone
-- @neural-analyst predicts genetic investments from brain structure alone
-- @synthesis-judge evaluates predictions against actual organism data
-- Ecosystem context provides survival validation for all predictions
+1. **User (Daniel)**
+   - Strategic decisions and requirements validation
+   - Domain expertise and biological interpretation oversight
+   - Final validation of analysis outputs and methodology
+
+2. **Main Context (Primary Analysis)**
+   - Complex ecosystem analysis and behavioral interpretation
+   - Natural language reasoning for biological insights
+   - Coordination between user requirements and tool outputs
+   - All interpretive analysis work (behavioral, evolutionary, ecological)
+
+3. **@tools-engineer**
+   - Python tooling ecosystem maintenance and enhancement
+   - Data extraction, processing, and formatting utilities
+   - Strict scope: Data in → Data out, zero biological interpretation
+   - Repository workspace: src/ directory ownership
+
+4. **@process-manager**  
+   - Repository hygiene and documentation synchronization
+   - Development workflow coordination and process gates
+   - Meta-documentation maintenance and agent definition updates
+
+### Analysis Framework (Supersedes Adversarial Architecture)
+**Primary Context Analytical Reasoning:**
+- Ecosystem dynamics analysis with zone-aware context
+- Behavioral pattern interpretation from neural and genetic data
+- Species-level evolutionary tracking and speciation analysis
+- Cross-domain insights integrating genetic, neural, and environmental factors
 
 ### Coordination Patterns
-- **Sequential handoffs:** Ecosystem → Selection → Adversarial → Synthesis
-- **Context preservation:** Each layer provides environmental/survival context to next
-- **Git workflow:** Agent outputs → human review → commit → iteration
-- **Scope boundaries:** Strict domain limitations prevent agent drift
+- **Primary Context Analysis:** All complex reasoning, biological interpretation, and ecosystem insights
+- **Tool Integration:** @tools-engineer provides data extraction utilities, main context performs analysis
+- **Process Gates:** @process-manager ensures documentation sync and workflow hygiene  
+- **User Validation:** Daniel provides strategic guidance and final methodology validation
+- **Git Workflow:** Clean commits with proper attribution and scope boundaries
 
 ## Current Ecosystem: Multiple Protectorate Concentric Zones (3.3.2)
 
@@ -133,12 +152,12 @@ python -m src.tools.bibites --help
 
 ## Development Workflow
 
-### Analysis Phase Pipeline
-1. **Ecosystem Reconnaissance** - @ecosystem-scout analyzes population and zones
-2. **Specimen Curation** - @specimen-curator selects representative organisms  
-3. **Adversarial Analysis** - Gene/neural specialists make blind predictions
-4. **Cross Validation** - @synthesis-judge evaluates prediction accuracy
-5. **Insight Integration** - Document findings for ecosystem survival prediction
+### Analysis Workflow (Current Approach)
+1. **Data Extraction** - @tools-engineer provides data access via unified bibites tool
+2. **Primary Analysis** - Main context performs ecosystem analysis, species profiling, and behavioral interpretation
+3. **Tool Enhancement** - @tools-engineer implements new data processing capabilities as needed  
+4. **Process Validation** - @process-manager ensures workflow hygiene and documentation sync
+5. **User Validation** - Daniel provides strategic guidance and methodology validation
 
 ### Git Workflow
 - **Agent delegation:** Specify requirements, let agents implement
